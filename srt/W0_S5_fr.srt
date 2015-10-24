@@ -16,7 +16,7 @@ pour voir de quoi il a l'air.
 
 5
 00:00:13,009 --> 00:00:14,259
-Commençons à en faire le tour.
+Commençons par en faire le tour.
 
 6
 00:00:14,259 --> 00:00:18,910
@@ -31,7 +31,7 @@ fonctionnalités avancées du langage OCaml.
 8
 00:00:21,940 --> 00:00:24,730
 Rappelez-vous, les utilisateurs nous ont dit que
-ce qu'ils aiment, c'est :
+ce qu'ils aiment, ce sont :
 
 9
 00:00:24,730 --> 00:00:27,400
@@ -59,7 +59,7 @@ Petit avertissement. C'est un premier
 14
 00:00:44,160 --> 00:00:48,649
 tour d'horizon rapide pour vous donner
-avant-goût du langage,
+un avant-goût du langage,
 
 15
 00:00:48,649 --> 00:00:52,620
@@ -265,7 +265,7 @@ Pourquoi ? Parce que <u>suml</u> attend une liste d'entiers.
 
 59
 00:03:47,249 --> 00:03:52,459
-« J'ai trouvé une liste mais pas d'entier, de chaînes. »
+« J'ai trouvé une liste mais pas d'entiers, de chaînes. »
 Donc, cela est une erreur.
 
 60
@@ -310,7 +310,7 @@ types, vous n'aurez pas d'erreurs de type à l'exécution.
 68
 00:04:24,759 --> 00:04:30,239
 Donc, nous avons écrit notre belle fonction <u>suml</u>
-qui additione tous les éléments de la liste.
+qui additionne tous les éléments de la liste.
 
 69
 00:04:30,240 --> 00:04:36,370
@@ -350,7 +350,7 @@ elle est définie par cas.
 76
 00:05:05,319 --> 00:05:11,139
 Sur la liste vide, au lieu de <u>0</u>,
-le vais renvoyer ce <u>e</u>, ici.
+je vais renvoyer ce <u>e</u>, ici.
 
 77
 00:05:11,139 --> 00:05:14,340
@@ -413,7 +413,7 @@ Et regardez :
 
 90
 00:05:57,379 --> 00:05:58,900
-« ce que vous me l'avez donnée est une fonction, »
+« ce que vous m'avez donné est une fonction, »
 
 91
 00:05:58,900 --> 00:06:06,400
@@ -432,7 +432,7 @@ de type <u>b</u>; »
 
 94
 00:06:13,560 --> 00:06:19,009
-« puis, prend une liste des élément de type <u>a</u> »
+« puis, prend une liste des éléments de type <u>a</u> »
 --- eh bien cette liste ici ---,
 
 95
@@ -533,7 +533,7 @@ le résultat obtenu.
 116
 00:07:40,139 --> 00:07:43,080
 Mais alors, vous pouvez décider d'utiliser la fonction
-dans d'autres environnement.
+dans d'autres environnements.
 
 117
 00:07:43,080 --> 00:07:49,189
@@ -693,7 +693,7 @@ poursuit sur la liste avec <u>y</u> en tête puis le reste.
 
 152
 00:10:01,560 --> 00:10:03,440
-Donc je l'ai enlevé la première répétition.
+Donc j'ai enlevé la première répétition.
 
 153
 00:10:03,440 --> 00:10:09,040
@@ -798,7 +798,7 @@ Je ne fais rien pour la liste vide.
 175
 00:11:27,589 --> 00:11:30,970
 Pour la liste a un seul élément
-je dois dire que ce qui se passe.
+je dois dire ce qui se passe.
 
 176
 00:11:30,970 --> 00:11:34,529
@@ -812,7 +812,7 @@ je renvoie la liste telle quelle.
 
 178
 00:11:38,579 --> 00:11:40,610
-Et la dernière clause est la même avant.
+Et la dernière clause est la même qu'avant.
 
 179
 00:11:40,610 --> 00:11:42,839

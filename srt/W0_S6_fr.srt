@@ -16,7 +16,7 @@ vous avez à votre disposition pour apprendre davantage.
 
 5
 00:00:07,939 --> 00:00:11,519
-Mais laissez moi commencer en vous disant qu'en fait
+Mais laissez-moi commencer en vous disant qu'en fait
 ce cours se suffit vraiment à lui-même.
 
 6
@@ -96,7 +96,7 @@ exactement le même environnement.
 
 22
 00:01:16,620 --> 00:01:18,330
-Wous aurez aussi de l'aide avec
+Vous aurez aussi de l'aide avec
 la plate-forme d'apprentissage.
 
 23
@@ -277,4 +277,4 @@ vous savez d'où nous venons.
 00:03:52,760 --> 00:03:59,000
 Et nous sommes vraiment impatients
 de vous voir la semaine prochaine pour commencer
-le véritable voyage techniques avec nous.
+le véritable voyage technique avec nous.

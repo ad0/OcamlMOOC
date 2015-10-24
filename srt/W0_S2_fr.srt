@@ -192,7 +192,7 @@ Ils étaient très enthousiastes sur ce sujet.
 44
 00:02:42,040 --> 00:02:46,280
 Par exemple, en 1985, il y avait Guy Cousineau,
-Pierre Louis Curien et Michel Mauny
+Pierre-Louis Curien et Michel Mauny
 
 45
 00:02:46,280 --> 00:02:50,560
@@ -247,7 +247,7 @@ Et à la fin,
 
 56
 00:03:33,869 --> 00:03:37,560
--- j'ai de tendre souvenirs de cette époque,
+-- j'ai de tendres souvenirs de cette époque,
 car je venais d'arriver en France ---
 
 57
@@ -423,7 +423,7 @@ En 2000, d'autres fonctionnalités arrivent,
 94
 00:06:00,719 --> 00:06:04,689
 Jacques Garrigue travaillait sur une branche.
-appelé Objective Label,
+appelée Objective Label,
 
 95
 00:06:04,689 --> 00:06:08,200
@@ -480,4 +480,3 @@ et pourquoi ils ont choisi celui-ci.
 106
 00:06:48,439 --> 00:06:50,400
 Nous verrons tout cela dans la séquence suivante.
-
