@@ -24,7 +24,11 @@ sur les fonctions en OCaml :
 
 6
 00:00:25,710 --> 00:00:30,859
+<<<<<<< HEAD
+les fonctions sont en réalité des valeurs
+=======
 les fonctions sont des valeurs
+>>>>>>> upstream/master
 comme toutes les autres valeurs en OCaml.
 
 7
@@ -120,12 +124,21 @@ une variante locale d'une définition de fonction.
 26
 00:02:04,340 --> 00:02:06,930
 Ici, nous avons une définition locale
+<<<<<<< HEAD
+de la fonction [g],
+
+27
+00:02:06,930 --> 00:02:12,120
+elle ne sera visible que dans
+l'expression après le [in].
+=======
 de la fonction <u>g</u>,
 
 27
 00:02:06,930 --> 00:02:12,120
 elle ne serait visible que dans
 l'expression après le <u>in</u>.
+>>>>>>> upstream/master
 
 28
 00:02:12,120 --> 00:02:14,580
@@ -151,12 +164,17 @@ Comme dans ce cas, où <u>f</u> est défini comme
 une fonction ayant un seul argument.
 
 33
+<<<<<<< HEAD
+00: 02: 29,130 ​​-> 00: 02: 32,290
+Quand on essaye de transmettre cela au toplevel,
+=======
 00:02:29,130 --> 00:02:32,290
 Quand on essaye de la transmettre cela au toplevel,
+>>>>>>> upstream/master
 
 34
 00:02:32,290 --> 00:02:36,740
-on obtient une erreur que nous n'avions pas vu avant.
+on obtient une erreur que nous n'avons pas vue avant.
 
 35
 00:02:36,740 --> 00:02:42,959
@@ -241,7 +259,7 @@ moment de l'exécution de la fonction.
 
 53
 00:03:52,970 --> 00:03:57,800
---- ce qui conrrespondrait au principe
+--- ce qui correspondrait au principe
 contraire, de la portée dynamique ---
 
 54
@@ -282,8 +300,13 @@ Et non celui qui est défini à la ligne 4.
 
 62
 00:04:25,439 --> 00:04:31,039
+<<<<<<< HEAD
+Même si nous avons une application de [g] qui vient
+après cette deuxième définition de la fonction [f].
+=======
 Même si nous avons une application de <u>g</u> qui vient
 après cette deuxième définition de la fonction <u>f</u>.
+>>>>>>> upstream/master
 
 63
 00:04:31,789 --> 00:04:37,309
@@ -291,8 +314,13 @@ Donc, quand on soumet cette phrase à OCaml,
 
 64
 00:04:37,309 --> 00:04:40,550
+<<<<<<< HEAD
+nous voyons que le [f] qui
+sera utilisé par la fonction [g]
+=======
 nous voyons que le <u>f</u> qui
 sera utilisés par la fonction <u>g</u>
+>>>>>>> upstream/master
 
 65
 00:04:40,550 --> 00:04:44,689
@@ -478,4 +506,8 @@ Cela prouve que le second <u>a</u> est un nouveau <u>a</u>,
 106
 00:07:39,619 --> 00:07:47,689
 qui est juste complétement invisible de
+<<<<<<< HEAD
+la fonction [f] qui a été définie auparavant.
+=======
 la fonction <u>f</u> qui a été définie auparavant.
+>>>>>>> upstream/master

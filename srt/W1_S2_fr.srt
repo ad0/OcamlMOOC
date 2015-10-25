@@ -1,5 +1,9 @@
 1
+<<<<<<< HEAD
+00:00:00,000 -> 00:00:04,920
+=======
 00:00:00,000 --> 00:00:04,920
+>>>>>>> upstream/master
 Bonjour ! Dans cette séquence,
 nous allons continuer notre tour d'OCaml,
 
@@ -16,14 +20,24 @@ Le rôle des expressions est de calculer les valeurs.
 En OCaml nous avons un système très riche de valeurs
 
 5
+<<<<<<< HEAD
+00:00:16,380 -> 00:00:19,419
+=======
 00:00:16,380 --> 00:00:19,419
+>>>>>>> upstream/master
 et en fait les valeurs jouent un rôle très important
 en OCaml.
 
 6
+<<<<<<< HEAD
+00:00:19,419 -> 00:00:26,619
+Pour cette raison, les expressions sont tout à fait
+centrales dans la définition du langage.
+=======
 00:00:19,419 --> 00:00:26,619
 Pour cette raison, les expressions sont tout à fait
 centrales dans la définition de la langage.
+>>>>>>> upstream/master
 
 7
 00:00:26,620 --> 00:00:31,900
@@ -63,14 +77,24 @@ vous avez après le <u>then</u> et après le <u>else</u>,
 doivent être du même type.
 
 15
+<<<<<<< HEAD
+00:00:59,800 -> 00:01:05,040
+=======
 00:00:59,800 --> 00:01:05,040
+>>>>>>> upstream/master
 Et ce type vous donne le type de
 l'expression conditionnelle complète.
 
 16
+<<<<<<< HEAD
+00:01:05,040 -> 00:01:11,450
+Il y a en fait une valeur par défaut qui est utilisée
+au cas où vous n'écririez pas la partie [else],
+=======
 00:01:05,040 --> 00:01:11,450
 Il y a en fait une valeur par défaut qui est utilisée
 au cas où vous n'écririez pas la partie <u>sinon</u>,
+>>>>>>> upstream/master
 
 17
 00:01:11,450 --> 00:01:18,370
@@ -78,7 +102,11 @@ mais s'il vous plaît ne l'utilisez pas pour le moment,
 ce n'est pas la valeur à laquelle vous vous attendriez.
 
 18
+<<<<<<< HEAD
+00:01:20,260 -> 00:01:23,180
+=======
 00:01:20,260 --> 00:01:23,180
+>>>>>>> upstream/master
 Ici nous avons quelques
 expressions conditionnelles simples.
 
@@ -110,9 +138,15 @@ Dans ce cas, la condition serait évidemment
 évaluée à <u>true</u>,
 
 25
+<<<<<<< HEAD
+00:01:42,090 -> 00:01:49,750
+et donc le résultat de cette évaluation serait
+le résultat de la partie [then], qui est bien sûr [13].
+=======
 00:01:42,090 --> 00:01:49,750
 et donc le résultat de cette évaluation serait
 le résultat de la partie <u>then</u>, qui est bien sûr <u>13</u>.
+>>>>>>> upstream/master
 
 26
 00:01:50,560 --> 00:01:54,720
@@ -120,8 +154,13 @@ Une chose importante à retenir à propos des
 expressions conditionnelles est que
 
 27
+<<<<<<< HEAD
+00:01:54,720 -> 00:01:59,280
+les expressions après le [then] et après le [else]
+=======
 00:01:54,720 --> 00:01:59,280
 les expressions après le <u>then</u> et après le <u>else</u>
+>>>>>>> upstream/master
 doivent être de même type.
 
 28
@@ -154,7 +193,11 @@ expressions imbriquées plus compliquées,
 comme dans cet exemple.
 
 34
+<<<<<<< HEAD
+00:02:29,650 -> 00:02:34,560
+=======
 00:02:29,650 --> 00:02:34,560
+>>>>>>> upstream/master
 Ici, nous avons une expression conditionnelle qui est
 combinée par une conjonction
 
@@ -168,6 +211,20 @@ et cela est bien sûr parfaitement correct et nous
 donne la valeur booléenne <u>true</u>.
 
 37
+<<<<<<< HEAD
+00:02:42,260 -> 00:02:48,040
+Enfin, un autre genre d'emboîtement qui est tout-à-fait
+permis dans les expressions booléennes :
+
+38
+00:02:48,040 -> 00:02:50,980
+ici nous avons une expression emboîtée comme condition.
+
+39
+00:02:50,980 -> 00:02:58,420
+Cela est bien sûr correct et ce que nous obtenons
+alors est, comme prévu, la valeur [true].
+=======
 00:02:42,260 --> 00:02:48,040
 Enfin, un autre genre d'emboitement qui est tout-à-fait
 permis dans les expressions booléennes :
@@ -180,6 +237,7 @@ ici nous avons une expression emboitée comme condition.
 00:02:50,980 --> 00:02:58,420
 Cela est bien sûr correct et ce que nous obtenons
 alors est, comme prévu, la valeur <u>true</u>.
+>>>>>>> upstream/master
 
 40
 00:03:00,000 --> 00:03:04,300
@@ -196,7 +254,11 @@ la construction d'une expression, vous
 devez d'abord connaître le type de votre fonction.
 
 43
+<<<<<<< HEAD
+00:03:11,350 -> 00:03:14,580
+=======
 00:03:11,350 --> 00:03:14,580
+>>>>>>> upstream/master
 En général, la fonction peut attendre
 plusieurs arguments.
 
@@ -237,6 +299,15 @@ qui attend d'abord une chaîne, puis un entier
 et qui renvoie un caractère.
 
 52
+<<<<<<< HEAD
+00:03:46,290 -> 00:03:53,550
+Et on appliquerait cette fonction en écrivant juste
+[String.get], puis la chaîne, et enfin l'entier.
+
+53
+00:03:53,550 -> 00:04:00,190
+Et cela donne dans ce cas la lettre ['c'],
+=======
 00:03:46,290 --> 00:03:53,550
 Et on appliquerait cette fonction en écrivant juste
 <u>String.get</u>, puis la chaîne, et enfin l'entier.
@@ -244,6 +315,7 @@ Et on appliquerait cette fonction en écrivant juste
 53
 00:03:53,550 --> 00:04:00,190
 Et cela donne dans ce cas la lettre <u>'c'</u>,
+>>>>>>> upstream/master
 puisque les chaînes sont indicées à partir de 0.
 
 54
@@ -261,11 +333,24 @@ auriez des expressions plus complexes,
 dans lesquelles vous devez préciser la structure.
 
 57
+<<<<<<< HEAD
+00:04:13,200 -> 00:04:19,980
+=======
 00:04:13,200 --> 00:04:19,980
+>>>>>>> upstream/master
 Les exemples de cette diapositive montrent comment
 appliquer une fonction qui attend plusieurs arguments,
 
 58
+<<<<<<< HEAD
+00:04:19,980 -> 00:04:26,280
+comme ici, la fonction [String.get], qui attend
+en arguments d'abord une chaîne, puis un entier,
+
+59
+00:04:26,280 -> 00:04:28,540
+et vous écrivez simplement le nom de la fonction
+=======
 00:04:19,980 --> 00:04:26,280
 comme ici, la fonction <u>String.get</u>, qui attend
 en arguments d'abord une chaînes, puis un entier,
@@ -273,6 +358,7 @@ en arguments d'abord une chaînes, puis un entier,
 59
 00:04:26,280 --> 00:04:28,540
 et vous simplement écrivez le nom de la fonction
+>>>>>>> upstream/master
 
 60
 00:04:28,540 --> 00:04:32,099
@@ -284,12 +370,20 @@ et nous obtenons bien sûr le résultat prévu, qui est
 <u>'c'</u>, le troisième caractère dans cette chaîne.
 
 62
+<<<<<<< HEAD
+00:04:37,920 -> 00:04:42,340
+=======
 00:04:37,920 --> 00:04:42,340
+>>>>>>> upstream/master
 En fait, vous êtes autorisé à écrire à la position
 du paramètre effectif
 
 63
+<<<<<<< HEAD
+00:04:42,349 -> 00:04:47,209
+=======
 00:04:42,349 --> 00:04:47,209
+>>>>>>> upstream/master
 toute expression qui calcule une valeur du
 type attendu.
 
@@ -299,12 +393,20 @@ Par exemple, le deuxième et le premier
 argument peuvent être des expressions plus complexes,
 
 65
+<<<<<<< HEAD
+00:04:52,860 -> 00:04:57,499
+=======
 00:04:52,860 --> 00:04:57,499
+>>>>>>> upstream/master
 qui doivent être évaluées avant de passer
 les valeurs à la fonction.
 
 66
+<<<<<<< HEAD
+00:04:57,499 -> 00:05:01,479
+=======
 00:04:57,499 --> 00:05:01,479
+>>>>>>> upstream/master
 Nous pouvons aussi avoir quelque chose de plus
 compliqué, comme l'application de cette fonction,
 
@@ -323,13 +425,22 @@ où nous convertissons d'abord un entier en chaîne
 pour le premier argument,
 
 70
+<<<<<<< HEAD
+00:05:14,159 -> 00:05:17,579
+=======
 00:05:14,159 --> 00:05:17,579
+>>>>>>> upstream/master
 et une chaîne en entier
 pour obtenir le second argument.
 
 71
+<<<<<<< HEAD
+00:05:20,080 -> 00:05:26.500
+Les expressions peuvent être emboîtées arbitrairement
+=======
 00:05:20,080 --> 00:05:26,500
 Les expressions peuvent être emboitées arbitrairement
+>>>>>>> upstream/master
 et devenir très complexes et compliquées,
 
 72
@@ -342,31 +453,54 @@ pour couper une grande expression en petits morceaux,
 comme vous le verrez dans la prochaine séquence.
 
 74
+<<<<<<< HEAD
+00:05:37,700 -> 00:05:42,979
+=======
 00:05:37,700 --> 00:05:42,979
+>>>>>>> upstream/master
 Il est possible de fournir aux fonctions des arguments
 en quantité a priori insuffisante.
 
 75
+<<<<<<< HEAD
+00:05:42,979 -> 00:05:49,259
+Si vous essayez de le faire, alors vous obtenez un
+résultat de type différent de ce que vous pourriez attendre,
+=======
 00:05:42,979 --> 00:05:49,259
 Si vous essayez de le faire, alors vous obtenez un
 résultat de type différent que vous pourriez attendre,
+>>>>>>> upstream/master
 
 76
 00:05:49,260 --> 00:05:51,940
 comme on le verra en semaine 4.
 
 77
+<<<<<<< HEAD
+00:05:51,940 -> 00:05:56,360
+=======
 00:05:51,940 --> 00:05:56,360
+>>>>>>> upstream/master
 Encore une fois, les parenthèses ne font pas partie
 de l'application de fonction.
 
 78
+<<<<<<< HEAD
+00:05:56,360 -> 00:06:04,460
+Si vous essayez quelque chose comme [f (e1, e2)] pour
+l'application d'une fonction à deux arguments,
+
+79
+00:06:04,460 -> 00:06:10.000
+=======
 00:05:56,360 --> 00:06:04,460
 Si vous essayez quelque chose comme <u>f (e1, e2)</u> pour
 l'application d'une fonction à deux arguments,
 
 79
 00:06:04,460 --> 00:06:10,000
+>>>>>>> upstream/master
 vous obtiendrez une erreur, et l'explication
 en sera donnée à la semaine 2.
 
@@ -376,7 +510,11 @@ Les opérateurs sont juste des fonctions
 avec une syntaxe particulière
 
 81
+<<<<<<< HEAD
+00:06:14,140 -> 00:06:19,260
+=======
 00:06:14,140 --> 00:06:19,260
+>>>>>>> upstream/master
 qui vous permet d'écrire une application avec
 une notation infixe.
 
@@ -391,12 +529,20 @@ Comme par exemple <u>+</u> a le type <u>int -> int -> int</u>
 car c'est l'addition entière habituelle.
 
 84
+<<<<<<< HEAD
+00:06:32,720 -> 00:06:38,680
+=======
 00:06:32,720 --> 00:06:38,680
+>>>>>>> upstream/master
 Nous avons déjà vu des opérateurs qui ont en fait un
 type polymorphe, comme les opérateurs de comparaison
 
 85
+<<<<<<< HEAD
+00:06:38,680 -> 00:06:42,580
+=======
 00:06:38,680 --> 00:06:42,580
+>>>>>>> upstream/master
 puisque ces opérateurs attendent des valeurs de
 n'importe quel type.
 
@@ -410,7 +556,11 @@ indiqué avec une variable dite de type.
 Les variables de type sont écrites avec une apostrophe.
 
 88
+<<<<<<< HEAD
+00:06:54,080 -> 00:06:58,800
+=======
 00:06:54,080 --> 00:06:58,800
+>>>>>>> upstream/master
 Dans le cas où ces variables sont constituées
 d'une apostrophe et d'une seule lettre,
 
@@ -452,7 +602,7 @@ dans une invocation donnée.
 97
 00:07:30,040 --> 00:07:34,199
 Donc, c'est juste pour rappeler certaines choses sur
-opérateurs polymorphes,
+les opérateurs polymorphes,
 
 98
 00:07:34,199 --> 00:07:37,719
@@ -506,9 +656,15 @@ Et nous obtenons la valeur booléenne <u>true</u>.
 Un avertissement pour terminer.
 
 109
+<<<<<<< HEAD
+00:08:22,000 -> 00:08:28,040
+L'opérateur de comparaison s'écrit toujours
+avec un seul signe d'égalité [=].
+=======
 00:08:22,000 --> 00:08:28,040
 L'opérateur de comparaison s'écrit toujours
 avec un seul signe d'égalité <u>=</u>.
+>>>>>>> upstream/master
 
 110
 00:08:28,040 --> 00:08:36,040
@@ -516,20 +672,36 @@ En fait, il existe en OCaml un opérateur
 s'écrivant <u>==</u>, mais il signifie autre chose,
 
 111
+<<<<<<< HEAD
+00:08:36,040 -> 00:08:38,800
+comme vous pourrez le voir en semaine 2.
+
+112
+00:08:38,800 -> 00:08:43,100
+=======
 00:08:36,040 --> 00:08:38,800
 comme vous pourrez le voir dans la semaine 2.
 
 112
 00:08:38,800 --> 00:08:43,100
+>>>>>>> upstream/master
 Comme toujours, vous trouverez bien plus
 d'informations dans le manuel OCaml.
 
 113
+<<<<<<< HEAD
+00:08:43,100 -> 00:08:47.400
+=======
 00:08:43,100 --> 00:08:47,400
+>>>>>>> upstream/master
 Et si vous voulez en apprendre davantage sur le jeu
 complet des constructions pour les expressions,
 
 114
+<<<<<<< HEAD
+00:08:47,400 -> 00:08:53,120
+=======
 00:08:47,400 --> 00:08:53,120
+>>>>>>> upstream/master
 vous pouvez consulter le chapitre sur les expressions
 dans le manuel de référence de OCaml.
