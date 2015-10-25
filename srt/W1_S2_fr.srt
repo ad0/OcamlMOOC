@@ -451,7 +451,7 @@ dans une invocation donnée.
 
 97
 00:07:30,040 --> 00:07:34,199
-Donc, c'est juste pour rappeler certaines choses sur
+Donc, tout ceci pour rappeler certaines choses sur
 opérateurs polymorphes,
 
 98

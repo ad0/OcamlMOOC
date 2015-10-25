@@ -19,8 +19,8 @@ comment définir des fonctions en OCaml.
 
 5
 00:00:20,900 --> 00:00:25,710
-En fait, il n'a rien de spécial
-sur les fonctions en OCaml :
+En fait, les fonctions en OCaml
+n'ont rien de spécial :
 
 6
 00:00:25,710 --> 00:00:30,859
@@ -205,7 +205,7 @@ langages de programmation modernes,
 
 45
 00:03:21,989 --> 00:03:26,090
-est régi par le principe de la portée lexicale.
+est régi par le principe de portée lexicale.
 
 46
 00:03:26,090 --> 00:03:29,220
@@ -241,13 +241,13 @@ moment de l'exécution de la fonction.
 
 53
 00:03:52,970 --> 00:03:57,800
---- ce qui conrrespondrait au principe
-contraire, de la portée dynamique ---
+--- ce qui correspondrait au principe
+contraire de portée dynamique ---
 
 54
 00:04:00,400 --> 00:04:04,849
 Maintenant, je tiens à vous illustrer
-ce principe très important de la portée lexicale
+ce principe très important de portée lexicale
 
 55
 00:04:04,849 --> 00:04:06,849
@@ -380,8 +380,8 @@ programmation impératifs traditionnels.
 
 84
 00:06:00,469 --> 00:06:06,389
-Maintenant, en suivant le principe de la
-portée lexicale --- ou une liaison statique ---
+Maintenant, en suivant le principe de
+portée lexicale --- ou liaison statique ---
 
 85
 00:06:06,389 --> 00:06:11,800
@@ -477,5 +477,5 @@ Cela prouve que le second <u>a</u> est un nouveau <u>a</u>,
 
 106
 00:07:39,619 --> 00:07:47,689
-qui est juste complétement invisible de
+qui est complètement invisible pour
 la fonction <u>f</u> qui a été définie auparavant.
