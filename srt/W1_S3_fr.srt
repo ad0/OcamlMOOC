@@ -27,10 +27,14 @@ Commençons par les définitions globales.
 7
 00:00:18,390 --> 00:00:24,200
 Les définitions globales sont des définitions qui sont
-effectives à partir du moment de vous les écrivez
+effectives à partir du moment où vous les écrivez
 
 8
+<<<<<<< HEAD
+00:00:24,220 -> 00:00:31,900
+=======
 00:00:24,220 --> 00:00:31,900
+>>>>>>> upstream/master
 jusqu'à la fin de la séance, ou de votre programme
 dans le cas d'un programme compilé.
 
@@ -45,22 +49,34 @@ et ensuite l'expression qui calcule la
 valeur que vous souhaitez attribuer au nom.
 
 11
+<<<<<<< HEAD
+00:00:43,879 -> 00:00:50,100
+=======
 00:00:43,879 --> 00:00:50,100
+>>>>>>> upstream/master
 Un identificateur n'a pas lieu d'être déclaré
 préalablement,
 
 12
+<<<<<<< HEAD
+00:00:50,170 -> 00:00:57,100
+=======
 00:00:50,170 --> 00:00:57,100
+>>>>>>> upstream/master
 et il n'y a pas lieu de déclarer son type,
 car il pourra être déduit par le système.
 
 13
 00:00:57,199 --> 00:01:02,839
 Une caractéristique très importante des langages de
-programmation fonctionnelle langues en général est que
+programmation fonctionnelle en général est que
 
 14
+<<<<<<< HEAD
+00:01:02,839 -> 00:01:07,579
+=======
 00:01:02,839 --> 00:01:07,579
+>>>>>>> upstream/master
 une fois définie, la valeur d'un identificateur
 ne change jamais.
 
@@ -69,15 +85,24 @@ ne change jamais.
 C'est vrai même en présence des traits impératifs,
 
 16
+<<<<<<< HEAD
+00:01:10,909 -> 00:01:13.500
+que nous verrons en semaine 5.
+=======
 00:01:10,909 --> 00:01:13,500
 que nous verrons dans la semaine 5.
+>>>>>>> upstream/master
 
 17
 00:01:13,500 --> 00:01:15,600
 Cela peut paraître surprenant pour le moment
 
 18
+<<<<<<< HEAD
+00:01:15,600 -> 00:01:21,200
+=======
 00:01:15,600 --> 00:01:21,200
+>>>>>>> upstream/master
 mais nous apprendrons en semaine 5 comment cela
 est possible en fait.
 
@@ -132,7 +157,11 @@ qui sera lié à la valeur de <u>2 * x</u>,
 qui est ainsi de <u>10</u>. Maintenant,
 
 30
+<<<<<<< HEAD
+00:02:06,799 -> 00:02:12.800
+=======
 00:02:06,799 --> 00:02:12,800
+>>>>>>> upstream/master
 il est tout à fait correct de donner une nouvelle
 définition globale d'un identificateur de même nom
 
@@ -158,8 +187,13 @@ ce qui signifie que l'ancienne définition sera masquée,
 et elle sera cachée pour le moment.
 
 36
+<<<<<<< HEAD
+00:02:29,280 -> 00:02:31,280
+Pour l'instant, croyez-moi simplement,
+=======
 00:02:29,280 --> 00:02:31,280
 Pour l'instant, croyez-moi simplement que
+>>>>>>> upstream/master
 
 37
 00:02:31,280 --> 00:02:33,190
@@ -170,7 +204,11 @@ l'ancienne définition est toujours présente,
 et peut encore être consultée par d'autres moyens.
 
 39
+<<<<<<< HEAD
+00:02:35,470 -> 00:02:40,400
+=======
 00:02:35,470 --> 00:02:40,400
+>>>>>>> upstream/master
 Dans la séquence suivante, en fait, je vais vous
 montrer que c'est vraiment le cas.
 
@@ -198,8 +236,13 @@ la valeur de <u>x</u>,
 alors c'est la dernière liaison qui est active,
 
 45
+<<<<<<< HEAD
+00:02:59,040 -> 00:03:01,400
+et le [x] que nous avons ici à la ligne 9
+=======
 00:02:59,040 --> 00:03:01,400
 et de le <u>x</u> que nous avons ici à la ligne 9
+>>>>>>> upstream/master
 
 46
 00:03:01,400 --> 00:03:06,450
@@ -234,7 +277,11 @@ Pour utiliser une définition locale, on écrit :
 <u>in</u>, expression «2».
 
 53
+<<<<<<< HEAD
+00:03:38,180 -> 00:03:42,800
+=======
 00:03:38,180 --> 00:03:42,800
+>>>>>>> upstream/master
 Et l'expression «2», ici, est la portée,
 c'est-à-dire la région délimitée
 
@@ -243,13 +290,22 @@ c'est-à-dire la région délimitée
 où cette définition sera utilisable.
 
 55
+<<<<<<< HEAD
+00:03:45,120 -> 00:03:49,750
+=======
 00:03:45,120 --> 00:03:49,750
+>>>>>>> upstream/master
 En fait vous pouvez écrire dans un programme
 plusieurs définitions,
 
 56
+<<<<<<< HEAD
+00:03:49,750 -> 00:03:53,730
+locales et globales, avec le même nom.
+=======
 00:03:49,750 --> 00:03:53,730
 locales et globales, pour le même nom.
+>>>>>>> upstream/master
 
 57
 00:03:53,730 --> 00:03:56,750
@@ -269,9 +325,15 @@ plus globales ou plus à l'extérieur.
 Ici, nous avons quelques définitions locales.
 
 61
+<<<<<<< HEAD
+00:04:08,550 -> 00:04:12.000
+Ainsi, sur la première ligne, nous avons
+une définition locale d'un identificateur [x],
+=======
 00:04:08,550 --> 00:04:12,000
 Ainsi, sur la première ligne, nous avons
 une définition locale d'un identificateur <u>x</u>,
+>>>>>>> upstream/master
 
 62
 00:04:12,000 --> 00:04:14,900
@@ -294,7 +356,7 @@ Cependant, avec une définition locale
 66
 00:04:27,600 --> 00:04:33,710
 la définition n'est plus visible une fois
-vous quittez la portée de cette définition.
+que vous quittez la portée de cette définition.
 
 67
 00:04:33,710 --> 00:04:38,020
@@ -302,8 +364,13 @@ Ce qui signifie que sur la ligne suivante,
 où nous demandons la valeur de <u>x</u>,
 
 68
+<<<<<<< HEAD
+00:04:38,020 -> 00:04:43,590
+la définition locale de [x] n'a plus d'effet,
+=======
 00:04:38,020 --> 00:04:43,590
 la définition locale de <u>x</u> n'a plus d'effet,
+>>>>>>> upstream/master
 et nous obtenons un message d'erreur.
 
 69
@@ -312,14 +379,24 @@ C'est seulement lorsqu'on a une définition globale
 d'un identificateur comme <u>x</u> à la valeur <u>17</u>,
 
 70
+<<<<<<< HEAD
+00:04:49,889 -> 00:04:55,560
+=======
 00:04:49,889 --> 00:04:55,560
+>>>>>>> upstream/master
 qu'il est possible d'utiliser cet identificateur
 dans les phrases soumises ensuite au toplevel.
 
 71
+<<<<<<< HEAD
+00:04:55,560 -> 00:04:59,840
+Donc, une fois que nous avons entré une définition
+globale de [x],
+=======
 00:04:55,560 --> 00:04:59,840
 Donc, une fois que nous avons entré une définition
 globale de <u>x</u>,
+>>>>>>> upstream/master
 
 72
 00:04:59,840 --> 00:05:01,749
@@ -331,8 +408,13 @@ Et nous obtenons, comme on peut s'y attendre,
 la valeur <u>17</u>.
 
 74
+<<<<<<< HEAD
+00:05:05,789 -> 00:05:10.600
+Et ensuite, nous pouvons utiliser cette valeur de [x]
+=======
 00:05:05,789 --> 00:05:10,600
 Et ensuite, nous pouvons utiliser cette valeur de <u>x</u>
+>>>>>>> upstream/master
 dans une autre définition, locale par exemple,
 
 75
@@ -348,9 +430,15 @@ Comme ici, nous avons une définition locale de <u>y</u>,
 qui sera liée à la valeur de <u>x + 1</u>, qui est <u>18</u>,
 
 78
+<<<<<<< HEAD
+00:05:20,030 -> 00:05:26,199
+dans [y / 3], de sorte que nous pouvons nous attendre
+à ce que cela nous renvoie la valeur [6].
+=======
 00:05:20,030 --> 00:05:26,199
 dans <u>y / 3</u>, de sorte que nous pouvons nous attendre
 à ce que cela nous renvoie la valeur <u>6</u>.
+>>>>>>> upstream/master
 
 79
 00:05:26,199 --> 00:05:28,999
@@ -362,7 +450,11 @@ L'exemple suivant illustre à nouveau quelque chose que
 nous avons vu auparavant : le masquage.
 
 81
+<<<<<<< HEAD
+00:05:34,590 -> 00:05:41,219
+=======
 00:05:34,590 --> 00:05:41,219
+>>>>>>> upstream/master
 Une définition plus récente, ou plus à l'intérieur ou
 plus locale masque une définition plus globale,
 
@@ -371,8 +463,13 @@ plus locale masque une définition plus globale,
 comme nous pouvons le voir sur cet exemple.
 
 83
+<<<<<<< HEAD
+00:05:43,969 -> 00:05:48,180
+Nous avons ici trois définitions locales emboîtées.
+=======
 00:05:43,969 --> 00:05:48,180
 Nous avons ici trois définitions locales emboitées.
+>>>>>>> upstream/master
 
 84
 00:05:48,180 --> 00:05:50,000
@@ -384,9 +481,15 @@ Ensuite, on définit <u>y</u> en se référant au
 <u>x</u> qu'on vient de définir.
 
 86
+<<<<<<< HEAD
+00:05:55,700 -> 00:05:59,400
+Et enfin, on définit un nouvel identificateur
+appelé [x]
+=======
 00:05:55,700 --> 00:05:59,400
 Et enfin, on définit un nouvel identificateur
 appelé <u>x</u>
+>>>>>>> upstream/master
 
 87
 00:05:59,400 --> 00:06:04,069
@@ -395,7 +498,7 @@ qui se réfère au <u>y</u> que nous venons de définir.
 88
 00:06:04,069 --> 00:06:06,259
 Maintenant, la seule question est:
-qu'est-ce  que nous obtenons à la fin?
+qu'est-ce-que nous obtenons à la fin?
 
 89
 00:06:06,259 --> 00:06:09,620
@@ -422,8 +525,13 @@ Et en effet, le résultat que nous obtenons ici
 est <u>10</u>, qui vient de <u>2 * 5</u>.
 
 94
+<<<<<<< HEAD
+00:06:30,029 -> 00:06:34,300
+Et cela est bien sûr, ce à quoi nous aurions
+=======
 00:06:30,029 --> 00:06:34,300
 Et cela est bien sûr, ce à quoi aurions
+>>>>>>> upstream/master
 pu nous attendre.
 
 95
@@ -431,7 +539,11 @@ pu nous attendre.
 Le dernier exemple, enfin,
 
 96
+<<<<<<< HEAD
+00:06:35,800 -> 00:06:39,900
+=======
 00:06:35,800 --> 00:06:39,900
+>>>>>>> upstream/master
 est dans le même esprit que ce que nous avons
 vu auparavant, avec des expressions conditionnelles.
 
@@ -449,6 +561,15 @@ et de construire des expressions plus complexes
 à partir d'expressions plus simples.
 
 100
+<<<<<<< HEAD
+00:06:48,689 -> 00:06:52,969
+Donc, nous pouvons les emboîter de manière quelconque,
+par exemple, dans ce cas,
+
+101
+00:06:52,969 -> 00:06:58,719
+nous avons ici une définition locale où,
+=======
 00:06:48,689 --> 00:06:52,969
 Donc, nous pouvons les emboiter de manière quelconque,
 par exemple, dans ce cas,
@@ -456,6 +577,7 @@ par exemple, dans ce cas,
 101
 00:06:52,969 --> 00:06:58,719
 nous avons  ici une définition locale, où,
+>>>>>>> upstream/master
 dans la portée de la définition, nous avons
 
 102
@@ -467,9 +589,15 @@ une expression qui est elle-même une définition locale.
 Et cela est parfaitement accepté.
 
 104
+<<<<<<< HEAD
+00:07:04,120 -> 00:07:10.600
+Donc, nous allons soumettre ceci au système et nous
+obtenons une valeur entière qui est [22].
+=======
 00:07:04,120 --> 00:07:10,600
 Donc, nous allons soumettre ceci au système et nous
 obtenons une valeur entière qui est <u>22</u>.
+>>>>>>> upstream/master
 
 105
 00:07:12,889 --> 00:07:18,659
@@ -495,12 +623,20 @@ Comme vous pouvez le voir sur ce schéma,
 c'est toujours la plus locale qui gagne,
 
 110
+<<<<<<< HEAD
+00:07:32,789 -> 00:07:40,860
+=======
 00:07:32,789 --> 00:07:40,860
+>>>>>>> upstream/master
 et qui prend la priorité sur la définition
 d'identificateur de même nom la plus globale.
 
 111
+<<<<<<< HEAD
+00:07:40,860 -> 00:07:46,100
+=======
 00:07:40,860 --> 00:07:46,100
+>>>>>>> upstream/master
 Dans certains cas, il est nécessaire de définir
 plusieurs choses en même temps.
 
@@ -533,7 +669,11 @@ dans les cas où vous avez à définir
 deux choses en même temps,
 
 118
+<<<<<<< HEAD
+00:08:14,719 -> 00:08:19,529
+=======
 00:08:14,719 --> 00:08:19,529
+>>>>>>> upstream/master
 et dans ce cas,
 vous aurez besoin de définitions simultanées.
 
@@ -559,7 +699,11 @@ comme <u>let x1 = e1 and x2 = e2</u>
 123
 00:08:39,430 --> 00:08:46,920
 ce sera exactement la même chose que si on change
+<<<<<<< HEAD
+l'ordre et qu'on écrit [let x2 = e2 and x1 = e1],
+=======
 l'ordre et qu'on écrit <u>let x2 = e2 et x1 = e1</u>,
+>>>>>>> upstream/master
 
 124
 00:08:46,920 --> 00:08:51,910
@@ -567,7 +711,11 @@ puisque les deux expressions seront
 évaluées dans l'ancien environnement.
 
 125
+<<<<<<< HEAD
+00:08:51,910 -> 00:08:55,830
+=======
 00:08:51,910 --> 00:08:55,830
+>>>>>>> upstream/master
 Cela fonctionne aussi bien avec les
 définitions globales qu'avec les définitions locales.
 
@@ -635,9 +783,15 @@ que nous avons après le signe d'égalité sont
 évaluées dans l'environnement précédent,
 
 140
+<<<<<<< HEAD
+00:09:53,710 -> 00:09:58,770
+c'est-à-dire dans l'environnement où [x]
+a la valeur [1].
+=======
 00:09:53,710 --> 00:09:58,770
 c'est-à-dire dans l'environnement où <u>x</u>
 a la valeur <u>1</u>.
+>>>>>>> upstream/master
 
 141
 00:09:58,770 --> 00:10:04,680
