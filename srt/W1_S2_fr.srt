@@ -253,7 +253,7 @@ les parenthèses ne sont a priori pas nécessaires.
 
 55
 00:04:04,000 --> 00:04:08,060
-Eles ne seraient nécessaires qu'au cas où vous
+Elles ne seraient nécessaires qu'au cas où vous
 auriez des expressions plus complexes,
 
 56
@@ -268,11 +268,11 @@ appliquer une fonction qui attend plusieurs arguments,
 58
 00:04:19,980 --> 00:04:26,280
 comme ici, la fonction <u>String.get</u>, qui attend
-en arguments d'abord une chaînes, puis un entier,
+en arguments d'abord une chaîne, puis un entier,
 
 59
 00:04:26,280 --> 00:04:28,540
-et vous simplement écrivez le nom de la fonction
+et vous écrivez simplement le nom de la fonction
 
 60
 00:04:28,540 --> 00:04:32,099
@@ -383,7 +383,7 @@ une notation infixe.
 82
 00:06:19,270 --> 00:06:23,650
 Les opérateurs, puisqu'ils sont des fonctions,
-ont toujours un type aussi.
+ont également toujours un type.
 
 83
 00:06:23,650 --> 00:06:32,720
