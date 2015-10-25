@@ -24,7 +24,7 @@ sur les fonctions en OCaml :
 
 6
 00:00:25,710 --> 00:00:30,859
-les fonctions sont des valeurs prises dans la réalité,
+les fonctions sont des valeurs
 comme toutes les autres valeurs en OCaml.
 
 7
@@ -33,17 +33,17 @@ Mais nous verrons cela en détail en semaine 4.
 
 8
 00:00:33,610 --> 00:00:39,020
-Pour l'instant, afin de définir une fonction [f]
-avec un argument,
+Pour l'instant, afin de définir
+une fonction <u>f</u> à un argument,
 
 9
 00:00:39,020 --> 00:00:47,080
-il suffit d'écrire [let f x = exp],
-où [exp] serait le corps de la fonction
+il suffit d'écrire <u>let f x = exp</u>,
+où <u>exp</u> serait le corps de la fonction
 
 10
 00:00:47,080 --> 00:00:51,330
-et qui en général va utiliser son paramètre [x].
+qui en général va utiliser son paramètre <u>x</u>.
 
 11
 00:00:51,330 --> 00:00:56,290
@@ -53,7 +53,7 @@ avec une portée délimitée.
 12
 00:00:56,290 --> 00:01:04,500
 Cela s'écrit :
-[let f x = exp1] (son corps) [in exp2] (sa portée).
+<u>let f x = exp1</u> (son corps) <u>in exp2</u> (sa portée).
 
 13
 00:01:04,640 --> 00:01:09,740
@@ -62,7 +62,7 @@ que celles vues à la dernière séquence.
 
 14
 00:01:09,740 --> 00:01:15,200
-C'est-à-dire que les définitions locales ont 
+C'est-à-dire que les définitions locales ont
 toujours la priorité sur des définitions plus globales.
 
 15
@@ -76,7 +76,7 @@ on peut écrire une application de fonction en
 
 17
 00:01:21,390 --> 00:01:26,720
-l'expression qui donne la valeur 
+l'expression qui donne la valeur
 de son paramètre effectif.
 
 18
@@ -85,7 +85,7 @@ On ne doit pas utiliser de parenthèses, à moins
 
 19
 00:01:31,200 --> 00:01:34,000
-qu'il soit nécessaire d'indiquer 
+qu'il soit nécessaire d'indiquer
 la structure des expressions.
 
 20
@@ -96,16 +96,16 @@ de définitions de fonctions.
 21
 00:01:40,900 --> 00:01:47,710
 Voici d'abord une définition de fonction globale :
-let f x = x + 1].
+<u>let f x = x + 1</u>.
 
 22
 00:01:47,710 --> 00:01:52,820
-Et nous voyons que [f] est reconnu comme
-une fonction de type [int -> int].
+Et nous voyons que <u>f</u> est reconnu comme
+une fonction de type <u>int -> int</u>.
 
 23
 00:01:52,820 --> 00:01:57,810
-On peut maintenant appliquer cette fonction à 
+On peut maintenant appliquer cette fonction à
 un argument,
 
 24
@@ -119,13 +119,13 @@ une variante locale d'une définition de fonction.
 
 26
 00:02:04,340 --> 00:02:06,930
-Ici, nous avons une définition locale 
-de la fonction [g],
+Ici, nous avons une définition locale
+de la fonction <u>g</u>,
 
 27
 00:02:06,930 --> 00:02:12,120
 elle ne serait visible que dans
-l'expression après le [in].
+l'expression après le <u>in</u>.
 
 28
 00:02:12,120 --> 00:02:14,580
@@ -147,11 +147,11 @@ une suite d'applications de fonction.
 
 32
 00:02:25,640 --> 00:02:29,130
-Comme dans ce cas, où [f] est défini comme
+Comme dans ce cas, où <u>f</u> est défini comme
 une fonction ayant un seul argument.
 
 33
-00: 02: 29,130 ​​-> 00: 02: 32,290
+00:02:29,130 --> 00:02:32,290
 Quand on essaye de la transmettre cela au toplevel,
 
 34
@@ -160,7 +160,7 @@ on obtient une erreur que nous n'avions pas vu avant.
 
 35
 00:02:36,740 --> 00:02:42,959
-OCaml nous dit que nous avons essayé d'appliquer 
+OCaml nous dit que nous avons essayé d'appliquer
 une fonction unaire à trop d'arguments.
 
 36
@@ -173,8 +173,8 @@ En fait, ce que nous avons écrit sur cette ligne est :
 
 38
 00:02:47,390 --> 00:02:56,010
-l'application de [f] à deux arguments,
-à savoir [f], puis à un second argument [1].
+l'application de <u>f</u> à deux arguments,
+à savoir <u>f</u>, puis à un second argument <u>1</u>.
 
 39
 00:02:56,010 --> 00:02:58,750
@@ -183,7 +183,7 @@ Bien sûr ce n'est pas ce que nous voulions écrire.
 40
 00:02:58,750 --> 00:03:05,650
 La seule chose qui aurait un sens dans cette ligne
-serait d'appliquer [f] deux fois à la valeur [1].
+serait d'appliquer <u>f</u> deux fois à la valeur <u>1</u>.
 
 41
 00:03:05,650 --> 00:03:08,410
@@ -200,7 +200,7 @@ Lorsqu'on fait cela, on obtient ce qu'on attendait.
 
 44
 00:03:17,910 --> 00:03:21,989
-OCaml, comme presque tous les 
+OCaml, comme presque tous les
 langages de programmation modernes,
 
 45
@@ -255,21 +255,21 @@ que nous avons en OCaml.
 
 56
 00:04:06,849 --> 00:04:08,410
-La portée lexicale signifie que 
+La portée lexicale signifie que
 
 57
 00:04:08,410 --> 00:04:11,870
 quand vous avez une définition de fonction,
-comme ici la définition de [g],
+comme ici la définition de <u>g</u>,
 
 58
 00:04:11,870 --> 00:04:15,660
-alors le [f], que vous voyez dans
+alors le <u>f</u>, que vous voyez dans
 le corps de la définition de la fonction,
 
 59
 00:04:15,660 --> 00:04:19,009
-est celui qui était visible 
+est celui qui était visible
 au moment de sa définition.
 
 60
@@ -282,8 +282,8 @@ Et non celui qui est défini à la ligne 4.
 
 62
 00:04:25,439 --> 00:04:31,039
-Même si nous avons une application de [g] qui vient 
-après cette deuxième définition de la fonction [f].
+Même si nous avons une application de <u>g</u> qui vient
+après cette deuxième définition de la fonction <u>f</u>.
 
 63
 00:04:31,789 --> 00:04:37,309
@@ -291,21 +291,21 @@ Donc, quand on soumet cette phrase à OCaml,
 
 64
 00:04:37,309 --> 00:04:40,550
-nous voyons que le [f] qui
-sera utilisés par la fonction [g]
+nous voyons que le <u>f</u> qui
+sera utilisés par la fonction <u>g</u>
 
 65
 00:04:40,550 --> 00:04:44,689
-est la fonction qui associe [x] à [x + 1].
+est la fonction qui associe <u>x</u> à <u>x + 1</u>.
 
 66
 00:04:44,689 --> 00:04:49,860
-Cela veut dire que c'est vraiment le principe 
+Cela veut dire que c'est vraiment le principe
 de portée lexicale qui est en oeuvre sur cet exemple.
 
 67
 00:04:49,860 --> 00:04:55,050
-Et nous obtenons, lorsque [g] est appliquée à 5,
+Et nous obtenons, lorsque <u>g</u> est appliquée à 5,
 la valeur 7.
 
 68
@@ -314,7 +314,7 @@ Si nous avions la portée dynamique,
 
 69
 00:04:56,889 --> 00:04:59,839
-alors le [f] utilisé dans l'exécution de [g]
+alors le <u>f</u> utilisé dans l'exécution de <u>g</u>
 
 70
 00:04:59,839 --> 00:05:02,129
@@ -352,7 +352,7 @@ Comme nous l'avons vu dans la séquence précédente,
 
 78
 00:05:29,520 --> 00:05:36,669
-il est autorisé de donner plusieurs définitions 
+il est autorisé de donner plusieurs définitions
 à des identificateurs de même nom.
 
 79
@@ -361,7 +361,7 @@ Comme expliqué lors de la dernière séquence,
 
 80
 00:05:39,499 --> 00:05:43,499
-cela veut juste dire que l'on donne une 
+cela veut juste dire que l'on donne une
 nouvelle définition à un nouvel identificateur
 
 81
@@ -375,12 +375,12 @@ avec le changement de valeur d'une variable,
 
 83
 00:05:55,360 --> 00:06:00,469
-que vous avez dans les langages de 
+que vous avez dans les langages de
 programmation impératifs traditionnels.
 
 84
 00:06:00,469 --> 00:06:06,389
-Maintenant, en suivant le principe de la 
+Maintenant, en suivant le principe de la
 portée lexicale --- ou une liaison statique ---
 
 85
@@ -394,12 +394,12 @@ Donc, en utilisant le principe de portée lexicale,
 
 87
 00:06:18,240 --> 00:06:23,770
-Je peux vous illustrer ce je vous ai promis 
+Je peux vous illustrer ce je vous ai promis
 à la séquence précédente,
 
 88
 00:06:23,770 --> 00:06:28,819
-à savoir que, si vous faites deux liaisons par [let]
+à savoir que, si vous faites deux liaisons par <u>let</u>
 à un identificateur de même nom,
 
 89
@@ -417,21 +417,21 @@ Maintenant, pour vous le montrer,
 92
 00:06:35,099 --> 00:06:40,669
 Effectuons d'abord une liaison
-à un identificateur [a],
+à un identificateur <u>a</u>,
 
 93
 00:06:40,669 --> 00:06:45,780
-puis on définit une fonction [f]
-dont le corps utilise cet identifiant [a].
+puis on définit une fonction <u>f</u>
+dont le corps utilise cet identifiant <u>a</u>.
 
 94
 00:06:46,800 --> 00:06:50,000
-Bien, maintenant nous avons défini [f].
+Bien, maintenant nous avons défini <u>f</u>.
 
 95
 00:06:50,000 --> 00:06:57,000
-[f] est maintenant la fonction qui envoie
-[x] vers [x + a], qui est dans ce cas [x + 1].
+<u>f</u> est maintenant la fonction qui envoie
+<u>x</u> vers <u>x + a</u>, qui est dans ce cas <u>x + 1</u>.
 
 96
 00:06:57,000 --> 00:07:01,529
@@ -447,7 +447,7 @@ Maintenant, pour vous montrer que
 
 99
 00:07:07,270 --> 00:07:12,619
-l'ajout d'une nouvelle liaison à l'identificateur [a]
+l'ajout d'une nouvelle liaison à l'identificateur <u>a</u>
 produit vraiment un nouvel identificateur, et
 
 100
@@ -456,7 +456,7 @@ ne modifie pas la valeur de l'ancien identificateur,
 
 101
 00:07:15,990 --> 00:07:18,800
-effectuons simplement une nouvelle liaison à [a].
+effectuons simplement une nouvelle liaison à <u>a</u>.
 
 102
 00:07:18,800 --> 00:07:23,800
@@ -464,7 +464,7 @@ effectuons simplement une nouvelle liaison à [a].
 
 103
 00:07:23,800 --> 00:07:30,899
-Lorsque nous appelons maintenant la fonction [f]
+Lorsque nous appelons maintenant la fonction <u>f</u>
 avec exactement le même argument,
 
 104
@@ -473,10 +473,9 @@ nous obtenons toujours exactement le même résultat.
 
 105
 00:07:34,599 --> 00:07:39,619
-Cela prouve que le second [a] est un nouveau [a],
+Cela prouve que le second <u>a</u> est un nouveau <u>a</u>,
 
 106
 00:07:39,619 --> 00:07:47,689
 qui est juste complétement invisible de
-la fonction [f] qui a été définie auparavant.
-
+la fonction <u>f</u> qui a été définie auparavant.
