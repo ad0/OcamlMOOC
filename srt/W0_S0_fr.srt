@@ -169,7 +169,7 @@ tous les cours et des notions de base,
 38
 00:02:17,780 --> 00:02:22,520
 au cours de la semaine 0,
-celle que vous êtes en train écouter.
+celle que vous êtes en train d'écouter.
 
 39
 00:02:22,520 --> 00:02:29,800
@@ -326,7 +326,7 @@ dans le système de programmation OCaml.
 73
 00:04:16,930 --> 00:04:22,760
 Et puis viendra une brève démonstration
-de quelques unes des fonctionnalités avancées d'OCaml.
+de quelques-unes des fonctionnalités avancées d'OCaml.
 
 74
 00:04:22,760 --> 00:04:24,090

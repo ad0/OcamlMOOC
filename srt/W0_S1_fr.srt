@@ -79,7 +79,7 @@ une bonne année pour « l'origine » de la programmation,
 
 18
 00:01:24,380 --> 00:01:30,970
-parce qu'il est l'année où un célèbre mathématicien,
+parce qu'elle est l'année où un célèbre mathématicien,
 David Hilbert, a posé le « problème de la décision ».
 
 19
@@ -124,7 +124,7 @@ aujourd'hui bien connue.
 
 28
 00:02:15,860 --> 00:02:19,000
-C'est essentiellement un automate à états fini.
+C'est essentiellement un automate à états finis.
 
 29
 00:02:19,000 --> 00:02:24,000
@@ -181,7 +181,7 @@ Ces cellules détiennent le contenu des « variables »
 40
 00:03:11,980 --> 00:03:16,000
 que vous connaissez bien si vous avez utilisé
-langages de programmation impératifs.
+des langages de programmation impératifs.
 
 41
 00:03:16,000 --> 00:03:23,000
@@ -190,7 +190,7 @@ vous voyez dans ce petit extrait d'un programme Java.
 
 42
 00:03:23,000 --> 00:03:26,050
-Ceux sont juste des noms pour des cellules mémoire.
+Ce sont juste des noms pour des cellules mémoire.
 
 43
 00:03:26,050 --> 00:03:30,209
@@ -209,7 +209,7 @@ effectuons des opérations dessus,
 46
 00:03:39,769 --> 00:03:44,000
 replaçons les résultats dans des cellules mémoire
-et ensuite retournons le résultat.
+et retournons ensuite le résultat.
 
 47
 00:03:44,000 --> 00:03:48,000
@@ -294,7 +294,7 @@ et les appliquer à des valeurs ---
 65
 00:04:56,110 --> 00:05:03,099
 La seule règle utilisée dans ce système pour
-« calculer » est la règle dites « beta ».
+« calculer » est la règle dite « beta ».
 
 66
 00:05:03,099 --> 00:05:06,759
@@ -452,7 +452,7 @@ toute cette excitation à propos des « lambdas »
 100
 00:07:34,700 --> 00:07:38,599
 qui sont introduits dans
-des langages comme Java et C ++.
+des langages comme Java et C++.
 
 101
 00:07:38,599 --> 00:07:46,449
@@ -729,7 +729,7 @@ est vraiment à la hausse.
 160
 00:11:53,060 --> 00:11:58,080
 Il y a un rapport intéressant de CMU
-sur l'éducation à a science du calcul où ils expliquent
+sur l'éducation à la science du calcul où ils expliquent
 
 161
 00:11:58,080 --> 00:12:02,839
@@ -757,7 +757,7 @@ les programmes sont corrects ;
 166
 00:12:16,229 --> 00:12:21,120
 et les programmes purement fonctionnels sont plus
-faciles à prouver corrects que ceux qui sont impératif.
+faciles à prouver corrects que ceux qui sont impératifs.
 
 167
 00:12:21,120 --> 00:12:25,940
@@ -776,7 +776,7 @@ pour le faire tourner sur une seule machine,
 
 170
 00:12:35,720 --> 00:12:39,939
-vous voulez maintenant à exploiter la puissance
+vous voulez maintenant exploiter la puissance
 des nombreuses machines disponibles.
 
 171

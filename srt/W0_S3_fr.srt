@@ -31,7 +31,7 @@ en France naturellement, là où le langage est né,
 
 8
 00:00:23,000 --> 00:00:25,990
-dans de nombreuses universités, à Paris et alentour.
+dans de nombreuses universités, à Paris et alentours.
 
 9
 00:00:25,990 --> 00:00:28,800
@@ -418,7 +418,7 @@ et alors, naturellement, délicatement,
 95
 00:05:11,400 --> 00:05:17,300
 le compilateur va vous conduire vers
-le développent du bon programme, très rapidement.
+le développement du bon programme, très rapidement.
 
 96
 00:05:17,300 --> 00:05:19,490
@@ -436,7 +436,7 @@ au cours de ce MOOC.
 99
 00:05:26,599 --> 00:05:32,210
 Cryptographie. En cryptographie, vous avez une autre
-start-up qui est s'appelle Cryptosense.
+start-up qui s'appelle Cryptosense.
 
 100
 00:05:32,210 --> 00:05:38,550
@@ -651,7 +651,7 @@ fondamental pour trouver des bogues
 
 146
 00:08:04,600 --> 00:08:09,440
-qui sont diffificiles à trouver
+qui sont difficiles à trouver
 directement par le test.
 
 147

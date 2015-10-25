@@ -109,7 +109,7 @@ Bien sûr, vous perdez la portabilité, dans ce cas.
 25
 00:01:29,659 --> 00:01:34,070
 Et puis, enfin,
-le dernier né de la famille : <u>js_of_ocaml</u>.
+le dernier-né de la famille : <u>js_of_ocaml</u>.
 
 26
 00:01:34,070 --> 00:01:38,670
@@ -384,8 +384,8 @@ un programme dans votre navigateur,
 
 86
 00:04:59,690 --> 00:05:04,699
-main il y a un gros serveur quelque part
-où votre phrase est envoyée et d'où résultat est tiré.
+mais il y a un gros serveur quelque part
+où votre phrase est envoyée et d'où le résultat est tiré.
 
 87
 00:05:04,699 --> 00:05:07,079
@@ -455,7 +455,7 @@ Par exemple, on vous demande juste de remplir
 102
 00:06:01,909 --> 00:06:06,759
 les définitions des opérations sur les nombres entiers
-<u>plus</u>, <u>minus</u>, <u>times</u>, et <u>div</u>.
+<u>plus</u>, <u>minus</u>, <u>times</u>, et <u>divide</u>.
 
 103
 00:06:06,759 --> 00:06:15,780
@@ -478,7 +478,7 @@ votre programme.
 
 107
 00:06:26,210 --> 00:06:27,210
-Faisons le.
+Faisons-le.
 
 108
 00:06:27,210 --> 00:06:30,130
@@ -528,7 +528,7 @@ exactement celle qui est correcte.
 118
 00:06:56,060 --> 00:06:59,289
 Donc, parfois, vous aurez besoin de
-changer le squellette que l'on vous a fourni.
+changer le squelette que l'on vous a fourni.
 
 119
 00:06:59,289 --> 00:07:03,800
@@ -670,7 +670,7 @@ l'éditeur est à gauche,
 
 151
 00:09:00,880 --> 00:09:03,460
-et le toplevel est à droite.
+et le toplevel à droite.
 
 152
 00:09:03,460 --> 00:09:05,890
@@ -858,7 +858,7 @@ Nous recevons douze points sur les douze possibles.
 
 196
 00:11:51,610 --> 00:11:54,510
-Votre note sera stocké dans la plate-forme FUN,
+Votre note sera stockée dans la plate-forme FUN,
 
 197
 00:11:54,510 --> 00:11:58,529
