@@ -15,7 +15,7 @@ des nombres à virgule flottante.
 4
 00:00:10,269 --> 00:00:15,739
 Les valeurs des nombres flottants sont toujours
-écrits d'une manière qui indique
+écrites d'une manière qui indique
 
 5
 00:00:15,740 --> 00:00:20,280
@@ -56,7 +56,7 @@ la valeur absolue, et ainsi de suite...
 
 13
 00:00:46,200 --> 00:00:49,440
-Attetion, c'est très important alors je le répète,
+Attention, c'est très important alors je le répète,
 
 14
 00:00:49,449 --> 00:00:53,869
@@ -409,7 +409,7 @@ mais ce est plus le cas.
 
 88
 00:06:34,340 --> 00:06:38,580
-En Ocaml les chaînes aussi sont des constantes,
+En OCaml les chaînes aussi sont des constantes,
 donc non modifiables.
 
 89

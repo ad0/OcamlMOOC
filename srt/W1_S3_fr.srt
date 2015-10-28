@@ -9,7 +9,7 @@ les définitions en OCaml.
 
 3
 00:00:05,270 --> 00:00:09,370
-En fait les définitions sont utilisées pour
+En fait, les définitions sont utilisées pour
 donner des noms à des valeurs,
 
 4
@@ -57,7 +57,7 @@ car il pourra être déduit par le système.
 13
 00:00:57,199 --> 00:01:02,839
 Une caractéristique très importante des langages de
-programmation fonctionnelle langues en général est que
+programmation fonctionnelle en général est que
 
 14
 00:01:02,839 --> 00:01:07,579
@@ -79,7 +79,7 @@ Cela peut paraître surprenant pour le moment
 18
 00:01:15,600 --> 00:01:21,200
 mais nous apprendrons en semaine 5 comment cela
-est possible en fait.
+est en fait possible.
 
 19
 00:01:21,200 --> 00:01:24,750
@@ -134,11 +134,11 @@ qui est ainsi de <u>10</u>. Maintenant,
 30
 00:02:06,799 --> 00:02:12,800
 il est tout à fait correct de donner une nouvelle
-définition globale d'un identificateur de même nom
+définition globale pour un identificateur de même nom
 
 31
 00:02:12,800 --> 00:02:15,700
-comme nous l'avons déjà fait auparavant.
+qu'un autre que nous avons défini auparavant.
 
 32
 00:02:15,700 --> 00:02:20,100
@@ -176,7 +176,7 @@ montrer que c'est vraiment le cas.
 
 40
 00:02:40,780 --> 00:02:42,420
-Donc soumettons ceci au toplevel,
+Soumettons donc ceci au toplevel,
 
 41
 00:02:42,420 --> 00:02:47,400
@@ -185,7 +185,7 @@ nous obtenons bien sûr que
 
 42
 00:02:47,400 --> 00:02:52,560
-Nous avons donc encore ici pour <u>y</u>,
+Nous avons encore ici pour <u>y</u>,
 la valeur <u>10</u>, comme précédemment.
 
 43
@@ -395,7 +395,7 @@ qui se réfère au <u>y</u> que nous venons de définir.
 88
 00:06:04,069 --> 00:06:06,259
 Maintenant, la seule question est:
-qu'est-ce  que nous obtenons à la fin?
+qu'est-ce que nous obtenons à la fin?
 
 89
 00:06:06,259 --> 00:06:09,620
@@ -455,7 +455,7 @@ par exemple, dans ce cas,
 
 101
 00:06:52,969 --> 00:06:58,719
-nous avons  ici une définition locale, où,
+nous avons ici une définition locale, où,
 dans la portée de la définition, nous avons
 
 102
@@ -464,7 +464,7 @@ une expression qui est elle-même une définition locale.
 
 103
 00:07:01,749 --> 00:07:04,120
-Et cela est parfaitement accepté.
+Et cela est parfaitement valide.
 
 104
 00:07:04,120 --> 00:07:10,600

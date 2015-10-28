@@ -380,4 +380,4 @@ comme on peut le voir sur la réponse du toplevel.
 81
 00:06:43,639 --> 00:06:49,079
 Et maintenant, <u>even</u> et <u>odd</u> sont les fonctions
-q'elles sont censées être.
+qu'elles sont censées être.
