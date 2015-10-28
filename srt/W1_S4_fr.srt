@@ -156,7 +156,7 @@ Quand on essaye de la transmettre cela au toplevel,
 
 34
 00:02:32,290 --> 00:02:36,740
-on obtient une erreur que nous n'avions pas vu avant.
+on obtient une erreur que nous n'avons pas vue avant.
 
 35
 00:02:36,740 --> 00:02:42,959

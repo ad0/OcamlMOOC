@@ -452,7 +452,7 @@ dans une invocation donnée.
 97
 00:07:30,040 --> 00:07:34,199
 Donc, tout ceci pour rappeler certaines choses sur
-opérateurs polymorphes,
+les opérateurs polymorphes,
 
 98
 00:07:34,199 --> 00:07:37,719

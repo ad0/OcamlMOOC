@@ -255,12 +255,12 @@ And the Coq development team told us,
 
 61
 00:03:06,800 --> 00:03:10,600
-if they really need to choose 
+if they really need to choose
 one particular feature of the language
 
 62
 00:03:10,629 --> 00:03:13,489
-that is essential for them, 
+that is essential for them,
 that was pattern matching.
 
 63
@@ -274,7 +274,7 @@ So TrustInSoft is a start-up that provides
 
 65
 00:03:23,000 --> 00:03:28,939
-ground-breaking technology 
+ground-breaking technology
 for checking safety of software,
 
 66
@@ -301,7 +301,7 @@ they need expressivity because they are, again,
 
 71
 00:03:46,000 --> 00:03:50,000
-developing sophisticated analysers 
+developing sophisticated analysers
 so they need to be concise,
 
 72
@@ -310,7 +310,7 @@ and they need static type-checking,
 
 73
 00:03:52,200 --> 00:03:57,629
-because that way, you can avoid 
+because that way, you can avoid
 an incredible amount of errors.
 
 74
