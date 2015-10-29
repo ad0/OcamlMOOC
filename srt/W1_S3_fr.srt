@@ -70,11 +70,11 @@ C'est vrai même en présence des traits impératifs,
 
 16
 00:01:10,909 --> 00:01:13,500
-que nous verrons dans la semaine 5.
+que nous verrons en semaine 5.
 
 17
 00:01:13,500 --> 00:01:15,600
-Cela peut paraître surprenant pour le moment
+Cela peut paraître surprenant sur le moment
 
 18
 00:01:15,600 --> 00:01:21,200
@@ -199,7 +199,7 @@ alors c'est la dernière liaison qui est active,
 
 45
 00:02:59,040 --> 00:03:01,400
-et de le <u>x</u> que nous avons ici à la ligne 9
+et le <u>x</u> que nous avons ici à la ligne 9
 
 46
 00:03:01,400 --> 00:03:06,450
@@ -217,7 +217,7 @@ fonctionnent presque de même,
 
 49
 00:03:18,700 --> 00:03:25,290
-sauf que la portée, ce qui signifie la région
+sauf que la portée, c'est-à-dire la région
 du programme où cette définition s'applique,
 
 50
@@ -372,7 +372,7 @@ comme nous pouvons le voir sur cet exemple.
 
 83
 00:05:43,969 --> 00:05:48,180
-Nous avons ici trois définitions locales emboitées.
+Nous avons ici trois définitions locales emboîtées.
 
 84
 00:05:48,180 --> 00:05:50,000
@@ -423,7 +423,7 @@ est <u>10</u>, qui vient de <u>2 * 5</u>.
 
 94
 00:06:30,029 --> 00:06:34,300
-Et cela est bien sûr, ce à quoi aurions
+Et cela est bien sûr, ce à quoi nous aurions
 pu nous attendre.
 
 95
@@ -450,7 +450,7 @@ et de construire des expressions plus complexes
 
 100
 00:06:48,689 --> 00:06:52,969
-Donc, nous pouvons les emboiter de manière quelconque,
+Donc, nous pouvons les emboîter de manière quelconque,
 par exemple, dans ce cas,
 
 101
@@ -618,7 +618,7 @@ la valeur de <u>x</u> qui est <u>2</u>.
 136
 00:09:33,980 --> 00:09:40,320
 Donc, quand on soumet ceci au compilateur,
-on obtient dans ce cas la valeur <u>6</u>.
+on obtient la valeur <u>6</u>.
 
 137
 00:09:40,320 --> 00:09:45,170

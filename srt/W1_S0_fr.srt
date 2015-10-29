@@ -26,7 +26,7 @@ nous examinerons quelques types de données de base
 
 7
 00:00:21,130 --> 00:00:23,970
-que auriez dans tout langage de programmation.
+que vous auriez dans tout langage de programmation.
 
 8
 00:00:23,970 --> 00:00:26,230
@@ -34,7 +34,7 @@ Nous allons examiner quelques-unes des façons
 
 9
 00:00:26,230 --> 00:00:31,220
-que l'on a en OCaml pour construire des expressions ;
+que l'on a en OCaml de construire des expressions ;
 
 10
 00:00:31,230 --> 00:00:34,570
@@ -69,7 +69,7 @@ du système OCaml,
 
 17
 00:00:54,160 --> 00:00:58,579
-car il permet de concilier la flexibilité
+qui permet de concilier la flexibilité
 des langages de programmation non typés avec
 
 18
@@ -164,12 +164,12 @@ données de base
 
 39
 00:02:07,420 --> 00:02:11,939
-comme les entiers, les booléens, les nombres à virgule
+que sont les entiers, les booléens, les nombres à virgule
 flottante, les chaînes et les caractères.
 
 40
 00:02:11,939 --> 00:02:15,099
-Ensuite, des deux semaines suivantes, nous verrons
+Ensuite, les deux semaines suivantes, nous verrons
 
 41
 00:02:15,100 --> 00:02:16,780
@@ -191,7 +191,7 @@ Et là, nous verrons que cela est lié aussi
 
 45
 00:02:29,150 --> 00:02:32,040
-Et nous avons même des classes et des objets en OCaml,
+Nous avons même des classes et des objets en OCaml,
 
 46
 00:02:32,040 --> 00:02:35,880
@@ -199,7 +199,7 @@ mais ceux-ci sont hors du champ de ce MOOC.
 
 47
 00:02:36,480 --> 00:02:40,459
-Commençons donc avec le type des entiers, écrit <u>int</u>.
+Commençons donc avec le type des entiers, qui s'écrit <u>int</u>.
 
 48
 00:02:40,459 --> 00:02:43,419
@@ -207,8 +207,7 @@ Si vous travaillez sur une architecture CPU de 64 bits
 
 49
 00:02:43,420 --> 00:02:47,980
-alors les entiers sont représentés avec les 64 bits
-au complet
+alors les entiers sont représentés avec l'ensemble des 64 bits
 
 50
 00:02:47,980 --> 00:02:52,260
