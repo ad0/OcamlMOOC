@@ -19,12 +19,12 @@ structures de données définies de manière récursive,
 
 5
 00:00:17,470 --> 00:00:20,850
-comme vous les verrez dans la semaine 3.
+comme vous les verrez en semaine 3.
 
 6
 00:00:20,850 --> 00:00:26,800
 Puisque nous n'en avons pas vu jusqu'ici, je dois
-vous montrer le principe sur quelques exemples jouets.
+vous montrer le principe sur quelques exemples simples.
 
 7
 00:00:26,840 --> 00:00:36,600
@@ -84,7 +84,7 @@ l'environnement que vous aviez avant le <u>let</u>.
 19
 00:01:39,780 --> 00:01:44,400
 Bien sûr, cela ne fonctionne pas avec une fonction
-récursive car avec une fonction récursive :
+récursive car avec elle
 
 20
 00:01:44,400 --> 00:01:49,659
@@ -188,7 +188,7 @@ d'après tous les principes vus jusqu'ici.
 
 41
 00:03:27,900 --> 00:03:33,480
-Le problème est que cela ne correspond à pas ce qu'on
+Le problème est que cela ne correspond pas à ce que l'on
 veut pour définir des fonctions récursives.
 
 42
@@ -216,17 +216,17 @@ mais il n'existe pas.
 
 47
 00:03:49,760 --> 00:03:52,000
-Donc, si vous essayez de soumettre ceci au toplevel,
+Donc, si nous essayons de soumettre ceci au toplevel,
 
 48
 00:03:52,000 --> 00:03:57,780
-nous recevons un message d'erreur puisque <u>fact</u> ne
-ne pas exister avant le début de cette définition.
+nous recevons un message d'erreur puisque <u>fact</u>
+n'existe pas avant le début de cette définition.
 
 49
 00:03:58,629 --> 00:04:04,800
-Et c'est pourquoi on a d'un nouveau mot-clé <u>rec</u>,
-afin de pouvoir écrire une définition récursive.
+Et c'est pourquoi on a un nouveau mot-clé <u>rec</u>,
+qui permet de pouvoir écrire une définition récursive.
 
 50
 00:04:04,849 --> 00:04:12,129
@@ -250,7 +250,7 @@ Et si vous connaissez la valeur de <u>fact</u>,
 54
 00:04:26,300 --> 00:04:31,740
 vous pouvez voir que lorsque nous l'appliquons à 10,
-on obtient exactement le bon résultat.
+on obtient exactement ce bon résultat.
 
 55
 00:04:34,050 --> 00:04:36,529
@@ -279,7 +279,7 @@ au cours de la définition récursive.
 60
 00:05:00,020 --> 00:05:06,600
 C'est là aussi très naturel avec des structures de
-données mutuellement récursives, voir semaine 3.
+données mutuellement récursives, voir en Semaine 3.
 
 61
 00:05:06,680 --> 00:05:14,900
@@ -293,13 +293,13 @@ récursion mutuelle :
 
 63
 00:05:19,379 --> 00:05:24,219
-donc on peut dire qu'un nombre entier <u>n</u> est pair
-soit s'il est 0,
+donc on peut dire ,d'une part, qu'un nombre entier <u>n</u> est pair
+si, soit il vaut 0,
 
 64
 00:05:24,219 --> 00:05:28,819
-soit s'il est strictement positif et que
-<u>n-1</u> est impair, d'une part.
+soit il est strictement positif et que
+<u>n-1</u> est impair.
 
 65
 00:05:28,819 --> 00:05:36,400
@@ -374,10 +374,10 @@ conjointement avec le mot-clé <u>and</u>,
 
 80
 00:06:38,360 --> 00:06:43,639
-alors les deux définitions sont acceptées,
+alors elles sont acceptées,
 comme on peut le voir sur la réponse du toplevel.
 
 81
 00:06:43,639 --> 00:06:49,079
-Et maintenant, <u>even</u> et <u>odd</u> sont les fonctions
+Et maintenant, <u>even</u> et <u>odd</u> sont bien les fonctions
 qu'elles sont censées être.

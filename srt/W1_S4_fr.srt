@@ -152,7 +152,7 @@ une fonction ayant un seul argument.
 
 33
 00:02:29,130 --> 00:02:32,290
-Quand on essaye de la transmettre cela au toplevel,
+Quand on essaye de transmettre cela au toplevel,
 
 34
 00:02:32,290 --> 00:02:36,740
@@ -292,7 +292,7 @@ Donc, quand on soumet cette phrase à OCaml,
 64
 00:04:37,309 --> 00:04:40,550
 nous voyons que le <u>f</u> qui
-sera utilisés par la fonction <u>g</u>
+sera utilisé par la fonction <u>g</u>
 
 65
 00:04:40,550 --> 00:04:44,689
@@ -394,7 +394,7 @@ Donc, en utilisant le principe de portée lexicale,
 
 87
 00:06:18,240 --> 00:06:23,770
-Je peux vous illustrer ce je vous ai promis
+Je peux vous illustrer ce que je vous ai promis
 à la séquence précédente,
 
 88
@@ -404,7 +404,7 @@ Je peux vous illustrer ce je vous ai promis
 
 89
 00:06:28,819 --> 00:06:30,569
-alors ce ne sont pas une affectation, mais
+alors ce ne sont pas des affectations, mais
 
 90
 00:06:30,569 --> 00:06:32,889
@@ -469,7 +469,7 @@ avec exactement le même argument,
 
 104
 00:07:30,899 --> 00:07:34,599
-nous obtenons toujours exactement le même résultat.
+nous obtenons toujours le même résultat.
 
 105
 00:07:34,599 --> 00:07:39,619

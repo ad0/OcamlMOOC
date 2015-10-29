@@ -111,13 +111,13 @@ Par exemple, essayer de calculer une somme entière
 
 25
 00:01:38,470 --> 00:01:43,510
-entre un entier et un nombre flottante
+entre un entier et un nombre flottant
 nous donne une erreur de type.
 
 26
 00:01:43,510 --> 00:01:49,910
 Exactement de la même façon, essayer de multiplier
-un flottant par une entier
+un flottant par un entier
 
 27
 00:01:49,910 --> 00:01:51,890
@@ -184,7 +184,7 @@ explicite entre la quasi-totalité des types de base,
 41
 00:02:43,670 --> 00:02:47,980
 et s'ils n'existent pas, alors il est très facile
-de les ajouter par soi-même.
+de les ajouter soi-même.
 
 42
 00:02:47,980 --> 00:02:51,480
@@ -227,7 +227,7 @@ suivi de l'argument.
 50
 00:03:20,150 --> 00:03:27,690
 On n'utilise des parenthèses que pour regrouper,
-pour structurer une expression plus compliquée.
+ou pour structurer une expression plus compliquée.
 
 51
 00:03:27,690 --> 00:03:31,830
@@ -327,11 +327,11 @@ que, en fait, les deux fonctions de conversion,
 71
 00:05:11,360 --> 00:05:16,100
 <u>Char.chr</u> et <u>Char.code</u>,
-sont bien des inverses l'une de l'autre,
+sont bien les inverses l'une de l'autre,
 
 72
 00:05:16,120 --> 00:05:21,400
-de sorte qu'en allant dans un sens puis l'autre,
+de sorte qu'en allant dans un sens puis dans l'autre,
 on retrouve exactement la même valeur.
 
 73
@@ -404,8 +404,8 @@ pour les chaînes,
 
 87
 00:06:30,400 --> 00:06:34,340
-à un époque où elles étaient modifiables ;
-mais ce est plus le cas.
+à une époque où elles étaient modifiables ;
+mais ce n'est plus le cas.
 
 88
 00:06:34,340 --> 00:06:38,580
@@ -467,7 +467,7 @@ avec la valeur entière elle-même,
 
 101
 00:07:32,300 --> 00:07:34,620
-ce qui est évidemment d'un type très différent.
+qui est évidemment d'un type très différent.
 
 102
 00:07:34,620 --> 00:07:40,280
@@ -504,8 +504,8 @@ que l'on trouve le caractère <u>'b'</u> la position 1.
 
 109
 00:08:13,480 --> 00:08:17,320
-Encore une fois, vous pouvez trouver de l'information
-complète sur les types de données de base,
+Encore une fois, vous pouvez trouver des informations
+complètes sur les types de données de base,
 
 110
 00:08:17,320 --> 00:08:20,080

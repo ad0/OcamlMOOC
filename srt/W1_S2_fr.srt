@@ -23,7 +23,7 @@ en OCaml.
 6
 00:00:19,419 --> 00:00:26,619
 Pour cette raison, les expressions sont tout à fait
-centrales dans la définition de la langage.
+centrales dans la définition du langage.
 
 7
 00:00:26,620 --> 00:00:31,900
@@ -70,7 +70,7 @@ l'expression conditionnelle complète.
 16
 00:01:05,040 --> 00:01:11,450
 Il y a en fait une valeur par défaut qui est utilisée
-au cas où vous n'écririez pas la partie <u>sinon</u>,
+au cas où vous n'écririez pas la partie <u>else</u>,
 
 17
 00:01:11,450 --> 00:01:18,370
@@ -169,12 +169,12 @@ donne la valeur booléenne <u>true</u>.
 
 37
 00:02:42,260 --> 00:02:48,040
-Enfin, un autre genre d'emboitement qui est tout-à-fait
+Enfin, un autre genre d'emboîtement qui est tout-à-fait
 permis dans les expressions booléennes :
 
 38
 00:02:48,040 --> 00:02:50,980
-ici nous avons une expression emboitée comme condition.
+ici nous avons une expression emboîtée comme condition.
 
 39
 00:02:50,980 --> 00:02:58,420
@@ -197,13 +197,13 @@ devez d'abord connaître le type de votre fonction.
 
 43
 00:03:11,350 --> 00:03:14,580
-En général, la fonction peut attendre
+En général, la fonction peut prendre
 plusieurs arguments.
 
 44
 00:03:14,580 --> 00:03:19,820
 Et dans ce cas, le type est écrit comme une
-séquence composée de tous les types d'arguments
+séquence composée de tous les types des arguments
 
 45
 00:03:19,820 --> 00:03:22,020
@@ -272,7 +272,7 @@ en arguments d'abord une chaîne, puis un entier,
 
 59
 00:04:26,280 --> 00:04:28,540
-et vous écrivez simplement le nom de la fonction
+vous écrivez simplement le nom de la fonction
 
 60
 00:04:28,540 --> 00:04:32,099
@@ -329,7 +329,7 @@ pour obtenir le second argument.
 
 71
 00:05:20,080 --> 00:05:26,500
-Les expressions peuvent être emboitées arbitrairement
+Les expressions peuvent être emboîtées arbitrairement
 et devenir très complexes et compliquées,
 
 72
@@ -349,7 +349,7 @@ en quantité a priori insuffisante.
 75
 00:05:42,979 --> 00:05:49,259
 Si vous essayez de le faire, alors vous obtenez un
-résultat de type différent que vous pourriez attendre,
+résultat de type différent de ce que vous pourriez attendre,
 
 76
 00:05:49,260 --> 00:05:51,940
@@ -368,7 +368,7 @@ l'application d'une fonction à deux arguments,
 79
 00:06:04,460 --> 00:06:10,000
 vous obtiendrez une erreur, et l'explication
-en sera donnée à la semaine 2.
+en sera donnée en semaine 2.
 
 80
 00:06:10,000 --> 00:06:14,140
@@ -517,7 +517,7 @@ s'écrivant <u>==</u>, mais il signifie autre chose,
 
 111
 00:08:36,040 --> 00:08:38,800
-comme vous pourrez le voir dans la semaine 2.
+comme vous pourrez le voir en semaine 2.
 
 112
 00:08:38,800 --> 00:08:43,100
