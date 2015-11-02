@@ -54,7 +54,7 @@ un statut, d'une base de données, et d'un contact.
 
 13
 00:00:52,930 --> 00:01:00,140
-Le statut sera [true],
+Le statut sera <u>true</u>,
 si la requête s'est bien passée.
 
 14
@@ -82,7 +82,7 @@ Il est facile de définir un enregistrement bidon,
 19
 00:01:36,880 --> 00:01:43,520
 contenant un contact avec un nom vide
-et un numéro de téléphone valant juste [0].
+et un numéro de téléphone valant juste <u>0</u>.
 
 20
 00:01:45,620 --> 00:01:49,340
@@ -108,7 +108,7 @@ que l'on pourra stocker dans la base de données.
 
 25
 00:02:08,780 --> 00:02:13,500
-Au début, le nombre de contacts est [0].
+Au début, le nombre de contacts est <u>0</u>.
 
 26
 00:02:13,500 --> 00:02:18,460
@@ -121,7 +121,7 @@ de notre base de données, et, pour le moment,
 
 28
 00:02:25,360 --> 00:02:28,940
-dont tous les éléments sont égaux à [nobody].
+dont tous les éléments sont égaux à <u>nobody</u>.
 
 29
 00:02:34,520 --> 00:02:41,400
@@ -179,7 +179,7 @@ le contact trouvé
 
 41
 00:03:30,820 --> 00:03:37,380
-se trouve à la position [idx].
+se trouve à la position <u>idx</u>.
 
 42
 00:03:37,380 --> 00:03:43,840
@@ -231,7 +231,7 @@ la longueur choisie ---
 52
 00:04:30,640 --> 00:04:37,480
 alors on produit une erreur
-en renvoyant un statut valant [false].
+en renvoyant un statut valant <u>false</u>.
 
 53
 00:04:37,480 --> 00:04:45,870
@@ -250,7 +250,7 @@ dans la base de données ---
 56
 00:04:56,010 --> 00:05:05,410
 on crée une nouvelle base de données où les cellules 
-sont définies en utilisant cette fonction [cells].
+sont définies en utilisant cette fonction <u>cells</u>.
 
 57
 00:05:05,410 --> 00:05:09,930
@@ -273,7 +273,7 @@ le contenu de la base de données initiale,
 61
 00:05:22,420 --> 00:05:29,410
 et on retourne la valeur actuelle du tableau 
-à la position [i].
+à la position <u>i</u>.
 
 62
 00:05:29,410 --> 00:05:33,850
@@ -292,12 +292,12 @@ Et le tableau des contacts est un nouveau tableau,
 65
 00:05:42,160 --> 00:05:49,390
 dont les cellules sont initialisées par 
-la fonction [cells].
+la fonction <u>cells</u>.
 
 66
 00:05:49,390 --> 00:05:55,990
-Cette fois, le statut est [true],
-la nouvelle base de données est [db], et
+Cette fois, le statut est <u>true</u>,
+la nouvelle base de données est <u>db</u>, et
 
 67
 00:05:55,990 --> 00:05:59,070
@@ -330,7 +330,7 @@ le nombre (précédent) de contacts moins 1, et
 73
 00:06:36,320 --> 00:06:43,820
 le nouveau tableau est initialisé par la
-fonction [cells], de sorte que :
+fonction <u>cells</u>, de sorte que :
 
 74
 00:06:43,820 --> 00:06:53,940
@@ -339,7 +339,7 @@ au contact que l'on souhaite supprimer,
 
 75
 00:06:53,950 --> 00:07:01,240
-on renvoie [nobody] ;
+on renvoie <u>nobody</u> ;
 --- le moyen d'effacer cette cellule ---
 
 76
@@ -368,20 +368,20 @@ et la requête.
 
 81
 00:07:30,419 --> 00:07:33,659
-Selon la valeur de [code],
+Selon la valeur de <u>code</u>,
 on fera :
 
 82
 00:07:33,660 --> 00:07:36,840
-une insertion si le code est égal à [0] ;
+une insertion si le code est égal à <u>0</u> ;
 
 83
 00:07:36,840 --> 00:07:39,480
-une suppression si le code est égal à [1], et
+une suppression si le code est égal à <u>1</u>, et
 
 84
 00:07:39,480 --> 00:07:43,800
-si le code est égal à [2],
+si le code est égal à <u>2</u>,
 alors on fera une recherche, et
 
 85
@@ -440,7 +440,7 @@ la base de données, on obtient une erreur.
 
 97
 00:08:45,839 --> 00:08:47,939
-Le statut est égal à [false].
+Le statut est égal à <u>false</u>.
 
 98
 00:08:47,940 --> 00:08:51,080

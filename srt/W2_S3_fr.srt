@@ -70,26 +70,26 @@ un tableau contenant des entiers.
 
 17
 00:01:22,890 --> 00:01:26,340
-Alors définissons une fonction qui prend un [x], et
+Alors définissons une fonction qui prend un <u>x</u>, et
 
 18
 00:01:26,340 --> 00:01:31,920
-renvoie [x] multipliée par [x].
+renvoie <u>x</u> multipliée par <u>x</u>.
 
 19
 00:01:31,920 --> 00:01:38,770
 Nous pouvons utiliser cette fonction
-pour créer un tableau de taille [n]
+pour créer un tableau de taille <u>n</u>
 
 20
 00:01:38,770 --> 00:01:48,830
-avec la propriété qu'à l'indice numéro [i], 
-on aura [i] multiplié par [i].
+avec la propriété qu'à l'indice numéro <u>i</u>, 
+on aura <u>i</u> multiplié par <u>i</u>.
 
 21
 00:01:48,830 --> 00:01:56,729
 On peut donc définir une telle fonction,
-ensuite l'appliquer à [5], et voir que
+ensuite l'appliquer à <u>5</u>, et voir que
 
 22
 00:01:57,729 --> 00:02:01,270
@@ -111,11 +111,11 @@ ont un type donné.
 
 26
 00:02:22,209 --> 00:02:26,609
-Et il s'écrit [un_certain_type array].
+Et il s'écrit <u>un_certain_type array</u>.
 
 27
 00:02:26,609 --> 00:02:30,560
-Le type [array] est prédéfini en OCaml.
+Le type <u>array</u> est prédéfini en OCaml.
 
 28
 00:02:30,560 --> 00:02:33,769
@@ -138,7 +138,7 @@ et qu'on doit la calculer,
 
 32
 00:02:52,249 --> 00:02:55,900
-on peut utiliser une fonction nommée [Array.make],
+on peut utiliser une fonction nommée <u>Array.make</u>,
 
 33
 00:02:55,900 --> 00:03:01,139
@@ -157,7 +157,7 @@ qui est très intéressante.
 
 36
 00:03:13,320 --> 00:03:16,300
-Elle est appelée [Array.init].
+Elle est appelée <u>Array.init</u>.
 
 37
 00:03:16,300 --> 00:03:22,400
@@ -182,7 +182,7 @@ qui peut dépendre, bien sûr, de cet indice.
 41
 00:03:41,719 --> 00:03:47,480
 Une fonction très utile est
-la fonction [Array.length], qui
+la fonction <u>Array.length</u>, qui
 
 42
 00:03:47,480 --> 00:03:52,189
@@ -227,7 +227,7 @@ Il faut être prudent, parce que
 51
 00:04:21,800 --> 00:04:29,900
 l'indice d'un tableau doit être compris
-entre [0] et la taille de ce tableau moins 1.
+entre <u>0</u> et la taille de ce tableau moins 1.
 
 52
 00:04:29,910 --> 00:04:36,530
@@ -281,12 +281,12 @@ la première cellule du tableau d'entrée,
 
 63
 00:05:25,410 --> 00:05:28,310
-c'est-à-dire, la cellule numéro [0].
+c'est-à-dire, la cellule numéro <u>0</u>.
 
 64
 00:05:28,310 --> 00:05:34,520
 Ainsi, le type de cette fonction est 
-[array] vers [tableau], et
+<u>array</u> vers <u>tableau</u>, et
 
 65
 00:05:34,520 --> 00:05:39,840
@@ -300,7 +300,7 @@ On peut vérifier que cela fonctionne bien.
 67
 00:05:46,650 --> 00:05:56,150
 Essayons donc d'utiliser les motifs de tableau
-pour définir une fonction appelée [swap].
+pour définir une fonction appelée <u>swap</u>.
 
 68
 00:05:56,150 --> 00:06:01,140
@@ -309,8 +309,8 @@ deux en entrée,
 
 69
 00:06:01,140 --> 00:06:06,420
-nomme la première cellule [x] et
-la seconde cellule [y],
+nomme la première cellule <u>x</u> et
+la seconde cellule <u>y</u>,
 
 70
 00:06:06,420 --> 00:06:11,500
@@ -318,8 +318,8 @@ Et elle renverra un tableau contenant,
 
 71
 00:06:11,500 --> 00:06:17,140
-d'abord le contenu de [y],
-puis le contenu de [x].
+d'abord le contenu de <u>y</u>,
+puis le contenu de <u>x</u>.
 
 72
 00:06:17,150 --> 00:06:21,580

@@ -32,11 +32,11 @@ des accolades et une liste de déclarations de champs.
 
 8
 00:00:42,780 --> 00:00:49,060
-Ici, je définis un champ nommé [x] de type [int],
+Ici, je définis un champ nommé <u>x</u> de type <u>int</u>,
 
 9
 00:00:49,060 --> 00:00:56,740
-et un autre champ [y] de type [int].
+et un autre champ <u>y</u> de type <u>int</u>.
 
 10
 00:00:56,740 --> 00:01:00,410
@@ -54,8 +54,8 @@ la valeur pour chaque champ.
 
 13
 00:01:11,050 --> 00:01:17,150
-Ici, je dis que [x] est égal à [0], et
-que [y] est égal à [0].
+Ici, je dis que <u>x</u> est égal à <u>0</u>, et
+que <u>y</u> est égal à <u>0</u>.
 
 14
 00:01:17,150 --> 00:01:20,430
@@ -64,21 +64,21 @@ Et OCaml est en mesure de conclure que
 15
 00:01:20,430 --> 00:01:25,760
 cette définition d'enregistrement a en fait 
-le type [point2d].
+le type <u>point2d</u>.
 
 16
 00:01:27,800 --> 00:01:33,400
 Il est facile de définir une fonction de conversion
-de [pair] vers [point2d].
+de <u>pair</u> vers <u>point2d</u>.
 
 17
 00:01:33,400 --> 00:01:39,750
 Mais ici, on peut remarquer qu'au lieu d'écrire 
-que [x] est égal à [x],
+que <u>x</u> est égal à <u>x</u>,
 
 18
 00:01:39,750 --> 00:01:43,340
-on peut juste écrire [x] ici.
+on peut juste écrire <u>x</u> ici.
 
 19
 00:01:43,340 --> 00:01:53,700
@@ -92,12 +92,12 @@ Ainsi, je peux définir deux points.
 21
 00:01:59,220 --> 00:02:05,520
 Et maintenant un autre type d'enregistrement 
-pour une [box],
+pour une <u>box</u>,
 
 22
 00:02:05,520 --> 00:02:11,220
 qui utilise ma définition de type enregistrement 
-pour [point].
+pour <u>point</u>.
 
 23
 00:02:11,220 --> 00:02:12,200
@@ -109,17 +109,17 @@ C'est accepté par OCaml sans diffculté.
 
 25
 00:02:20,660 --> 00:02:22,790
-Et je peux définir un [box], dans lequel
+Et je peux définir un <u>box</u>, dans lequel
 
 26
 00:02:22,790 --> 00:02:26,600
 le coin supérieur gauche
-est égal à mon premier point [a]
+est égal à mon premier point <u>a</u>
 
 27
 00:02:26,600 --> 00:02:29,200
 et le coin inférieur droit
-est égal à [b].
+est égal à <u>b</u>.
 
 28
 00:02:33,510 --> 00:02:39,600
@@ -150,7 +150,7 @@ j'utilise un autre motif,
 
 34
 00:03:03,300 --> 00:03:10,340
-ce sera juste  «x», le nom du champ [x].
+ce sera juste «x», le nom du champ <u>x</u>.
 
 35
 00:03:10,340 --> 00:03:14,450
@@ -168,7 +168,7 @@ Comme ça.
 38
 00:03:17,600 --> 00:03:24,600
 Cette définition est acceptée par OCaml,
-et elle a pour type [box -> int].
+et elle a pour type <u>box -> int</u>.
 
 39
 00:03:27,170 --> 00:03:34,590
@@ -202,12 +202,12 @@ d'enregistrement est la suivante.
 
 45
 00:04:00,800 --> 00:04:06,209
-On utilise d'abord le mot-clé [type].
+On utilise d'abord le mot-clé <u>type</u>.
 Ensuite, le nom de notre identifiant de type.
 
 46
 00:04:06,209 --> 00:04:12,349
-Et après cela, entre deux accolades [{ ... }],
+Et après cela, entre deux accolades <u>{ ... }</u>,
 on doit énumérer
 
 47
@@ -242,16 +242,16 @@ en utilisant, à nouveau, des accolades,
 53
 00:04:47,200 --> 00:04:54,319
 mais cette fois, il faudra définir chaque champ
-en utilisant le signe [=].
+en utilisant le signe <u>=</u>.
 
 54
 00:04:54,319 --> 00:05:00,999
-À gauche de ce signe [=],
+À gauche de ce signe <u>=</u>,
 on aura le nom du champ
 
 55
 00:05:00,999 --> 00:05:08,169
-et à droite du signe [=],
+et à droite du signe <u>=</u>,
 on aura la définition de ce champ
 
 56
@@ -296,7 +296,7 @@ on énumère tous les champs que l'on veut observer,
 65
 00:05:43,270 --> 00:05:48,259
 et pour chaque champ, on doit spécifier,
-juste après le signe [=],
+juste après le signe <u>=</u>,
 
 66
 00:05:48,259 --> 00:05:55,059
@@ -358,7 +358,7 @@ cette fois vous faites une faute de frappe.
 
 79
 00:06:55,599 --> 00:06:58,589
-vous changez [y] en [z].
+vous changez <u>y</u> en <u>z</u>.
 
 80
 00:06:58,589 --> 00:07:00,179
@@ -382,7 +382,7 @@ définition de point 2D,
 84
 00:07:17,169 --> 00:07:22,569
 et que vous ayez oublié de donner
-la valeur pour le champ [y].
+la valeur pour le champ <u>y</u>.
 
 85
 00:07:22,569 --> 00:07:29,319
@@ -415,12 +415,12 @@ est capable de détecter ce genre d'erreur.
 91
 00:07:58,309 --> 00:08:01,400
 Donc, imaginez que vous ayez défini
-un type d'enregistrement pour une [personne]
+un type d'enregistrement pour une <u>personne</u>
 
 92
 00:08:01,449 --> 00:08:07,349
-dans lequel vous avez un [nom] de type [string]
-et un [age] de type [int]
+dans lequel vous avez un <u>nom</u> de type <u>string</u>
+et un <u>age</u> de type <u>int</u>
 
 93
 00:08:07,349 --> 00:08:10,399
@@ -429,8 +429,8 @@ est fausse !
 
 94
 00:08:10,399 --> 00:08:15,699
-Parce que, pour [age],
-on a utilisé un [string] au lieu d'un [int].
+Parce que, pour <u>age</u>,
+on a utilisé un <u>string</u> au lieu d'un <u>int</u>.
 
 95
 00:08:15,699 --> 00:08:20,000
@@ -464,7 +464,7 @@ parce que l'ambiguïté n'est pas intentionnelle.
 101
 00:08:52,800 --> 00:08:59,810
 Ainsi, définissons deux types 
-d'enregistrement [a] et [b].
+d'enregistrement <u>a</u> et <u>b</u>.
 
 102
 00:08:59,810 --> 00:09:08,890
@@ -477,28 +477,28 @@ Cela rend l'inférence facile.
 
 104
 00:09:10,590 --> 00:09:16,950
-Ayant utilisé [x] et [b]
-avec le type [int],
+Ayant utilisé <u>x</u> et <u>b</u>
+avec le type <u>int</u>,
 
 105
 00:09:16,950 --> 00:09:22,270
 il est facile pour le vérificateur de type
-d'inférer que cet enregistrement a le type [a].
+d'inférer que cet enregistrement a le type <u>a</u>.
 
 107
 00:09:22,270 --> 00:09:30,770
-maintenant, imaginez que l'on a un type [t] 
+maintenant, imaginez que l'on a un type <u>t</u> 
 dont le type est
 
 108
 00:09:30,770 --> 00:09:35,310
 un type d'enregistrement avec un seul champ 
-de type [bool].
+de type <u>bool</u>.
 
 109
 00:09:35,310 --> 00:09:42,010
 Si on dit ensuite que l'on a un enregistrement 
-avec un seul champ [x] de type [bool],
+avec un seul champ <u>x</u> de type <u>bool</u>,
 
 110
 00:09:42,010 --> 00:09:47,560
@@ -507,17 +507,17 @@ et est en mesure de conclure que
 
 111
 00:09:47,560 --> 00:09:52,000
-ce document n'a pas le type [a] 
+ce document n'a pas le type <u>a</u> 
 avec un champ manquant,
 
 112
 00:09:52,000 --> 00:09:57,000
-mais le type [t] avec le bon champ.
+mais le type <u>t</u> avec le bon champ.
 
 113
 00:09:57,000 --> 00:10:02,460
-Mais maintenant, si on définit un autre type [u]
-avec un champ [x] de type [int]
+Mais maintenant, si on définit un autre type <u>u</u>
+avec un champ <u>x</u> de type <u>int</u>
 
 114
 00:10:02,460 --> 00:10:07,510
@@ -535,7 +535,7 @@ ce champ n'a pas le bon type
 117
 00:10:19,310 --> 00:10:25,540
 par rapport à la dernière définition
-d'un enregistrement avec un seul champ [x].
+d'un enregistrement avec un seul champ <u>x</u>.
 
 118
 00:10:25,540 --> 00:10:27,610

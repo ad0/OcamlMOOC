@@ -81,8 +81,8 @@ un n-uplet de taille deux -- un couple.
 
 19
 00:01:29,270 --> 00:01:34,390
-Le premier élément est de type [int], et
-le deuxième élément est de type [int].
+Le premier élément est de type <u>int</u>, et
+le deuxième élément est de type <u>int</u>.
 
 20
 00:01:34,390 --> 00:01:40,979
@@ -105,16 +105,16 @@ appris dans la séquence précédente
 
 25
 00:01:58,880 --> 00:02:03,789
-en introduisant un identificateur [point2D].
+en introduisant un identificateur <u>point2D</u>.
 
 26
 00:02:03,789 --> 00:02:06,520
-Et [point2D] peut être utilisé pour
+Et <u>point2D</u> peut être utilisé pour
 
 27
 00:02:06,520 --> 00:02:16,580
 contraindre le type de l'identificateur de 
-l'origine à être de type [point2D].
+l'origine à être de type <u>point2D</u>.
 
 28
 00:02:20,360 --> 00:02:22,280
@@ -135,7 +135,7 @@ type de n-uplets
 
 32
 00:02:33,400 --> 00:02:37,320
-en utilisant l'opérateur [*].
+en utilisant l'opérateur <u>*</u>.
 
 33
 00:02:37,320 --> 00:02:39,800
@@ -186,7 +186,7 @@ valeurs sont observées par le programme.
 
 44
 00:03:15,750 --> 00:03:23,930
-Les motifs apparaissent dans les liaisons [let]
+Les motifs apparaissent dans les liaisons <u>let</u>
 et les arguments des fonction.
 
 45
@@ -201,7 +201,7 @@ les identificateurs.
 47
 00:03:32,560 --> 00:03:39,480
 Lorsqu'on a une expression de la forme:
-[let x = 6 * 3 x]
+<u>let x = 6 * 3 x</u>
 
 48
 00:03:39,480 --> 00:03:42,130
@@ -209,8 +209,8 @@ on peut le lire ainsi :
 
 49
 00:03:42,130 --> 00:03:53,120
-"J'observe la valeur de l'expression [6 * 3]
-en la nommant [x] "
+"J'observe la valeur de l'expression <u>6 * 3</u>
+en la nommant <u>x</u>"
 
 51
 00:03:53,120 --> 00:03:56,900
@@ -234,7 +234,7 @@ Ainsi, lorsqu'on a l'expression suivante,
 55
 00:04:10,850 --> 00:04:17,280
 on peut la lire :
-"j'ignore la valeur de [6 * 3]".
+"j'ignore la valeur de <u>6 * 3</u>".
 
 56
 00:04:17,280 --> 00:04:23,219
@@ -253,7 +253,7 @@ Par exemple, l'expression suivante est lue comme:
 59
 00:04:36,300 --> 00:04:45,990
 "J'observe la première composante du
-ce n-uplet en la nommant [x], et"
+ce n-uplet en la nommant <u>x</u>, et"
 
 60
 00:04:45,990 --> 00:04:50,819
@@ -288,11 +288,11 @@ qui est suivi par un joker.
 69
 00:05:20,749 --> 00:05:27,680
 On voit que le toplevel a
-nommé seulement le premier composant [x]
+nommé seulement le premier composant <u>x</u>
 
 70
 00:05:27,680 --> 00:05:31,779
---- qui est bien égal à [18] ---
+--- qui est bien égal à <u>18</u> ---
 
 71
 00:05:31,779 --> 00:05:40,340
@@ -361,8 +361,8 @@ il y a une cellule par composant.
 
 86
 00:06:50,569 --> 00:06:55,889
-Par exemple, si on a un n-uplet [p] 
-contenant [1], [2] et [3],
+Par exemple, si on a un n-uplet <u>p</u> 
+contenant <u>1</u>, <u>2</u> et <u>3</u>,
 
 87
 00:06:55,889 --> 00:06:59,699
@@ -370,19 +370,19 @@ alors on a un bloc avec trois cellules.
 
 88
 00:06:59,699 --> 00:07:01,089
-Le premier contient [1],
+Le premier contient <u>1</u>,
 
 89
 00:07:01,089 --> 00:07:03,229
-le second contient [2], et
+le second contient <u>2</u>, et
 
 90
 00:07:03,229 --> 00:07:05,999
-le troisième contient [3].
+le troisième contient <u>3</u>.
 
 91
 00:07:05,999 --> 00:07:13,879
-Maintenant, si vous avez un identificateur [p],
+Maintenant, si vous avez un identificateur <u>p</u>,
 
 92
 00:07:13,879 --> 00:07:17,279
@@ -395,8 +395,8 @@ vers la mémoire.
 
 94
 00:07:22,449 --> 00:07:30,150
-Ensuite, si on définit par exemple [q],
-dont la première composante est [p],
+Ensuite, si on définit par exemple <u>q</u>,
+dont la première composante est <u>p</u>,
 
 95
 00:07:30,150 --> 00:07:34,749
@@ -414,7 +414,7 @@ Les pointeurs peuvent être partagés.
 98
 00:07:46,789 --> 00:07:53,789
 Cela signifie que si on remplace
-le [0] en seconde composante de [q] par [p],
+le <u>0</u> en seconde composante de <u>q</u> par <u>p</u>,
 
 99
 00:07:53,789 --> 00:07:57,680
@@ -445,7 +445,7 @@ si elles ont le même contenu.
 
 105
 00:08:28,060 --> 00:08:36,780
-L'opérateur [==] calcule
+L'opérateur <u>==</u> calcule
 ce qu'on appelle l'égalité physique.
 
 106
@@ -459,11 +459,11 @@ Cela veut dire que les deux pointeurs sont égaux.
 
 109
 00:08:53,130 --> 00:09:03,750
-Définissons deux couples [x] et [y], et
+Définissons deux couples <u>x</u> et <u>y</u>, et
 
 110
 00:09:03,750 --> 00:09:08,500
-un identifiant [z] qui est égal à [x].
+un identifiant <u>z</u> qui est égal à <u>x</u>.
 
 111
 00:09:08,500 --> 00:09:12,329
@@ -484,7 +484,7 @@ ils sont égaux.
 115
 00:09:21,470 --> 00:09:30,880
 Maintenant, si on utilise l'égalité physique
-pour comparer les deux couples [x] et [y].
+pour comparer les deux couples <u>x</u> et <u>y</u>.
 
 116
 00:09:30,880 --> 00:09:33,670
@@ -502,17 +502,17 @@ différents.
 
 119
 00:09:45,000 --> 00:09:56,120
-Lorsqu'on a écrit que [z] est égal à [x], on a
+Lorsqu'on a écrit que <u>z</u> est égal à <u>x</u>, on a
 en fait partagé les mêmes pointeurs.
 
 120
 00:09:56,130 --> 00:10:03,449
-La valeur attribuée à l'identificateur [z],
-est le même pointeur que celui qu'on a pour [x].
+La valeur attribuée à l'identificateur <u>z</u>,
+est le même pointeur que celui qu'on a pour <u>x</u>.
 
 121
 00:10:03,449 --> 00:10:08,040
-Donc, [x] est physiquement égal à [z].
+Donc, <u>x</u> est physiquement égal à <u>z</u>.
 
 123
 00:10:09,339 --> 00:10:14,920
@@ -634,11 +634,11 @@ Sauf qu'il y a une erreur,
 
 151
 00:12:27,800 --> 00:12:33,839
-parce que l'abscisse devrait être ici [x] et
+parce que l'abscisse devrait être ici <u>x</u> et
 
 152
 00:12:33,839 --> 00:12:36,050
-que l'ordonnée devrait être ici [y].
+que l'ordonnée devrait être ici <u>y</u>.
 
 153
 00:12:36,050 --> 00:12:42,800
