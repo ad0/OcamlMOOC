@@ -13,7 +13,7 @@ les enregistrements, les n-uplets et les tableaux.
 
 4
 00:00:11,780 --> 00:00:16,140
-Pour mieux les comprendre, nous allons les 
+Pour mieux les comprendre, nous allons les
 utiliser ensemble dans un même programme.
 
 5
@@ -39,18 +39,18 @@ une fonction de recherche dans la base de données.
 
 10
 00:00:37,070 --> 00:00:41,390
-Le type de la fonction 
+Le type de la fonction
 <i>moteur-base-de-données</i> sera le suivant.
 
 11
 00:00:41,390 --> 00:00:44,670
-Elle prendra en entrée une base de données, 
+Elle prendra en entrée une base de données,
 une requête, et
 
 12
 00:00:44,670 --> 00:00:52,920
-retournera un triplet composé d'un
-un statut, d'une base de données, et d'un contact.
+retournera un triplet composé
+d'un statut, d'une base de données, et d'un contact.
 
 13
 00:00:52,930 --> 00:01:00,140
@@ -59,13 +59,13 @@ si la requête s'est bien passée.
 
 14
 00:01:00,140 --> 00:01:08,980
-Le deuxième composant sera une nouvelle base de 
+Le deuxième composant sera une nouvelle base de
 données, si on a inséré ou supprimé un contact.
 
 15
 00:01:08,990 --> 00:01:17,410
 Et enfin, si un contact a été trouvé,
-ce sera la troisième composante de ce n-uplet.
+il sera la troisième composante de ce n-uplet.
 
 16
 00:01:20,180 --> 00:01:25,340
@@ -138,7 +138,7 @@ et parfois, on devra donner un contact,
 
 32
 00:02:46,530 --> 00:02:50,570
-de sorte que nous avons aussi un champ pour 
+de sorte que nous avons aussi un champ pour
 représenter un contact.
 
 33
@@ -157,7 +157,7 @@ on doit juste traverser le tableau, et
 
 36
 00:03:06,450 --> 00:03:14,560
-si on trouve une cellule dont le nom est égal à
+si on trouve une cellule dont le nom est égal
 au nom du contact cherché,
 
 37
@@ -183,7 +183,7 @@ se trouve à la position <u>idx</u>.
 
 42
 00:03:37,380 --> 00:03:43,840
-Sinon, il se peut que l'on soit à la fin de 
+Sinon, il se peut que l'on soit à la fin de
 la base de données,
 
 43
@@ -193,7 +193,7 @@ présents dans la base de données ---
 
 44
 00:03:49,720 --> 00:03:58,140
-ou peut-être, on peut aller à l'indice suivant,
+ou peut-être, que l'on puisse aller à la position suivante,
 par appel récursif avec un indice incrémenté.
 
 45
@@ -207,7 +207,7 @@ insérer un contact dans la base de données.
 
 47
 00:04:06,350 --> 00:04:14,740
-Si on veut insérer un nouveau contact dans 
+Si on veut insérer un nouveau contact dans
 la base de données, alors
 
 48
@@ -216,8 +216,8 @@ il y a un premier cas :
 
 49
 00:04:16,250 --> 00:04:21,380
-si on a atteint la limite des contacts
-qui peuvent être stockées dans la base de données,
+On a atteint la limite des contacts
+qui peuvent être stockés dans la base de données,
 
 50
 00:04:21,380 --> 00:04:24,230
@@ -230,12 +230,12 @@ la longueur choisie ---
 
 52
 00:04:30,640 --> 00:04:37,480
-alors on produit une erreur
+on produit alors une erreur
 en renvoyant un statut valant <u>false</u>.
 
 53
 00:04:37,480 --> 00:04:45,870
-Sinon, on doit d'abord chercher si le contact 
+Sinon, on doit d'abord chercher si le contact
 est déjà dans la base de données,
 
 54
@@ -244,12 +244,12 @@ est déjà dans la base de données,
 
 55
 00:04:50,920 --> 00:04:56,010
-et enfin, --- si le contact ne se trouve pas 
+Enfin, --- si le contact ne se trouve pas
 dans la base de données ---
 
 56
 00:04:56,010 --> 00:05:05,410
-on crée une nouvelle base de données où les cellules 
+on crée une nouvelle base de données où les cellules
 sont définies en utilisant cette fonction <u>cells</u>.
 
 57
@@ -258,7 +258,7 @@ Si l'indice est égal au nombre de contacts, alors
 
 58
 00:05:09,930 --> 00:05:13,870
-on veut l'utiliser pour stocker 
+on va l'utiliser pour stocker
 notre (nouveau) contact,
 
 59
@@ -272,7 +272,7 @@ le contenu de la base de données initiale,
 
 61
 00:05:22,420 --> 00:05:29,410
-et on retourne la valeur actuelle du tableau 
+et on retourne la valeur actuelle du tableau
 à la position <u>i</u>.
 
 62
@@ -291,7 +291,7 @@ Et le tableau des contacts est un nouveau tableau,
 
 65
 00:05:42,160 --> 00:05:49,390
-dont les cellules sont initialisées par 
+dont les cellules sont initialisées par
 la fonction <u>cells</u>.
 
 66
@@ -310,11 +310,11 @@ On peut faire la même chose pour supprimer un contact.
 
 69
 00:06:11,540 --> 00:06:16,120
-On peut commmencer par rechercher le contact.
+On commmence par rechercher le contact.
 
 70
 00:06:16,120 --> 00:06:21,860
-S'il n'est pas dans la base de données, 
+S'il n'est pas dans la base de données,
 alors on renvoie une erreur.
 
 71
@@ -349,8 +349,8 @@ pas le contact que l'on souhaite supprimer,
 
 77
 00:07:05,450 --> 00:07:11,810
-on renvoie juste le même contact que celui qui 
-se trouve dans la base de données précédente.
+on renvoie juste le même contact que celui qui
+se trouvait dans la base de données précédente.
 
 78
 00:07:14,530 --> 00:07:20,360
@@ -430,12 +430,12 @@ On peut supprimer Luke de la base de données.
 
 95
 00:08:33,460 --> 00:08:37,680
-Et nous pouvons voir que la base de données 
+Et nous pouvons voir que la base de données
 ne contient plus que Darth Vader.
 
 96
 00:08:39,659 --> 00:08:45,839
-Et enfin, si on cherche encore Luke dans 
+Et enfin, si on cherche encore Luke dans
 la base de données, on obtient une erreur.
 
 97
@@ -452,7 +452,7 @@ Si nous comparons la mise en œuvre
 
 100
 00:08:55,140 --> 00:08:58,820
-que nous venons de faire pour 
+que nous venons de faire pour
 notre moteur de base de données,
 
 101
@@ -461,7 +461,7 @@ avec une réalisation impérative,
 
 102
 00:09:01,580 --> 00:09:08,020
-ce qui est clair est nous avons écrit un programme 
+ce qui est clair est nous avons écrit un programme
 non destructif.
 
 103
@@ -471,12 +471,12 @@ ce moteur de base de données,
 
 104
 00:09:15,330 --> 00:09:23,190
-on peut remarquer qu'une nouvelle base de données est 
+on peut remarquer qu'une nouvelle base de données est
 créée chaque fois qu'une requête est traitée.
 
 105
 00:09:23,190 --> 00:09:29,270
-Donc les versions précédentes de cette base sont 
+Donc les versions précédentes de cette base sont
 toujours des valeurs valides disponibles dans OCaml.
 
 106
@@ -486,7 +486,7 @@ et qu'on applique une requête à une base de données,
 
 107
 00:09:36,080 --> 00:09:39,350
-cela qui modifie en place la base de données.
+celle-ci est modifiée en-place.
 
 108
 00:09:39,350 --> 00:09:47,680
@@ -499,12 +499,12 @@ Alors maintenant, ce qui importe.
 
 110
 00:09:51,570 --> 00:09:59,780
-Pourquoi les effets de bord sont considérés comme 
+Pourquoi les effets de bord sont considérés comme
 dangereux en programmation purement fonctionnelle.
 
 111
 00:09:59,780 --> 00:10:05,760
-Eh bien, l'idée est que lorsqu'on programme 
+Eh bien, l'idée est que lorsqu'on programme
 effectivement dans un langage fonctionnel,
 
 112
@@ -519,16 +519,16 @@ ne dépend pas de l'état du programme.
 
 114
 00:10:16,170 --> 00:10:20,320
-Mais seulement sur les arguments de la fonction.
+Mais seulement des arguments de la fonction.
 
 115
 00:10:20,320 --> 00:10:24,570
-Et cela est exactement comme en mathématiques.
+Et c'est exactement ce qui se passe en mathématiques.
 
 116
 00:10:24,570 --> 00:10:31,670
-On peut appeler une fonction à plusieurs reprises, sur
-les mêmes entrées, on obtient le même résultat.
+On peut appeler une fonction à plusieurs reprises, avec
+les mêmes entrées on obtiendra le même résultat.
 
 117
 00:10:31,670 --> 00:10:36,440
@@ -543,11 +543,11 @@ par des objets mathématiques.
 119
 00:10:44,890 --> 00:10:50,640
 Par exemple, une spécification valide
-notre moteur est le fait que
+de notre moteur est le fait que
 
 120
 00:10:50,640 --> 00:10:57,290
-si on insère un contact dans la base de données,
+si l'on insère un contact dans la base de données,
 et qu'on le supprime juste après,
 
 121
@@ -561,7 +561,7 @@ Comme il ne dépend pas de l'état de la machine,
 
 123
 00:11:08,270 --> 00:11:11,890
-un programme fonctionnel peut être utilisé 
+un programme fonctionnel peut être utilisé
 à tout moment.
 
 124
@@ -580,12 +580,12 @@ de notre mise en œuvre.
 
 127
 00:11:25,490 --> 00:11:35,050
-Eh bien, la spécification donnée à notre moteur 
-n'est pas très satisfaisante. En effet, 
+Eh bien, la spécification donnée à notre moteur
+n'est pas très satisfaisante. En effet,
 
 128
 00:11:35,050 --> 00:11:45,480
-les requêtes devraient renvoyer un contact pour les 
+les requêtes devraient renvoyer un contact pour les
 recherches et une base de données pour les insertions.
 
 129
@@ -613,7 +613,7 @@ soit un contact soit une nouvelle base de données.
 
 134
 00:12:11,959 --> 00:12:19,410
-Un autre problème est que lorsqu'on recrée 
+Un autre problème est que lorsqu'on recrée
 une nouvelle base de données,
 
 135
@@ -622,17 +622,17 @@ elle est dupliquée entièrement, même si
 
 136
 00:12:22,830 --> 00:12:33,260
-presque tout dans la base de données est pareil
-que dans la base de données précédente.
+presque tout dans la base de données est identique
+à la précédente.
 
 137
 00:12:33,270 --> 00:12:36,860
-Nous devrions utiliser une meilleure structure de 
+Nous aimerions utiliser une meilleure structure de
 données pour représenter la base de données,
 
 138
 00:12:36,860 --> 00:12:42,459
-pour permettre davantage de partage entre
+afin de permettre davantage de partage entre
 les différentes versions de la base de données.
 
 139
@@ -643,4 +643,3 @@ Les types de données algébriques à venir
 140
 00:12:46,980 --> 00:12:50,380
 seront une réponse élégante à tous ces problèmes.
-

@@ -5,17 +5,17 @@ sur la programmation fonctionnelle en OCaml
 
 2
 00:00:14,640 --> 00:00:19,380
-Dans les deux semaines suivantes, 
+Dans les deux semaines suivantes,
 nous reviendrons sur les types,
 
 3
 00:00:19,500 --> 00:00:26,570
-et en particulier, comment structurer 
+et en particulier, comment structurer
 votre code et vos données en utilisant des types.
 
 4
 00:00:26,570 --> 00:00:31,760
-Cette semaine, nous allons d'abord apprendre 
+Cette semaine, nous allons d'abord apprendre
 à définir nos propres types.
 
 5
@@ -28,12 +28,12 @@ les n-uplets, les records et les tableaux.
 
 7
 00:00:39,949 --> 00:00:44,670
-Pour finir, nous les utiliserons pour 
+Pour finir, nous les utiliserons pour
 programmer une petite base de données typée.
 
 8
 00:00:44,670 --> 00:00:52,179
-Une utilisation primaire des types est de documenter 
+Une utilisation primaire des types est de documenter
 le code, pour expliquer à un autre programmeur
 
 9
@@ -52,7 +52,7 @@ en choisissant 1 pour représenter mardi, etc.
 
 12
 00:01:10,310 --> 00:01:14,350
-On obtient au final est un sous-ensemble de <u>int</u>.
+On obtient au final un sous-ensemble de <u>int</u>.
 
 13
 00:01:14,350 --> 00:01:23,000
@@ -61,7 +61,7 @@ en utilisant un identificateur de type.
 
 14
 00:01:23,000 --> 00:01:34,390
-On peut ajouter un invariant informel indiquant qu'un 
+On peut ajouter un invariant informel indiquant qu'un
 entier <u>x</u> est un jour valide s'il est entre 0 et 6.
 
 15
@@ -93,12 +93,12 @@ qu'une couleur est représentée par un entier.
 
 21
 00:02:21,079 --> 00:02:28,030
-Et après ça, on peut déclarer 
+Et après ça, on peut déclarer
 rouge comme une couleur,
 
 22
 00:02:28,030 --> 00:02:36,800
-avec deux points <u>:</u>, puis le nom du type que nous 
+avec deux points <u>:</u>, puis le nom du type que nous
 voulons assigner à cet identificateur, qui est <u>color</u>.
 
 23
@@ -118,7 +118,7 @@ pour les entiers positifs.
 
 26
 00:02:55,639 --> 00:03:03,019
-Nous recommençons à introduire un nom pour le type 
+Nous recommençons à introduire un nom pour le type
 des entiers positifs,
 
 27
@@ -131,7 +131,7 @@ Celui que nous connaissons déjà.
 
 29
 00:03:15,269 --> 00:03:18,400
-Maintenant, imaginons que l'on souhaite réaliser 
+Maintenant, imaginons que l'on souhaite réaliser
 la fonction <u>absolute</u>
 
 30
@@ -141,7 +141,7 @@ en un nombre entier positif.
 
 31
 00:03:24,519 --> 00:03:31,230
-On voudra peut-être de documenter cela
+On voudra peut-être documenter cela
 en disant que cela prend un argument qui est un <u>int</u>,
 
 32
@@ -155,7 +155,7 @@ est inférieur à 0, et <u>x</u> quand <u>x</u> est supérieur à 0,
 
 34
 00:03:42,840 --> 00:03:52,980
-indique que le résultat de cette expression 
+indique que le résultat de cette expression
 est un nombre positif.
 
 35
@@ -192,7 +192,7 @@ passons en revue la règle générale pour la syntaxe.
 
 42
 00:04:32,980 --> 00:04:40,380
-On doit d'abord utiliser le mot-clé <u>type</u>, suivi par 
+On doit d'abord utiliser le mot-clé <u>type</u>, suivi par
 l'identificateur de type que l'on a choisi.
 
 43
@@ -323,7 +323,7 @@ lorsqu'on interagit avec le toplevel OCaml,
 
 69
 00:07:32,800 --> 00:07:39,190
-et qu'on a choisi le même identificateur de type 
+et qu'on a choisi le même identificateur de type
 pour plusieurs définitions.
 
 70
@@ -338,7 +338,7 @@ un type <u>t</u> qui est égal à <u>int</u>.
 
 72
 00:07:54,650 --> 00:08:03,490
-Et juste après, une définition pour un 
+Et juste après, une définition pour un
 identificateur <u>x</u> de type <u>t</u> égal à 0.
 
 73
@@ -362,7 +362,7 @@ pour appliquer la fonction <u>not</u> à cet argument.
 
 77
 00:08:33,829 --> 00:08:39,690
-Maintenant, si j'applique <u>f</u> à <u>x</u> 
+Maintenant, si j'applique <u>f</u> à <u>x</u>
 alors bien sûr cela est invalide,
 
 78
@@ -407,21 +407,21 @@ est seulement une documentation,
 86
 00:09:32,900 --> 00:09:43,000
 et rien ne garantit statiquement que les
-valeurs de ce type sont bien un positives.
+valeurs de ce type sont bien positives.
 
 87
 00:09:43,070 --> 00:09:47,690
-Par exemple, on peut parfaitement écrire 
+Par exemple, on peut parfaitement écrire
 la définition suivante
 
 88
 00:09:47,690 --> 00:09:55,110
-disant que <u>x</u>, égal à <u>-1</u>, 
+disant que <u>x</u>, égal à <u>-1</u>,
 est de type <u>positif</u>,
 
 89
 00:09:55,110 --> 00:10:02,170
-parce que <u>-1</u> est un <u>int</u>, cette définition 
+parce que <u>-1</u> est un <u>int</u>, cette définition
 est donc acceptée par le vérificateur de type.
 
 90
@@ -433,4 +433,3 @@ nous aidera à définir des types plus précis,
 00:10:08,450 --> 00:10:13,630
 afin de pouvoir
 capturer ce genre de propriété statique.
-
