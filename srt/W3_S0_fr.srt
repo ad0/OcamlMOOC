@@ -5,7 +5,7 @@ sur la programmation fonctionnelle et OCaml.
 
 2
 00:00:13,830 --> 00:00:22,810
-Cette semaine sera consacrée aux types de données 
+Cette semaine sera consacrée aux types de données
 algébriques, un sorte de types très importante
 
 3
@@ -60,7 +60,7 @@ certains de ses composants sont dénués de sens.
 
 14
 00:01:27,670 --> 00:01:40,300
-En effet, pour une requête d'insertion, seule la 
+En effet, pour une requête d'insertion, seule la
 composante "base de données" est significative ;
 
 15
@@ -75,7 +75,7 @@ les deux autres composants n'ont pas de sens.
 
 17
 00:01:56,579 --> 00:02:07,200
-Alors ... peut-on résoudre cela, et trouver un type 
+Alors ... peut-on résoudre cela, et trouver un type
 capturant bien mieux cette situation ?
 
 18
@@ -95,13 +95,13 @@ type [query_result] pouvant être soit une erreur,
 
 21
 00:02:28,480 --> 00:02:35,099
-soit une nouvelle base de données, dans le cas 
+soit une nouvelle base de données, dans le cas
 d'une requête d'insertion ou de suppression,
 
 22
 00:02:35,099 --> 00:02:44,200
-soit un contact et son index, pour
-une requête de recherche réussie.
+soit un contact et son index, dans le cas
+d'une requête de recherche réussie.
 
 23
 00:02:44,230 --> 00:02:48,300
@@ -110,7 +110,7 @@ on peut simplement écrire une déclaration de type
 
 24
 00:02:48,300 --> 00:02:53,300
-qui imite exactement cette description informelle.
+qui illustre exactement cette description informelle.
 
 25
 00:02:53,379 --> 00:03:00,150
@@ -129,7 +129,7 @@ suivi d'une [database],
 28
 00:03:08,739 --> 00:03:17,800
 Et le troisième est un [FoundContact]
-suivie d'un [contact] et d'un entier.
+suivi d'un [contact] et d'un entier.
 
 29
 00:03:18,000 --> 00:03:21,540
@@ -151,7 +151,7 @@ les différentes valeurs de ce type.
 
 33
 00:03:40,989 --> 00:03:42,709
-Et pour ce faire, on utilise des étiquettes.
+Pour ce faire, on utilise des étiquettes.
 
 34
 00:03:42,709 --> 00:03:48,220
@@ -160,7 +160,7 @@ par une majuscule.
 
 35
 00:03:48,220 --> 00:03:57,650
-Les noms d'étiquettes sont uniques et distincts 
+Les noms d'étiquettes sont uniques et distincts
 dans un type de données algébrique.
 
 36
@@ -175,7 +175,7 @@ des valeurs de ce type ?
 
 38
 00:04:09,730 --> 00:04:18,150
-Eh bien, la première chose à savoir, c'est que 
+Eh bien, la première chose à savoir, c'est que
 les étiquettes sont aussi appelées des constructeurs.
 
 39
@@ -184,7 +184,7 @@ Ainsi, pour construire une valeur d'un sous-type,
 
 40
 00:04:22,780 --> 00:04:28,229
-ce qu'on doit faire c'est 
+ce qu'on doit faire c'est
 construire une valeur de ce type
 
 41
@@ -309,12 +309,12 @@ est de type [color].
 
 66
 00:07:24,020 --> 00:07:33,219
-C'est mieux que ce qu'on avait quand on codait 
+C'est mieux que ce qu'on avait quand on codait
 une couleur par un entier,
 
 67
 00:07:33,219 --> 00:07:39,409
-parce que maintenant nous savons exactement
+car maintenant nous savons exactement
 que les seules couleurs possibles
 
 68
@@ -324,12 +324,12 @@ et rien d'autre.
 
 69
 00:07:45,950 --> 00:07:52,779
-Alors maintenant, examinons un type [t],
+Maintenant, examinons un type [t],
 qui est défini comme une énumération
 
 70
 00:07:52,779 --> 00:07:58,140
-avec deux étiquetées [A] et [B].
+avec deux étiquettes [A] et [B].
 
 71
 00:07:58,140 --> 00:08:02,589
@@ -357,8 +357,8 @@ mais en échange de cette contrainte,
 
 76
 00:08:24,899 --> 00:08:35,120
-on gagne une propriété très forte : le fait 
-qu'un [x] ne peut être que soit un [A] soit un [B].
+on gagne une propriété très forte : le fait
+qu'un [x] ne peut être qu'un [A] ou qu'un [B].
 
 77
 00:08:35,120 --> 00:08:41,930
@@ -386,7 +386,7 @@ toute valeur reconnue dans le type [t].
 
 82
 00:09:05,460 --> 00:09:13,600
-On sait maintenant que lorsqu'on observe une valeur 
+On sait maintenant que lorsqu'on observe une valeur
 d'un type somme, plusieurs cas sont possibles.
 
 83
@@ -404,7 +404,7 @@ Et le modèle sera de la forme suivante :
 
 86
 00:09:23,270 --> 00:09:27,670
-on écrit d'abord l'étiquette, et après cela,
+on écrit d'abord l'étiquette, puis,
 entre parenthèses,
 
 87
@@ -433,26 +433,26 @@ on peut utiliser ce qu'on appelle un filtrage
 
 92
 00:09:47,710 --> 00:09:51,400
-qui est une construction très, 
+qui est une construction très,
 très importante en OCaml,
 
 93
 00:09:51,400 --> 00:09:57,190
-et grâce à à laquelle la programmation en OCaml 
+et grâce à laquelle la programmation
 devient très, très agréable.
 
 94
 00:09:57,190 --> 00:10:02,570
 Un filtrage est une séquence de branches
-écrites juste comme ainsi :
+écrites ainsi :
 
 95
 00:10:02,570 --> 00:10:05,540
-vous écrit le mot-clé [match],
+on écrit le mot-clé [match],
 
 96
 00:10:05,540 --> 00:10:12,300
-suivi d'une expression qui s'évaluera en 
+suivi d'une expression qui s'évaluera en
 une valeur dans un type somme,
 
 97
@@ -465,7 +465,7 @@ Un filtrage doit comporter au moins une branche.
 
 99
 00:10:22,440 --> 00:10:26,340
-Et voici comment évaluer un filtrage de tête :
+Voici comment calculer de tête un filtrage :
 
 100
 00:10:26,340 --> 00:10:29,550
@@ -493,7 +493,7 @@ on essaye la branche suivante.
 
 105
 00:10:53,130 --> 00:10:57,150
-Et on continue, on continue, jusqu'à trouver 
+Et on continue, on continue, jusqu'à trouver
 une correspondance.
 
 106
@@ -515,7 +515,7 @@ et on a une branche pour chaque cas possible :
 
 110
 00:11:22,480 --> 00:11:30,100
-une pour la requête d'insertion, et dans ce cas 
+une pour la requête d'insertion, et dans ce cas
 il suffit d'utiliser la fonction [insert];
 
 111
@@ -558,12 +558,12 @@ Il s'écrit comme ça :
 
 119
 00:12:19,760 --> 00:12:25,130
-comme d'habitude, on utilise [let] pour introduire 
+comme d'habitude, on utilise [let] pour introduire
 l'identificateur de la fonction,
 
 120
 00:12:25,130 --> 00:12:36,800
-et juste après [=] vous utilisez le mot-clé [function] 
+et juste après [=] on utilise le mot-clé [function]
 suivi des différentes branches de l'analyse de cas.
 
 121
@@ -582,7 +582,7 @@ par un petit entier de la machine.
 
 124
 00:12:57,100 --> 00:13:01,800
-Donc, quand vous avez une valeur d'un type somme, 
+Donc, quand vous avez une valeur d'un type somme,
 il est soit :
 
 125
@@ -592,17 +592,17 @@ s'il n'y a aucun argument pour le constructeur,
 
 126
 00:13:06,779 --> 00:13:10,910
-si c'est juste comme dans une énumération,
+et c'est juste comme dans une énumération,
 
 127
 00:13:10,910 --> 00:13:21,500
-ou, si le constructeur a des arguments, c'est un bloc 
+ou, si le constructeur a des arguments, c'est un bloc
 alloué sur le tas commençant par une étiquette.
 
 128
 00:13:21,520 --> 00:13:29,400
-Donc, lorsqu'a lieu un filtrage, il se produit
-tout d'abord un test dynamique sur cette étiquette.
+Donc, lorsqu'un filtrage a lieu, il se produit
+d'abord un test dynamique sur cette étiquette.
 
 129
 00:13:29,420 --> 00:13:32,340
@@ -633,12 +633,12 @@ On peut aussi oublier certains cas.
 
 135
 00:13:56,560 --> 00:14:00,880
-Mais la bonne nouvelle c'est que ces sortes 
+Mais la bonne nouvelle est que ces sortes
 d'erreurs de programmation
 
 136
 00:14:00,880 --> 00:14:03,700
-sont en fait détectées par le type-checker.
+sont en fait détectées par le vérificateur de type.
 
 137
 00:14:05,990 --> 00:14:10,880
@@ -665,7 +665,7 @@ le premier signe '|' est facultatif
 
 142
 00:14:29,100 --> 00:14:34,600
-ce qui est particulièrement pratique lorsqu'on 
+ce qui est particulièrement pratique lorsqu'on
 écrit une définition de type sur une seule ligne.
 
 143
@@ -688,7 +688,7 @@ de déceler cette erreur
 
 147
 00:15:02,940 --> 00:15:10,320
-et indique que [None]
+et d'indiquer que [None]
 est appliqué à trop d'arguments.
 
 148
@@ -717,7 +717,7 @@ un entier et non un booléen.
 
 153
 00:15:39,800 --> 00:15:41,820
-Donc revenons à notre type des couleurs
+Revenons à notre type des couleurs
 
 154
 00:15:41,820 --> 00:15:45,710
@@ -748,12 +748,12 @@ Les trois premiers cas correspondent au fait que
 
 160
 00:16:10,250 --> 00:16:16,890
-nous ne voulons pas dire qu'une couleur est plus 
+nous ne voulons pas dire qu'une couleur est plus
 claire qu'elle-même.
 
 161
 00:16:16,890 --> 00:16:22,820
-Ce cas correspond au fait que [Black] est plus sombre 
+Ce cas correspond au fait que [Black] est plus sombre
 que toute autre couleur.
 
 162
@@ -763,8 +763,8 @@ autre couleur
 
 163
 00:16:29,820 --> 00:16:36,080
-Ensuite, les deux derniers cas correspondent à
-la relation entre
+Ensuite, les deux derniers cas correspondent aux
+relations entre
 
 164
 00:16:36,080 --> 00:16:40,029
@@ -794,5 +794,5 @@ et, en effet, j'ai raté un cas,
 
 170
 00:16:57,000 --> 00:17:02,500
-qui est celui où la première couleur est [White] 
-et la deuxième couleur est [Black].
+qui est celui où la première couleur est [White]
+et la deuxième [Black].
