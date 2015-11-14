@@ -4,12 +4,12 @@ Re-bonjour
 
 2
 00:00:03,129 --> 00:00:10,509
-En informatique de nombreuses structures de données 
+En informatique de nombreuses structures de données
 comme les listes, les arbres sont de taille illimitée.
 
 3
 00:00:11,830 --> 00:00:19,169
-Mais pour l'instant nous sommes incapables de les 
+Or pour l'instant nous sommes incapables de les
 définir parce que nous avons seulement
 
 4
@@ -22,7 +22,7 @@ Essayons donc de le faire informellement.
 
 6
 00:00:26,229 --> 00:00:33,989
-Sur le papier, nous écririons qu'une liste d'entiers 
+Sur le papier, nous écririons qu'une liste d'entiers
 par exemple, est une liste vide ou
 
 7
@@ -31,7 +31,7 @@ un entier suivi du reste de la liste.
 
 8
 00:00:39,780 --> 00:00:47,629
-Cela ressemble exactement aux types somme et 
+Cela ressemble exactement aux types somme et
 il faut juste se rendre compte
 
 9
@@ -49,12 +49,12 @@ de type.
 
 12
 00:00:59,739 --> 00:01:05,000
-On peut ainsi définir des structures de données 
+On peut ainsi définir des structures de données
 de grande taille grâce aux types récursifs.
 
 13
 00:01:07,340 --> 00:01:14,840
-Par exemple, si on veut définir un type de données 
+Par exemple, si on veut définir un type de données
 algébrique correspondant aux listes d'entiers
 
 14
@@ -77,8 +77,8 @@ définition : c'est un type récursif.
 
 18
 00:01:50,000 --> 00:02:00,710
-Si l'on considère cette définition des listes, puis
-qu'on écrit quelque chose comme <u>SomeElement 1</u>,
+Si l'on considère cette définition des listes, et
+que l'on écrit quelque chose comme <u>SomeElement 1</u>,
 
 19
 00:02:00,710 --> 00:02:05,090
@@ -120,7 +120,7 @@ longueur d'une liste.
 27
 00:02:50,010 --> 00:02:57,850
 On a un cas de base qui correspond à la
-liste vide, dans ce cas une liste vide a
+liste vide, dans ce cas cette liste a
 
 28
 00:02:57,850 --> 00:03:00,080
@@ -152,12 +152,12 @@ En fin de compte ce qu'on obtient est une fonction de
 
 34
 00:03:32,910 --> 00:03:39,950
-En fait, les listes sont si importantes en 
+En fait, les listes sont si importantes en
 programmation fonctionnelle qu'il existe un type
 
 35
 00:03:39,950 --> 00:03:41,170
-prédéfini pour les listes.
+prédéfini pour elles.
 
 36
 00:03:43,020 --> 00:03:49,870
@@ -166,7 +166,7 @@ des éléments de la liste.
 
 37
 00:03:49,870 --> 00:03:53,870
-La liste vide s'écrit avec deux 
+La liste vide s'écrit avec deux
 crochets rectangulaires comme ça.
 
 38
@@ -207,7 +207,7 @@ de la liste séparés par des <u>;</u>.
 
 46
 00:04:49,550 --> 00:04:58,639
-Comme OCaml a un type prédéfini pour les listes, on 
+Comme OCaml a un type prédéfini pour les listes, on
 n'a pas besoin de déclarer de liste d'entiers
 
 47
@@ -226,21 +226,21 @@ et continuant par <u>xs</u> avec un <u>::</u>.
 
 50
 00:05:22,550 --> 00:05:32,730
-Ceci est accepté et on voit ici que OCaml infère que 
-qu'entrée de cette fonction
+Ceci est accepté et on voit ici que OCaml infère que
+l'entrée de cette fonction
 
 51
 00:05:32,800 --> 00:05:37,160
-on a le type standard des listes.
+est le type standard des listes.
 
 52
 00:05:39,699 --> 00:05:49,239
-On peut calculer la longueur d'une liste contenant les 
+On peut calculer la longueur d'une liste contenant les
 entiers <u>1</u>, <u>2</u>, <u>3</u> cela donne bien 3.
 
 53
 00:05:52,300 --> 00:05:57,960
-Supposons ensuite que nous voulions définir une 
+Supposons ensuite que nous voulions définir une
 fonction qui prend une liste et la renverse.
 
 54
@@ -250,16 +250,16 @@ le cas de base : la liste vide et pour ce
 
 55
 00:06:06,999 --> 00:06:11,239
-cas la liste vide renversée est la liste vide.
+cas sa liste renversée est la liste vide.
 
 56
 00:06:13,400 --> 00:06:20,660
-Et dans le second cas, nous avons une liste <u>x</u>
+Dans le second cas, nous avons une liste <u>x</u>
 suivie de <u>xs</u>
 
 57
 00:06:22,040 --> 00:06:31,540
-on calcule d'abord le reversement du reste de la liste,
+on calcule d'abord le renversement du reste de la liste,
 et à la fin de ce résultat on concatène la tête
 
 58
@@ -268,13 +268,13 @@ de la liste.
 
 59
 00:06:37,590 --> 00:06:44,990
-Pour ce faire, nous utilisons cet opérateur <u>@</u> 
+Pour ce faire, nous utilisons cet opérateur <u>@</u>
 qui est prédéfini en OCaml.
 
 60
 00:06:46,580 --> 00:06:55,780
-Ce qu'on obtient au total est une fonction de <u>list/u> 
-vers <u>list</u> et elle renverse bien la liste d'entrée.
+Ce qu'on obtient au final est une fonction de <u>list/u>
+vers <u>list</u> qui renverse bien la liste d'entrée.
 
 61
 00:06:59,349 --> 00:07:03,400
@@ -299,13 +299,13 @@ Donc, au final on a un algorithme quadratique.
 
 66
 00:07:24,180 --> 00:07:31,060
-Ceci est un peu coûteux, et on ne veut pas de cette
+Ceci est un peu coûteux, et on aimerait éviter cette
 fonction coûteuse.
 
 67
 00:07:32,440 --> 00:07:40,740
 Voici une autre façon de calculer un renversement
-qui est basée sur une technique dite en style 
+qui est basée sur une technique dite de passage
 
 68
 00:07:41,930 --> 00:07:44,990
@@ -318,7 +318,7 @@ qui contiendra le résultat final du calcul.
 
 70
 00:07:53,740 --> 00:08:04,550
-Donc ici, je l'appelle <u>accu</u>. Quand le parcours 
+Donc ici, je l'appelle <u>accu</u>. Quand le parcours
 de la liste est terminé, donc quand on a une liste
 
 71
@@ -333,12 +333,12 @@ en tête, on va empiler cet élément au sommet
 73
 00:08:21,259 --> 00:08:30,959
 de la liste <u>accu</u> et poursuivre le calcul par un
-appel recursif sur le reste de la liste.
+appel récursif sur le reste de la liste.
 
 74
 00:08:33,700 --> 00:08:41,530
 En fait, c'est le moyen de renverser une liste
-qui a pour avantage d'être linéaire dans
+qui a l'avantage d'être linéaire en
 
 75
 00:08:41,530 --> 00:08:46,660
@@ -347,7 +347,7 @@ liste d'entrée
 
 76
 00:08:46,660 --> 00:08:57,570
-et à chaque étape, on a seulement une opération en 
+et à chaque étape, on a seulement une opération en
 temps constant qui est la construction
 
 77
@@ -361,12 +361,12 @@ pour <u>accu</u> on obtient au final une fonction de
 
 79
 00:09:16,750 --> 00:09:20,500
-renversement de <u>list</u> vers <u>list</u> 
+renversement de <u>list</u> vers <u>list</u>
 et ça marche.
 
 80
 00:09:22,950 --> 00:09:30,700
-Bien sûr, rien n'oblige à n'avoir que deux cas, 
+Bien sûr, rien n'oblige à n'avoir que deux cas,
 lorsqu'on définit une fonction par récursion
 
 81
@@ -375,15 +375,15 @@ sur une liste.
 
 82
 00:09:32,060 --> 00:09:39,800
-Parfois, comme dans les exemples déjà vus dans la 
+Parfois, comme dans les exemples déjà vus en
 première semaine, on peut avoir plusieurs cas.
 
 83
 00:09:39,880 --> 00:09:46,190
-Par exemple ici, on a le cas pour la liste vide,
-le cas pour une liste qui contient seulement
+Par exemple ici, on a un cas pour la liste vide,
+un cas pour une liste contenant seulement
 
 84
 00:09:46,190 --> 00:09:53,400
-un élément et le cas pour une liste avec au moins
+un élément et un cas pour une liste avec au moins
 deux éléments.

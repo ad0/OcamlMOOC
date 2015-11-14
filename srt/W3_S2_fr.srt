@@ -4,7 +4,7 @@ Re-bonjour
 
 2
 00:00:01,449 --> 00:00:09,000
-Dans cette séquence, on verra que les types récursifs 
+Dans cette séquence, on verra que les types récursifs
 peuvent être utilisés non seulement pour définir
 
 3
@@ -14,12 +14,12 @@ assez généraux pour des représentations arborescentes.
 
 4
 00:00:18,100 --> 00:00:23,920
-Et pour comprendre cela nous allons revenir à
+Pour comprendre cela nous allons revenir à
 nos exemples sur les bases de données.
 
 5
 00:00:25,009 --> 00:00:32,309
-Donc, le type de bases de données peut être désormais 
+Donc, le type de bases de données peut être désormais
 le type somme suivant.
 
 6
@@ -38,7 +38,7 @@ fils droit qui est aussi une base de données.
 
 9
 00:00:54,280 --> 00:01:01,860
-Donc c'est vraiment une représentation en arbre d'une 
+Donc c'est vraiment une représentation en arbre d'une
 base de données, mais nous allons aussi appliquer un
 
 10
@@ -47,37 +47,37 @@ invariant à la structure de données.
 
 11
 00:01:05,440 --> 00:01:13,950
-Le fait que si on a un <u>DataNode</u> avec un fils 
+Le fait est que si on a un <u>DataNode</u> avec un fils
 <u>left</u>, un contact <u>c</u> et un fils droit
 
 12
 00:01:13,970 --> 00:01:24,130
-<u>right</u>, il est bien formé si chaque contact dans
-<u>left</u> est lexicographiquement plus petit que 
+<u>right</u>, alors il est bien formé que si chaque contact dans
+<u>left</u> est lexicographiquement plus petit que
 
 13
 00:01:24,130 --> 00:01:31,950
-<u>c</u> et chaque chaque contact dans <u>right</u> est
+<u>c</u> et que chaque chaque contact dans <u>right</u> est
 lexicographiquement plus grand que <u>c</u>.
 
 14
 00:01:31,950 --> 00:01:39,970
-Par exemple ceci est un exemple d'une représentation
-une base de données dans la machine.
+Par exemple ceci est une représentation
+de la base de données dans la machine.
 
 15
 00:01:40,780 --> 00:01:48,040
-Ce qu'on obtient est une racine avec un 
+Ce qu'on obtient est une racine avec un
 <u>DataNode</u> contenant le contact <u>luke</u>.
 
 16
 00:01:48,840 --> 00:01:56,560
-À sa gauche, il y a une autre <u>DataNode</u> qui
+À sa gauche, il y a un autre <u>DataNode</u> qui
 n'a pas de fils, mais un contact nommé <u>leila</u>.
 
 17
 00:01:58,180 --> 00:02:05,340
-Et à sa droite on a autre <u>DataNode</u> sans
+Et à sa droite on a un autre <u>DataNode</u> sans
 fils, mais un contact nommé <u>yoda</u>.
 
 18
@@ -92,13 +92,13 @@ dans la base de données.
 
 20
 00:02:19,859 --> 00:02:23,959
-C'est maintenant un parcours d'arbre défini 
+C'est maintenant un parcours d'arbre défini
 par induction.
 
 21
 00:02:25,900 --> 00:02:32,739
-Dans le cas où <u>NoContact</u> est la base de données
-cela signifie que la base de données est vide.
+Dans le cas où la base de données est <u>NoContact</u>
+cela signifie que cette base est vide.
 
 22
 00:02:32,739 --> 00:02:34,800
@@ -112,11 +112,11 @@ alors il y a plusieurs cas.
 24
 00:02:42,499 --> 00:02:51,099
 Si le contact sur le noeud a le même nom
-que le nom recherché, alors on a trouvé
+que le nom recherché, on a trouvé
 
 25
 00:02:51,099 --> 00:02:53,930
-le contact et il vous suffit de le renvoyer.
+ce contact et il suffit de le renvoyer.
 
 26
 00:02:53,930 --> 00:03:00,239n
@@ -129,12 +129,12 @@ on cherche dans la partie gauche.
 
 28
 00:03:03,640 --> 00:03:11,559
-Sinon, si le nom est supérieur au nom du contact 
+Sinon, si le nom est plus grand quel le nom du contact
 sur le noeud on cherche
 
 29
 00:03:11,559 --> 00:03:13,260
-sur la droite.
+dans la partie droite.
 
 30
 00:03:13,260 --> 00:03:21,100
@@ -143,8 +143,8 @@ de trouver le contact que l'on recherche.
 
 31
 00:03:21,760 --> 00:03:26,800
-Cela signifie l'arbre a été traversé
-de la racine à une feuille.
+Cela signifie que l'arbre a été traversé
+de la racine vers une feuille.
 
 32
 00:03:28,389 --> 00:03:36,329
@@ -157,12 +157,12 @@ de l'arbre.
 
 34
 00:03:37,730 --> 00:03:45,170
-A contraire, la mise en oeuvre à base de tableau
+Au contraire, la mise en oeuvre à base de tableau
 que nous avons fait la semaine dernière
 
 35
 00:03:46,829 --> 00:03:50,709
-demande de traverser toute la base de données.
+demandait de traverser toute la base de données.
 
 36
 00:03:51,900 --> 00:03:56,440
@@ -171,7 +171,7 @@ soit égale au nombre de contacts
 
 37
 00:03:56,959 --> 00:04:01,339
-sinon cela signifierait que l'arbre a dégénéré
+car cela signifierait que l'arbre a dégénéré
 en liste.
 
 38
@@ -186,17 +186,17 @@ du nombre de contacts.
 
 40
 00:04:14,820 --> 00:04:21,220
-Donc, cette fonction de recherche peut être rendue 
+Ainsi, cette fonction de recherche peut être rendue
 logarithmique en la taille de la base de données
 
 41
 00:04:21,220 --> 00:04:26,320
-qui est très efficace par rapport à la
+ce qui est très efficace par rapport à la
 recherche en complexité linéaire.
 
 42
 00:04:27,289 --> 00:04:32,009
-Alors maintenant, revenons à l'insertion d'un contact 
+Maintenant, revenons à l'insertion d'un contact
 à l'intérieur de la base de données.
 
 43
@@ -210,7 +210,7 @@ et par analyse de cas sur la forme de l'arbre
 
 45
 00:04:44,419 --> 00:04:48,430
-Si l'arbre n'a pas de contact, si la base de données
+Si l'arbre n'a pas de contact, donc si la base de données
 est vide
 
 46
@@ -220,11 +220,11 @@ alors on renvoie juste une nouvelle base de données
 47
 00:04:53,400 --> 00:05:02,139
 qui contient un seul noeud constitué du
-le contact avec deux fils vides.
+contact avec deux fils vides.
 
 48
 00:05:02,139 --> 00:05:07,870
-Si la base de données est un noeud avec <u>contact'</u> 
+Si la base de données est un noeud avec <u>contact'</u>
 comme racine
 
 49
@@ -239,7 +239,7 @@ et on peut renvoyer l'arbre tel quel.
 
 51
 00:05:21,939 --> 00:05:29,639
-Si maintenant le nom du contact est plus petit que 
+Si maintenant le nom du contact est plus petit que
 le contact sur le noeud
 
 52
@@ -253,7 +253,7 @@ et on réutilise le même arbre sur la droite.
 
 54
 00:05:45,560 --> 00:05:54,180
-On a donc le même arbre pour la base de données 
+On a donc le même arbre pour la base de données
 initiale et pour la base de données en sortie.
 
 55
@@ -267,7 +267,7 @@ alors le contact doit être inséré sur la droite
 
 57
 00:06:09,520 --> 00:06:22,420
-et on peut là aussi réutiliser le sous-arbre gauche 
+et on peut là aussi réutiliser le sous-arbre gauche
 de la base de données en entrée.
 
 58
@@ -295,7 +295,7 @@ prenant dans la base de données en entrée.
 
 63
 00:07:05,360 --> 00:07:12,940
-En comparant avec la mise en oeuvre basée sur des 
+En comparant avec la mise en oeuvre basée sur des
 tableaux, cette représentation arborescente
 
 64
@@ -315,12 +315,12 @@ arbre.
 
 67
 00:07:34,800 --> 00:07:40,560
-On obtient alors deux sous-arbres et on doit 
+On obtient alors deux sous-arbres et on doit
 fusionner
 
 68
 00:07:40,560 --> 00:07:49,200
-ces deux sous-arbres pour former un arbre nouveau 
+ces deux sous-arbres pour former un nouvel arbre
 mais c'est un peu compliqué.
 
 69
@@ -338,13 +338,13 @@ une base de données.
 
 72
 00:08:04,640 --> 00:08:10,879
-Et nous allons le faire en appliquant le principe
-de la séparation des préoccupations.
+Nous allons le faire en appliquant le principe
+de la séparation des tâches.
 
 73
 00:08:11,940 --> 00:08:17,120
 Pour mettre en oeuvre ce principe de la séparation
-des préoccupations
+des tâches
 
 74
 00:08:17,120 --> 00:08:26,500
@@ -353,4 +353,4 @@ permettent d'effectuer un développement modulaire
 
 75
 00:08:27,200 --> 00:08:30,500
-et ils seront présentés dans une séquence à venir.
+et qui seront présentés dans une séquence à venir.

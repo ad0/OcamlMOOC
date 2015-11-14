@@ -154,7 +154,7 @@ un autre pour les cercles
 35
 00:03:14,129 --> 00:03:20,410
 alors on peut réunir ces deux types dans un
-type pour des formes
+seul type pour des formes
 
 36
 00:03:20,410 --> 00:03:24,340
@@ -162,12 +162,12 @@ qui peuvent être un carré ou un cercle.
 
 37
 00:03:24,340 --> 00:03:36,819
-Si je veux pour générer une forme qui est un carré
+Si je veux générer une forme qui est un carré
 j'utilise [Left]
 
 38
 00:03:36,819 --> 00:03:46,269
-et si je veux pour générer une autre forme qui
+et si je veux générer une autre forme qui
 est un cercle j'utilise [Right].
 
 39
@@ -255,8 +255,8 @@ la fonction [delete].
 
 58
 00:05:18,440 --> 00:05:22,979
-Je ne vais pas entrer dans les détails 
-au sujet de cette fonction.
+Je ne vais pas entrer dans les détails
+de cette fonction.
 
 59
 00:05:22,979 --> 00:05:31,419
@@ -268,7 +268,7 @@ pour définir le type de bases de données,
 
 61
 00:05:35,680 --> 00:05:39,820
-comme une instanciation des 
+comme une instanciation des
 arbres binaires de recherche,
 
 62
@@ -334,7 +334,7 @@ dans la définition du type.
 
 76
 00:06:47,300 --> 00:06:54,550
-Maintenant, si l'on veut utiliser une 
+Maintenant, si l'on veut utiliser une
 instanciation spécifique,
 
 77
@@ -370,7 +370,7 @@ peut-on faire
 
 84
 00:07:26,750 --> 00:07:30,400
-lorsqu'on utilise ou de définit des types paramétrés ?
+lorsqu'on utilise ou lorsqu'on définit des types paramétrés ?
 
 85
 00:07:30,400 --> 00:07:33,240
@@ -386,7 +386,7 @@ Et aussi, on peut, eh bien,
 
 88
 00:07:46,860 --> 00:07:51,349
-utiliser dans une définition des variables de type 
+utiliser dans une définition des variables de type
 non liées.
 
 89
@@ -399,11 +399,11 @@ paramétré par deux paramètres comme celui-ci
 
 91
 00:08:04,110 --> 00:08:08,169
-et nous l'instancions en passant trois types
+et que nous l'instancions en passant trois types
 
 92
 00:08:08,169 --> 00:08:10,910
-à ce constructeur de type.
+au constructeur de type.
 
 93
 00:08:10,910 --> 00:08:12,599
@@ -423,12 +423,12 @@ Bien sûr, vous devez aussi faire attention à
 
 97
 00:08:22,900 --> 00:08:26,770
-ne pas utiliser de paramètres de type, 
-de variables de type,
+ne pas utiliser de paramètres de type,
+ou de variables de type,
 
 98
 00:08:26,770 --> 00:08:31,720
-que vous n'avez pas déclarées comme paramètre de type.
+que vous n'avez pas déclarés comme paramètre de type.
 
 99
 00:08:31,720 --> 00:08:32,519

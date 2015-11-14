@@ -4,7 +4,7 @@ Re-bonjour.
 
 2
 00:00:01,510 --> 00:00:07,900
-Nous allons conclure cette semaine avec des sujets 
+Nous allons conclure cette semaine avec des sujets
 avancés sur les types de données algébriques.
 
 3
@@ -15,11 +15,11 @@ avec seulement un constructeur peut être très utile.
 4
 00:00:18,369 --> 00:00:24,199
 Si vous voulez faire la distinction entre deux types
-qui sont structurellement équivalent,
+qui sont structurellement équivalents,
 
 5
 00:00:24,199 --> 00:00:30,300
-mais auxquels vous voulez assigner 
+mais auxquels vous voulez assigner
 une sémantique différente.
 
 6
@@ -51,12 +51,12 @@ qui doit être appliquée,
 
 12
 00:01:05,220 --> 00:01:12,740
-et on ne veut pas dire que 10 euros 
+et on ne veut pas dire que 10 euros
 c'est pareil que 10 dollars.
 
 13
 00:01:12,740 --> 00:01:20,409
-En fait, le vérificateur de types peut nous aider
+En fait, le vérificateur de type peut nous aider
 à éviter de confondre ces deux monnaies.
 
 14
@@ -70,23 +70,23 @@ et si vous essayez de les comparer,
 
 16
 00:01:31,240 --> 00:01:35,979
-le type-checker dit que vous ne pouvez pas comparer
+le vérificateur de type dit que vous ne pouvez pas comparer
 des euros et des dollars.
 
 17
 00:01:35,979 --> 00:01:42,119
-Si vous voulez faire, vous devez d'abord convertir
+Si vous voulez le faire, vous devez d'abord convertir
 vos dollars en euros,
 
 18
 00:01:42,119 --> 00:01:47,000
-et après cela vous pouvez comparer
+et après cela vous pourrez comparer
 les euros que vous avez obtenus.
 
 19
 00:01:49,000 --> 00:01:57,619
 Parfois, lorsqu'on écrit un filtrage,
-plusieurs branches ont très exactement le même
+plusieurs branches ont exactement le même
 
 20
 00:01:57,619 --> 00:01:59,189
@@ -98,7 +98,7 @@ C'est toujours une mauvaise idée de dupliquer du code.
 
 22
 00:02:03,829 --> 00:02:12,170
-Heureusement, en utilisant ce qu'on appelle des 
+Heureusement, en utilisant ce qu'on appelle des
 "motifs-ou", on peut factoriser ces branches en une
 
 23
@@ -165,7 +165,7 @@ cette partie du motif,
 
 36
 00:03:47,810 --> 00:03:52,010
-qui est commun entre deux de nos motifs,
+qui est commune à deux de nos motifs,
 
 37
 00:03:52,010 --> 00:03:59,540
@@ -178,11 +178,11 @@ nommer un composant reconnu.
 
 39
 00:04:07,870 --> 00:04:10,990
-Tel est le rôle de ce qu'on appelle un "as-pattern".
+Tel est le rôle de ce que l'on appelle un "as-pattern".
 
 40
 00:04:10,990 --> 00:04:17,540
-le motif s'écrit comme ça :
+le motif s'écrit comme ceci :
 [some_pattern as x],
 
 41
@@ -197,7 +197,7 @@ qui duplique la tête d'une liste,
 
 43
 00:04:34,870 --> 00:04:38,710
-à la fin de cette liste, si elle (la tête) existe.
+à la fin de cette liste, si cette tête existe.
 
 44
 00:04:38,710 --> 00:04:44,980
@@ -246,7 +246,7 @@ attachée à une branche.
 
 54
 00:05:39,190 --> 00:05:49,700
-Un garde est une expression booléenne qui sera évaluée
+Une garde est une expression booléenne qui sera évaluée
 quand on essaie de reconnaître un motif.
 
 55
@@ -270,12 +270,12 @@ et la branche suivante sera considérée.
 
 59
 00:06:12,240 --> 00:06:20,139
-Pour introduire une garde dans une branche, 
+Pour introduire une garde dans une branche,
 on utilise le mot clé [when].
 
 60
 00:06:20,139 --> 00:06:26,050
-Alors réalisons maintenant une fonction qui 
+Réalisons maintenant une fonction qui
 traverse une liste,
 
 61
@@ -335,7 +335,7 @@ entre les deux cas précédents.
 
 73
 00:07:32,639 --> 00:07:39,870
-Donc, on ne peut pas utiliser uniquement 
+Donc, on ne peut pas utiliser uniquement
 la forme de la liste,
 
 74
@@ -345,7 +345,7 @@ est la même dans les deux cas.
 
 75
 00:07:42,460 --> 00:07:50,990
-On doit introduire un contrôle supplémentaire, 
+On doit introduire un contrôle supplémentaire,
 une protection supplémentaire, qui est écrite ici :
 
 76
@@ -375,16 +375,16 @@ cette fonction pousse 3 à la fin de la liste.
 81
 00:08:27,650 --> 00:08:37,370
 Donc, nous avons terminé notre premier tour des
-fonctionalités du système de types OCaml.
+fonctionalités du système de type OCaml.
 
 82
 00:08:37,370 --> 00:08:43,089
-En fait, il existe de nombreuses fonctionalités
+En fait, il existe de nombreuses fonctionnalités
 que nous n'avons pas montrées.
 
 83
 00:08:43,089 --> 00:08:51,089
-Objets : en fait, OCaml est un
+Les Objets : en fait, OCaml est un
 langage de programmation orienté objet.
 
 84
@@ -393,18 +393,18 @@ Voilà pourquoi il commence par un "O".
 
 85
 00:08:58,000 --> 00:09:09,200
-Modules de première classe sont un moyen différent des
+Les Modules de première classe sont un moyen différent des
 objets de définir des composants, mais aussi très utile.
 
 86
 00:09:09,279 --> 00:09:18,380
-Les variantes polymorphes sont un moyen de définir des
+Les Variants polymorphes sont un moyen de définir des
 types somme qui sont extensibles.
 
 87
 00:09:18,380 --> 00:09:25,870
-Enfin, on a les types de données algébriques 
-généralisés,
+Enfin, on a les Types de Données Algébriques
+Généralisés,
 
 88
 00:09:25,870 --> 00:09:32,230
@@ -413,12 +413,12 @@ des constructeurs de types de données.
 
 89
 00:09:32,230 --> 00:09:41,010
-Pourtant, même si vous ne disposez pas de toutes les 
+Pourtant, même si vous ne disposez pas de toutes les
 fonctionnalités du système de type OCaml,
 
 90
 00:09:41,010 --> 00:09:45,779
-vous pouvez déjà écrire des programmes très 
+vous pouvez déjà écrire des programmes très
 intéressants, comme des fonctions d'ordre supérieur.
 
 91
