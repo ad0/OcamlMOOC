@@ -5,7 +5,7 @@ qui est dédiée aux fonctions en OCaml.
 
 2
 00: 00: 14,000 -> 00: 00: 19,720
-Cette semaine, nous commencerons avec des expressions 
+Cette semaine, nous commencerons avec des expressions
 fonctionnelles ; en fait, certaines expressions
 
 3
@@ -14,7 +14,7 @@ désignent des fonctions en tant que valeurs.
 
 4
 00: 00: 22,000 -> 00: 00: 26,620
-Il se trouve que les fonctions sont ce qu'on appelle 
+Il se trouve que les fonctions sont ce qu'on appelle
 des valeurs de première classe en OCaml.
 
 5
@@ -25,11 +25,11 @@ que toute autre valeur que l'on peut écrire en OCaml.
 6
 00: 00: 33,000 -> 00: 00: 36.000
 Ensuite, nous allons continuer avec des
-fonctions avec des plusieurs arguments,
+fonctions à plusieurs arguments,
 
 7
 00: 00: 36,000 -> 00: 00: 40.000
-et, en relation avec cela, ce qu'on appelle 
+et, en relation avec cela, ce qu'on appelle
 l'application partielle de fonction.
 
 8
@@ -39,12 +39,12 @@ des fonctions d'ordre supérieur sur les listes.
 
 9
 00: 00: 46,000 -> 00: 00: 51.000
-Et on verra les fonctions de mapping et de pliage 
+Et on verra les fonctions de mapping et de pliage
 sur les listes.
 
 10
 00: 00: 51,340 -> 00: 00: 56,900
-Ainsi, la syntaxe pour une expression fonctionnelle
+Donc, la syntaxe pour une expression fonctionnelle
 utilise un nouveau mot-clé <u>function</u>,
 
 11
@@ -109,7 +109,7 @@ cette expression a bien sûr un type fonctionnel.
 
 24
 00: 02: 00100 -> 00: 02: 06100
-Donc, le type obtenu pour cette construction
+Ainsi, le type obtenu pour cette construction
 est un certain type flèche <u>t1 -> t2</u>,
 
 25
@@ -124,12 +124,12 @@ formant le corps de cette fonction.
 
 27
 00: 02: 17,100 -> 00: 02: 23,100
-Alors, quel est l'intérêt de ces
+Quel est donc l'intérêt de ces
 expressions fonctionnelles sans nom ?
 
 28
 00: 02: 25,580 -> 00: 02: 28,880
-Regardons quelques exemples 
+Regardons quelques exemples
 d'expressions fonctionnelles,
 
 29
@@ -149,7 +149,7 @@ et qui envoie <u>x</u> vers <u>x + 1</u>.
 
 32
 00: 02: 42,100 -> 00: 02: 46.500
-On pourrait bien sûr avoir des expressions 
+On pourrait bien sûr avoir des expressions
 plus compliquées dans le corps de la fonction.
 
 33
@@ -173,8 +173,8 @@ sur l'application de fonction.
 
 37
 00: 03: 07640 -> 00: 03: 11,180
-Ce qu'on voit sur cette ligne, c'est que ce qu'on 
-écrit à l'endroit de la fonction,
+Ce qu'on voit sur cette ligne, c'est ce qu'on
+écrit en position de fonction,
 
 38
 00: 03: 11,180 -> 00: 03: 12.920
@@ -182,7 +182,7 @@ lorsqu'on écrit une application de fonction,
 
 39
 00: 03: 12,920 -> 00: 03: 16,020
-n'est en fait pas nécessairement le nom d'une fonction,
+et en fait ce n'est pas nécessairement le nom d'une fonction,
 
 40
 00: 03: 16,020 -> 00: 03: 20.200
@@ -191,7 +191,7 @@ quelque chose ayant le type d'une fonction.
 
 41
 00: 03: 20,200 -> 00: 03: 24.200
-Comme cette expression de fonction, 
+Comme cette expression de fonction,
 écrite sur cette ligne.
 
 42
@@ -219,7 +219,7 @@ lorsqu'on a défini une fonction <u>f</u> en écrivant
 
 47
 00: 03: 50,200 -> 00: 03: 55,820
-C'est une abréviation pour la définition d'un 
+C'est une abréviation pour la définition d'un
 identificateur <u>f</u>,
 
 48
@@ -239,37 +239,37 @@ est une simple abréviation pour <u>let f = function x -> e</u>.
 
 51
 00: 04: 17,500 -> 00: 04: 26,200
-Donc on a juste une façon unique de définir un 
+Donc on a juste une façon unique de définir un
 identificateur, qui est <u>let nom = quelque chose</u>.
 
 52
 00: 04: 26,200 -> 00: 04: 30,780
-La seule chose qui est plus générale que ce qu'on a 
-vu la semaine 1 est que le quelque chose,
+La seule chose qui est plus générale que ce qu'on a
+vu en semaine 1 est que le quelque chose,
 
 53
 00: 04: 30,780 -> 00: 04: 34,540
-l'expression, est maintenant une expression 
+l'expression, est maintenant une expression
 d'un type plus compliqué,
 
 54
 00: 04: 34,540 -> 00: 04: 36,540
-c'est à dire, un type fonctionnel.
+c'est-à-dire, un type fonctionnel.
 
 55
 00: 04: 38,480 -> 00: 04: 43,960
-On voit maintenant qu'en fait on a utilisé jusqu'ici 
-quelque chose qui est une juste abréviation,
+On voit maintenant qu'en fait on a utilisé jusqu'ici
+quelque chose qui est une juste une abréviation,
 
 56
 00: 04: 43,960 -> 00: 04: 50,260
-pour la liaison d'un identificateur à une expression 
+pour la liaison d'un identificateur à une expression
 fonctionnelle dans la définition d'une fonction.
 
 57
 00: 04: 50,260 -> 00: 04: 56,800
 Donc revoici la première forme que nous avons vu
-pour définir une fonction, dans la semaine 1.
+pour définir une fonction, en semaine 1.
 
 58
 00: 04: 56,800 -> 00: 05: 01240
@@ -291,7 +291,7 @@ Et comme expliqué sur la diapositive précédente,
 
 62
 00: 05: 14,240 -> 00: 05: 17,860
-c'est juste une abréviation pour lier 
+c'est juste une abréviation pour lier
 l'identificateur [double]
 
 63
@@ -327,7 +327,7 @@ nous avons une séquence de filtrages.
 69
 00: 05: 46,000 -> 00: 05: 50,460
 Nous avons donc une séquence de motifs,
-et associé à chacun de ces motifs,
+et associée à chacun de ces motifs,
 
 70
 00: 05: 50,460 -> 00: 05: 51,700
@@ -344,7 +344,7 @@ introduits par le motif correspondant.
 
 73
 00: 06: 00360 -> 00: 06: 04400
-On peut noter que la forme que je vous ai montrée,
+On peut noter que la forme que je vous ai montré,
 au début de cette séquence,
 
 74
@@ -377,7 +377,7 @@ utilisant le filtrage.
 
 80
 00: 06: 37,780 -> 00: 06: 41,540
-Ici par exemple, on a la fonction longueur 
+Ici par exemple, on a la fonction longueur
 sur les listes.
 
 81
@@ -410,12 +410,12 @@ et se convaincre que cela fonctionne.
 
 87
 00: 07: 10,100 -> 00: 07: 17.400
-Un peu plus intéressant, on eut faire la même chose sur
-des structures de données vues la semaine 3.
+Un peu plus intéressant, on peut faire la même chose sur
+des structures de données vues en semaine 3.
 
 88
 00: 07: 17,400 -> 00: 07: 21,900
-Donc ici, nous avons par exemple un petit type de 
+Donc ici, nous avons par exemple un petit type de
 données d'expressions qui sont
 
 89
@@ -425,7 +425,7 @@ au moyen d'un constructeur d'addition binaire.
 
 90
 00: 07: 29,760 -> 00: 07: 35,120
-Bon, et maintenant on peut définir une fonction 
+Bon, et maintenant on peut définir une fonction
 récursive qui évalue une telle expression,
 
 91
@@ -450,7 +450,7 @@ Ainsi on obtient ici une fonction de type
 
 95
 00: 07: 56,600 -> 00: 08: 03780
-On peut alors évaluer notre fonction sur une petite 
+On peut alors évaluer notre fonction sur une petite
 expression, et si vous faites le calcul vous-même,
 
 96

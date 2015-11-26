@@ -1,7 +1,7 @@
 1
 00:00:08,059 --> 00:00:12,070
-Bienvenue pour cette nouvelle séquence du cours
-d'introduction à la programmation functionelle
+Bienvenue dans cette nouvelle séquence du cours
+d'introduction à la programmation fonctionelle
 en OCaml.
 
 2
@@ -24,7 +24,7 @@ choses avec, jusqu'à maintenant,
 
 6
 00:00:26,410 --> 00:00:32,710
-et vous avez peut-être remarqué que
+vous avez peut-être remarqué que
 nous avons tout fait en utilisant seulement
 des structures de données
 
@@ -49,7 +49,7 @@ en place (pas de variables, pas de cellules mémoire).
 
 11
 00:00:44,899 --> 00:00:50,270
-Et ensuite, vous avez les fonctions pures,
+Ensuite, vous avez les fonctions pures,
 fonctions qui n'effectuent absolument aucun effet de bord.
 
 12
@@ -59,7 +59,7 @@ n'est pas altéré.
 
 13
 00:00:55,649 --> 00:01:00,050
-Avec ce fragment du langage,
+Avec ce seul fragment du langage,
 nous pouvons aller très loin,
 
 14
@@ -121,7 +121,7 @@ modifiables en place ;
 26
 00:01:41,650 --> 00:01:47,470
 elles sont mutables et utiles pour des
-algorithmes impératives très efficaces.
+algorithmes impératifs très efficaces.
 
 27
 00:01:47,470 --> 00:01:54,130
@@ -145,7 +145,7 @@ purement fonctionnel,
 31
 00:02:00,549 --> 00:02:04,170
 ou vous pouvez programmer
-avec style complètement impératif.
+avec un style complètement impératif.
 
 32
 00:02:04,170 --> 00:02:10,440
@@ -164,7 +164,7 @@ en détails les exceptions,
 35
 00:02:16,230 --> 00:02:20,030
 les opérations d'entrées / sorties
-ainsi que le type spécialt qui
+ainsi qu'un type spécial
 
 36
 00:02:20,030 --> 00:02:22,209
@@ -187,4 +187,3 @@ voir toutes ces fonctionnalités
 40
 00:02:33,310 --> 00:02:34,220
 impératives supplémentaires.
-

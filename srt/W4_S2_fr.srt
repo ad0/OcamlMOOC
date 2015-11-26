@@ -25,7 +25,7 @@ flèche son corps. Il existe une légère différence
 
 6
 00: 00: 28,489 -> 00: 00: 32,680
-entre ce mot-clé <u>fun</u> et le mot-clé <u>function</u>: 
+entre ce mot-clé <u>fun</u> et le mot-clé <u>function</u>:
 comme on l'a vu dans la première séquence
 
 7
@@ -40,7 +40,7 @@ la forme <u>fun</u> on peut seulement utiliser un nom
 
 9
 00: 00: 45,010 -> 00: 00: 49,750
-pour les paramètres formels de l'expression de 
+pour les paramètres formels de l'expression de
 fonction. Si on veut faire du filtrage sur
 
 10
@@ -65,7 +65,7 @@ fonction. Quelque chose comme dans cet exemple: ici
 
 14
 00: 01: 12,640 -> 00: 01: 17,859
-on a une expression de fonction qui utilise un 
+on a une expression de fonction qui utilise un
 paramètre <u>n</u> et en fonction de ce
 
 15
@@ -75,7 +75,7 @@ son argument <u>x</u> de la valeur de <u>n</u>.
 
 16
 00: 01: 24,299 -> 00: 01: 30,549
-Maintenant, quel serait le type de cette expression? 
+Maintenant, quel serait le type de cette expression?
 Eh bien, en fait le type de cette expression
 
 17
@@ -120,12 +120,12 @@ le résultat ainsi obtenu à son deuxième
 
 25
 00: 02: 20,340 -> 00: 02: 27,580
-argument et elle se comporte exactement pareil que
+argument et elle se comporte exactement comme
 la forme utilisée jusqu'ici qui s'écrit
 
 26
 00: 02: 27,580 -> 00: 02: 34,130
-d'une manière qui ressemble à un peu plus à
+d'une manière qui ressemble un peu plus à
 une fonction qui attend deux arguments. Toutefois
 
 27
@@ -145,12 +145,12 @@ ce qui est écrit à la ligne 1 est juste la
 
 30
 00: 02: 52,470 -> 00: 02: 58,210
-forme réelle qui est derrière l'abréviation
-à la ligne 7 utilisée jusqu'ici. Alors si
+forme réelle de ce qui est derrière l'abréviation
+de la ligne 7 utilisée jusqu'ici. Alors si
 
 31
 00: 02: 58,210 -> 00: 03: 03230
-on définit maintenant une fonction <u>f2</u> de la 
+on définit maintenant une fonction <u>f2</u> de la
 manière vue à la semaine 1, on voit que le
 
 32
@@ -160,7 +160,7 @@ maintenant la fonction à ses arguments on voit
 
 33
 00: 03: 09510 -> 00: 03: 18,090
-qu'elle se comporte également exactement pareil que 
+qu'elle se comporte également exactement comme
 la fonction f1 définie avant.
 
 34
@@ -170,22 +170,22 @@ pas accidentel. En fait, les fonctions à plusieurs
 
 35
 00: 03: 27,730 -> 00: 03: 34,760
-arguments sont exactement la même chose que les 
+arguments sont exactement la même chose que les
 fonctions qui renvoient des fonctions en résultat. Et
 
 36
 00: 03: 34,760 -> 00: 03: 40,400
-pas toute la vérité sur les fonctions à
+ce n'est pas toute la vérité sur les fonctions à
 plusieurs arguments en OCaml: si on écrit
 
 37
 00: 03: 40,400 -> 00: 03: 46,770
-quelque chose comme <u>fun x1 ... xn</u>, donc une 
+quelque chose comme <u>fun x1 ... xn</u>, donc une
 expression de fonction à n paramètres renvoyant un
 
 38
 00: 03: 46,770 -> 00: 03: 54,180
-corps, c'est juste une abréviation pour une fonction 
+corps, c'est juste une abréviation pour une fonction
 unaire imbriquée. Donc, c'est juste une abréviation
 
 39
@@ -209,12 +209,12 @@ sur les différentes façons d'écrire la même
 
 43
 00: 04: 16,959 -> 00: 04: 22,380
-définition de fonction, je peux maintenant vous 
+définition de fonction, je peux vous
 montrer un exemple où on peut en fait donner au moins
 
 44
 00: 04: 22,380 -> 00: 04: 27,930
-quatre définitions différentes de la même fonction. 
+quatre définitions différentes de la même fonction.
 Cet exemple fonctionne avec un type de données
 
 45
@@ -229,12 +229,12 @@ les expressions sont formées avec des variables qui
 
 47
 00: 04: 40,260 -> 00: 04: 45,990
-contiennent le nom et l'addition binaire. 
+contiennent le nom et l'addition binaire.
 Ce qui signifie que, pour interpréter,
 
 48
 00: 04: 45,990 -> 00: 04: 51,410
-évaluer une telle expression, on doit utiliser 
+évaluer une telle expression, on doit utiliser
 un environnement. Et ici on voit en
 
 49
@@ -255,22 +255,22 @@ Et ce qu'on peut voir ici sur cet exemple
 52
 00: 05: 09210 -> 00: 05: 14,310
 en fait est que selon ce que l'on trouve dans
-l'expression, soit on examine la valeur
+l'expression, soit on examinera la valeur
 
 53
 00: 05: 14,310 -> 00: 05: 25,020
-dans l'environnement soit on calcule une addition.
+dans l'environnement soit on calculera une addition.
 Donc, le type est une liste d'association qui associe
 
 54
 00: 05: 25,020 -> 00: 05: 30,840
 des entiers à des chaînes comme premier argument,
-ainsi à partir d'une expression on renvoie
+puis on a une expression et finalement on renvoie
 
 55
 00: 05: 30,840 -> 00: 05: 36,860
 une valeur entière. Par exemple,
-ici on a notre exemple, donc on évalue
+ici on a notre exemple, on évalue
 
 56
 00: 05: 36,860 -> 00: 05: 43,430
@@ -303,12 +303,12 @@ on obtient exactement le même type, et lorsqu'on
 
 62
 00: 06: 12,980 -> 00: 06: 21,639
-exécute cette fonction sur notre exemple, 
+exécute cette fonction sur notre exemple,
 on obtient aussi le même résultat.
 
 63
 00: 06: 21,639 -> 00: 06: 26,460
-Dans la troisième définition on a une expression de 
+Dans la troisième définition on a une expression de
 fonction qui utilise d'abord un nom pour le
 
 64
@@ -318,7 +318,7 @@ filtrage implicite sur le second argument.
 
 65
 00: 06: 33,970 -> 00: 06: 40,350
-Le type obtenu ici est de nouveau le même, 
+Le type obtenu ici est de nouveau le même,
 et le résultat si on applique cette fonction
 
 66
@@ -327,7 +327,7 @@ est également le même qu'avant.
 
 67
 00: 06: 44,920 -> 00: 06: 53,960
-Et enfin, on a la quatrième, la dernière forme qui 
+Et enfin, on a la quatrième, la dernière forme qui
 utilise [let eval environment], ainsi on
 
 68
@@ -337,9 +337,9 @@ paramètre et elle renvoie en résultat une fonction
 
 69
 00: 07: 00820 -> 00: 07: 08120
-définie par un filtrage implicite. Encore une fois, 
+définie par un filtrage implicite. Encore une fois,
 ce qu'on obtient au toplevel
 
 70
 00: 07: 08120 -> 00: 07: 17,639
-est pareil tant le type que pour le résultat.
+est identique tant pour le type que pour le résultat.

@@ -5,7 +5,7 @@ d'un opérateur binaire sur les listes.
 
 2
 00: 00: 06350 -> 00: 00: 11,660
-Donc, dans la séquence précédente je vous ai expliqué
+Dans la séquence précédente je vous ai expliqué
 comment on peut utiliser une fonction définie dans
 
 3
@@ -30,11 +30,11 @@ très facile à paralléliser
 7
 00: 00: 29,140 -> 00: 00: 34,710
 et à exécuter sur plusieurs machines indépendamment
-jusqu'à ce que nous combinons les résultats.
+jusqu'à ce que nous combinions les résultats.
 
 8
 00: 00: 34,710 -> 00: 00: 40,090
-Maintenant, alors que [map] applique une fonction 
+Maintenant, alors que [map] applique une fonction
 unaire à tous les éléments d'une liste,
 
 9
@@ -57,7 +57,7 @@ sur une liste.
 
 13
 00: 00: 56,739 -> 00: 00: 59,660
-L'un est appelé <u>fold_left</u>, 
+L'un est appelé <u>fold_left</u>,
 l'autre est <u>fold_right</u>
 
 14
@@ -146,21 +146,21 @@ ainsi ce serait le type fonctionnel ;
 
 33
 00: 02: 13.860 -> 00: 02: 16,099
-il serait appliquée à une <u>'a list</u>
+il serait appliqué à une <u>'a list</u>
 
 34
 00: 02: 16,099 -> 00: 02: 19,260
 et enfin, nous avons aussi besoin d'une valeur
-est utilisée à la fin,
+qui est utilisée à la fin,
 
 35
 00: 02: 19,260 -> 00: 02: 24,430
-ce qui est toujours nécessaire puisque notre opération 
+et qui est toujours nécessaire puisque notre opération
 de pliage peut être appliquée à une liste vide
 
 36
 00: 02: 24,430 -> 00: 02: 29.440
-et ce qu'on met à la fin est le résultat qui est 
+et ce qu'on met à la fin est le résultat qui est
 renvoyé dans le cas d'une application à la liste vide.
 
 37
@@ -174,7 +174,7 @@ de <u>f</u>.
 
 39
 00: 02: 39,000 -> 00: 02: 47,450
-Donc, pour comprendre <u>fold_right</u>, juste garder 
+Donc, pour comprendre <u>fold_right</u>, juste garder
 cette image à l'esprit pour expliquer ce que fait cette
 
 40
@@ -197,7 +197,7 @@ sur la diapositive précédente.
 
 44
 00: 03: 03549 -> 00: 03: 09769
-Maintenant, on peut utiliser cette fonction <u>fold_right</u> 
+Maintenant, on peut utiliser cette fonction <u>fold_right</u>
 et l'appliquer à une fonction intéressante et
 
 45
@@ -219,12 +219,12 @@ une liste d'entiers et une liste vide.
 
 49
 00: 03: 21,090 -> 00: 03: 26,230
-Et ce qu'on obtient, dans ce cas, est en fait
+Ce qu'on obtient, dans ce cas, est en fait
 exactement la même liste.
 
 50
 00: 03: 26,230 -> 00: 03: 31,909
-Pour comprendre pourquoi c'est le cas, 
+Pour comprendre pourquoi c'est le cas,
 revenons à la diapositive précédente et regardons
 
 51
@@ -242,7 +242,7 @@ la liste,
 
 54
 00: 03: 38,480 -> 00: 03: 42,870
-et quand vous regardez cette image, vous 
+et quand vous regardez cette image, vous
 comprenez pourquoi vous obtenez exactement le même
 
 55
@@ -251,7 +251,7 @@ résultat pour cette application.
 
 56
 00: 03: 45,830 -> 00: 03: 52,810
-Une application plus intéressante de <u>List.fold_right</u> 
+Une application plus intéressante de <u>List.fold_right</u>
 est de plier l'opération <u>(+)</u> sur une liste.
 
 57
@@ -275,7 +275,7 @@ et la somme d'une liste vide devrait bien sûr
 
 61
 00: 04: 05349 -> 00: 04: 09849
-et c'est pourquoi on doit donner ici comme dernier 
+et c'est pourquoi on doit donner ici comme dernier
 argument la valeur zéro.
 
 62
@@ -285,7 +285,7 @@ dans notre cas la somme de la liste <u>[1; 2; 3; 4]</u>.
 
 63
 00: 04: 16,110 -> 00: 04: 16,980
- 
+
 
 64
 00: 04: 16,980 -> 00: 04: 20.670
@@ -299,12 +299,12 @@ bien entendu la valeur 1
 
 66
 00: 04: 26,110 -> 00: 04: 33.350
-et c'est pourquoi on doit donner ici un comme
+et c'est pourquoi on doit donner ici 1 comme
 troisième argument à cette application de <u>fold_right</u>,
 
 67
 00: 04: 33,350 -> 00: 04: 38,540
-et cela nous permet de calculer ici le produit 
+et cela nous permet de calculer le produit
 de tous les éléments de la liste <u>[1; 2; 3; 4]</u>
 
 68
@@ -314,7 +314,7 @@ qui est 24.
 69
 00: 04: 41,540 -> 00: 04: 45,790
 Pour généraliser la première application de
-<u>fold_right</u>, que je vous ai montrée,
+<u>fold_right</u>, que je vous ai montré,
 
 70
 00: 04: 45,790 -> 00: 04: 51,780
@@ -323,12 +323,12 @@ en utilisant <u>fold_right</u>.
 
 71
 00: 04: 51,780 -> 00: 04: 56,350
-Tout ce qu'on doit changer pour cette troisième 
+Tout ce qu'on doit changer pour cette troisième
 application de <u>fold_right</u> c'est
 
 72
 00: 04: 56,350 -> 00: 05: 02600
-remplacer le troisième argument, qui avant
+le troisième argument, qui avant
 était la liste vide, par la liste qui
 
 73
@@ -348,11 +348,11 @@ de concaténation,
 76
 00: 05: 17,390 -> 00: 05: 24,030
 et si on applique cette opération à deux
-listes, on voit que ce qu'on obtient
+listes, on voit que ce que l'on obtient
 
 77
 00: 05: 24,030 -> 00: 05: 29,150
-est exactement ce qu'on a prévu.
+est exactement ce que l'on a prévu.
 
 78
 00: 05: 29,150 -> 00: 05: 33,410
@@ -389,7 +389,7 @@ En conséquence, qu'est-ce qu'on obtient ?
 
 85
 00: 05: 52,850 -> 00: 06: 00190
-Eh bien, notre fonction elle-même serait d'abord 
+Eh bien, notre fonction elle-même serait d'abord
 appliquée à un argument qui est du même type que
 
 86
@@ -411,7 +411,7 @@ Donc on a pour argument de la fonction le type
 
 90
 00: 06: 12,790 -> 00: 06: 18,450
-alors on a un type <u>'a</u> pour la constante
+on a un type <u>'a</u> pour la constante
 qui est utilisée dans le cas de la liste vide
 
 91
@@ -425,7 +425,7 @@ Maintenant, regardons l'opération <u>fold_left</u>
 
 93
 00: 06: 29,200 -> 00: 06: 35,810
-que j'ai répétée ici, donc on voit dans le
+que j'ai répétée ici, on voit donc dans le
 toplevel que le type est précisément ce que je vous
 
 94
@@ -439,7 +439,7 @@ Maintenant, appliquons cette opération <u>fold_left</u>
 
 96
 00: 06: 42,900 -> 00: 06: 49,070
-Donc, on calcule ici la somme d'une liste, mais cette 
+Donc, on calcule ici la somme d'une liste, mais cette
 fois avec <u>fold_left</u> au lieu de <u>fold_right</u>
 
 97
@@ -538,7 +538,7 @@ les opérations sont appliquées.
 
 118
 00: 08: 01530 -> 00: 08: 08160
-Donc, on pourrait définir l'opération renverse
+On pourrait donc définir l'opération renverse
 sur les listes de cette façon
 
 119
@@ -548,17 +548,17 @@ et on peut déjà voir que son type est en effet
 
 120
 00: 08: 13,720 -> 00: 08: 18,240
-et si on applique cette fonction à une 
-liste d'entiers donnée
+et si on applique cette fonction à une
+liste d'entiers donnés
 
 121
 00: 08: 18,240 -> 00: 08: 23,160
-on voit en fait qu'elle porte renverse bien
+on voit en fait qu'elle renverse bien
 l'ordre de la liste.
 
 122
 00: 08: 23,160 -> 00: 08: 31,440
-Maintenant, voyons comment on peut utiliser 
+Maintenant, voyons comment on peut utiliser
 l'opération de pliage pour définir, par exemple,
 
 123
@@ -573,7 +573,7 @@ produit scalaire de deux vecteurs.
 
 125
 00: 08: 39,560 -> 00: 08: 44,640
-Et afin de calculer un tel produit scalaire,
+Afin de calculer un tel produit scalaire,
 
 126
 00: 08: 44,640 -> 00: 08: 50,310
@@ -606,7 +606,7 @@ de vecteurs d'entiers.
 
 132
 00: 09: 16,880 -> 00: 09: 22,840
-Pour calculer le produit scalaire de deux entiers, 
+Pour calculer le produit scalaire de deux entiers,
 on utiliserait d'abord l'opération <u>List.map2</u>
 
 133
@@ -616,7 +616,7 @@ des éléments des deux vecteurs,
 
 134
 00: 09: 30,260 -> 00: 09: 36,560
-puis on sommerait le résultat en utilisant l'opération 
+puis on sommerait le résultat en utilisant l'opération
 <u>List.fold_left</u> vue dans l'exemple
 
 135
@@ -635,7 +635,7 @@ ici
 138
 00: 09: 44,620 -> 00: 09: 49,750
 et vous voyez bien que c'est une fonction
-qui prend deux listes entières et renvoie une
+qui prend deux listes d'entiers et renvoie une
 
 139
 00: 09: 49,750 -> 00: 09: 49,980
@@ -648,12 +648,12 @@ deux vecteurs
 
 141
 00: 09: 56,260 -> 00: 10: 03140
-et on obtient en effet un résultat de 44, et vous
+On obtient en effet un résultat de 44, et vous
 pouvez vérifier très facilement que c'est exactement
 
 142
 00: 10: 03140 -> 00: 10: 07530
-le résultat qu'on attend.
+le résultat attendu.
 
 143
 00: 10: 07530 -> 00: 10: 11,080
@@ -662,12 +662,12 @@ du pliage,
 
 144
 00: 10: 11,080 -> 00: 10: 14,840
-où on a maintenant une autre fonction peut-être 
+avec une autre fonction peut-être
 un peu plus intéressante
 
 145
 00: 10: 14,840 -> 00: 10: 16,990
-qui est passée comme argument de fonction.
+et qui est passée comme argument de fonction.
 
 146
 00: 10: 16,990 -> 00: 10: 22,880
@@ -680,7 +680,7 @@ un certain critère.
 
 148
 00: 10: 25,010 -> 00: 10: 31,010
-Et l'idée est maintenant de faire du critère
+L'idée est maintenant de faire du critère
 un paramètre de cette fonction qui, bien sûr
 
 149
@@ -693,7 +693,7 @@ Donc, on obtient une fonction appelée <u>countif</u>,
 
 151
 00: 10: 36,310 -> 00: 10: 40,940
-<u>p</u> serait le critère qui est une 
+<u>p</u> serait le critère qui est une
 fonction <u>'a -> bool</u>,
 
 152
@@ -711,7 +711,7 @@ On peut y arriver en utilisant l'opération <u>fold_left</u>
 
 155
 00: 10: 51,260 -> 00: 10: 57,670
-puisque la fonction qu'on plie sur la liste est 
+puisque la fonction qu'on plie sur la liste est
 la fonction qui prend ce qu'on a
 
 156
@@ -738,7 +738,7 @@ sinon elle renvoie le compteur lui-même.
 161
 00: 11: 10,900 -> 00: 11: 14,900
 Dans le cas d'une liste vide, bien sûr, on
-compterait 0 éléments.
+compterait 0 élément.
 
 162
 00: 11: 14,900 -> 00: 11: 21,270
@@ -777,7 +777,7 @@ entiers positifs et négatifs
 
 170
 00: 11: 43,810 -> 00: 11: 46,060
-et quand on calcule cette application
+Quand on calcule cette application
 
 171
 00: 11: 46,060 -> 00: 11: 51,790
@@ -799,10 +799,9 @@ définies dans ce module
 
 175
 00: 12: 00650 -> 00: 12: 03490
-dans le manuel OCaml, il suffit de regarder dans 
+dans le manuel OCaml, il suffit de regarder dans
 la bibliothèque standard
 
 176
 00: 12: 03490 -> 00: 12: 09440
 où vous trouverez la description du module <u>List</u>.
-

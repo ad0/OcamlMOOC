@@ -5,7 +5,7 @@ et les itérations.
 
 2
 00:00:04,319 --> 00:00:10,630
-Nous avons découvert comme écrire des fonctions
+Nous avons découvrir comment écrire des fonctions
 qui effectuent des effets de bord,
 
 3
@@ -67,7 +67,7 @@ Et bien sûr, j'obtient "123" sur la sortie standard comme
 16
 00:00:55,789 --> 00:01:01,379
 souhaité, mais c'est un peu lourd comme
-notation, très verbeux.
+notation, et très verbeux.
 
 17
 00:01:01,379 --> 00:01:05,939
@@ -136,7 +136,7 @@ aient le type <u>unit</u> puisque nous jetons leurs valeurs.
 31
 00:01:52,649 --> 00:01:57,420
 Sinon, le compilateur OCaml affiche un avertissement
-à votre attention.
+à notre attention.
 
 32
 00:01:57,420 --> 00:02:07,090
@@ -203,7 +203,7 @@ point qui pollue notre sortie.
 
 45
 00:03:09,080 --> 00:03:12,890
-Voyons maitenant les itérations :
+Voyons maintenant les itérations :
 
 46
 00:03:12,890 --> 00:03:16,459
@@ -266,7 +266,7 @@ sur la sortie standard.
 58
 00:04:02,260 --> 00:04:05,610
 Mais comme vous le voyez, cette façon de faire
-est un peu lourde et difficile et à lire :
+est un peu lourde et difficile à lire :
 
 59
 00:04:05,610 --> 00:04:10,780
@@ -327,7 +327,7 @@ et le mot-clé terminal <u>done</u>.
 
 72
 00:04:44,100 --> 00:04:52,340
-L'identifiant <u>id</u> prendra toues les valeurs
+L'identifiant <u>id</u> prendra toutes les valeurs
 entières depuis <u>e1<u> jusqu'à <u>e2</u> tour à tour,
 
 73
@@ -346,7 +346,7 @@ mais pas le modifier.
 76
 00:05:01,860 --> 00:05:08,949
 Le corps de cette boucle est évalué pour chacune
-des valeurs de <u>id</u> et fais exactement ce que nous souhaitons.
+des valeurs de <u>id</u> et fait exactement ce que nous souhaitons.
 
 77
 00:05:08,949 --> 00:05:15,870
@@ -488,9 +488,8 @@ boucles et des expressions intermédiaires,
 107
 00:07:19,199 --> 00:07:24,030
 doivent tous avoir le type <u>unit</u> ou bien
-être ignorés explicitement 
+être ignorés explicitement
 
 108
 00:07:24,030 --> 00:07:25,949
 à l'aide de la fonction <u>ignore</u>.
-
