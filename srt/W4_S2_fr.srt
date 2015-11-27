@@ -75,7 +75,7 @@ son argument <u>x</u> de la valeur de <u>n</u>.
 
 16
 00: 01: 24,299 -> 00: 01: 30,549
-Maintenant, quel serait le type de cette expression?
+Maintenant, quel serait le type de cette expression ?
 Eh bien, en fait le type de cette expression
 
 17

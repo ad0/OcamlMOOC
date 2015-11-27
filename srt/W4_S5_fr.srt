@@ -314,7 +314,7 @@ qui est 24.
 69
 00: 04: 41,540 -> 00: 04: 45,790
 Pour généraliser la première application de
-<u>fold_right</u>, que je vous ai montré,
+<u>fold_right</u>, que je vous ai montrée,
 
 70
 00: 04: 45,790 -> 00: 04: 51,780
@@ -549,7 +549,7 @@ et on peut déjà voir que son type est en effet
 120
 00: 08: 13,720 -> 00: 08: 18,240
 et si on applique cette fonction à une
-liste d'entiers donnés
+liste d'entiers donnée
 
 121
 00: 08: 18,240 -> 00: 08: 23,160

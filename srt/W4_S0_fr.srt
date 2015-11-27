@@ -344,7 +344,7 @@ introduits par le motif correspondant.
 
 73
 00: 06: 00360 -> 00: 06: 04400
-On peut noter que la forme que je vous ai montré,
+On peut noter que la forme que je vous ai montrée,
 au début de cette séquence,
 
 74
