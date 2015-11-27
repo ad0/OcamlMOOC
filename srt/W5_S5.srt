@@ -84,7 +84,7 @@ point.
 19
 00:01:02,199 --> 00:01:09,350
 Then you can define
-a particular two-dimensional point [origin].
+a particular two-dimensional point <u>origin</u>.
 
 20
 00:01:09,350 --> 00:01:12,619
@@ -102,7 +102,7 @@ at a offset of a given one.
 23
 00:01:17,750 --> 00:01:22,290
 For example here,
-[offset_h] is a function
+<u>offset_h</u> is a function
 
 24
 00:01:22,290 --> 00:01:23,310
@@ -115,16 +115,16 @@ and gives you back another point
 
 26
 00:01:27,950 --> 00:01:29,189
-which is the same as [p]
+which is the same as <u>p</u>
 
 27
 00:01:29,189 --> 00:01:33,659
 but where it has changed
-the value of the [x] field
+the value of the <u>x</u> field
 
 28
 00:01:33,659 --> 00:01:36,860
-by adding this [dx].
+by adding this <u>dx</u>.
 
 29
 00:01:36,860 --> 00:01:41,320
@@ -181,7 +181,7 @@ It's still there.
 
 41
 00:02:09,819 --> 00:02:15,300
-So with this [with]
+So with this <u>with</u>
 construct is a very powerful abbreviation
 
 42
@@ -230,7 +230,7 @@ there are field names to their types.
 51
 00:02:42,819 --> 00:02:46,400
 But we can decide to put
-the [mutable] keyword
+the <u>mutable</u> keyword
 
 52
 00:02:46,400 --> 00:02:50,700
@@ -292,12 +292,12 @@ colored 2-dimensional point
 64
 00:03:32,060 --> 00:03:35,190
 can be defined by using
-the keyword [mutable] we have seen.
+the keyword <u>mutable</u> we have seen.
 
 65
 00:03:35,190 --> 00:03:38,650
-So we want to have the [x] field mutable
-the [y] field mutable
+So we want to have the <u>x</u> field mutable
+the <u>y</u> field mutable
 
 66
 00:03:38,650 --> 00:03:41,129
@@ -355,12 +355,12 @@ Of course I did not change the origin.
 78
 00:04:22,300 --> 00:04:28,419
 Again, it's still at position
-[x = 0] and [y = 0].
+<u>x = 0</u> and <u>y = 0</u>.
 
 79
 00:04:28,419 --> 00:04:31,699
 But now I'm able
-to write a [move] function
+to write a <u>move</u> function
 
 80
 00:04:31,699 --> 00:04:34,580
@@ -369,7 +369,7 @@ and adds a delta
 
 81
 00:04:34,580 --> 00:04:36,040
-on the [x] and the [y] axes.
+on the <u>x</u> and the <u>y</u> axes.
 
 82
 00:04:36,040 --> 00:04:37,500
@@ -393,7 +393,7 @@ an update operation.
 86
 00:04:45,880 --> 00:04:49,460
 We're changing
-the [x] field and the [y field]
+the <u>x</u> field and the <u>y field</u>
 
 87
 00:04:49,460 --> 00:04:57,080
@@ -402,7 +402,7 @@ of the point p wich is passed as a parameter.
 88
 00:04:57,080 --> 00:05:03,449
 So now we have this move operation,
-remember our original [p] point is
+remember our original <u>p</u> point is
 
 89
 00:05:03,449 --> 00:05:07,300
@@ -411,7 +411,7 @@ and the color is black.
 
 90
 00:05:07,300 --> 00:05:16,660
-Now if I move the point [p]
+Now if I move the point <u>p</u>
 of two points horizontally and vertically.
 
 91
@@ -425,7 +425,7 @@ so there has been a side effect happening.
 
 93
 00:05:23,030 --> 00:05:28,280
-If I look at [p] now,
+If I look at <u>p</u> now,
 it is no longer at position 10, 0
 
 94
@@ -445,7 +445,7 @@ as much as I want.
 97
 00:05:36,630 --> 00:05:43,310
 All changes will be reported
-in my point [p].
+in my point <u>p</u>.
 
 98
 00:05:43,310 --> 00:05:48,090
