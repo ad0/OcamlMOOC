@@ -14,7 +14,7 @@ ce que cela veut dire,
 
 4
 00: 00: 08400 -> 00: 00: 13,030
-que les fonctions sont considérées comme des valeurs 
+que les fonctions soient considérées comme des valeurs
 de première classe dans les langages fonctionnels.
 
 5
@@ -30,11 +30,11 @@ peuvent désigner ou calculer les valeurs
 7
 00: 00: 21,480 -> 00: 00: 25,859
 de types par exemple entier, booléen,
-ou dans d'autres types de base.
+ou d'autres types de base.
 
 8
 00: 00: 25,859 -> 00: 00: 31,609
-Dans la séquence précédente, nous avons vu que
+Dans la séquence précédente, nous avons vu que des
 expressions peuvent également calculer des valeurs
 
 9
@@ -61,7 +61,7 @@ Comme vu dans la séquence précédente,
 
 14
 00: 00: 53,729 -> 00: 00: 57,690
-cela permet d'avoir une façon unique de nommer des 
+cela permet d'avoir une façon unique de nommer des
 choses,
 
 15
@@ -80,12 +80,12 @@ qui est utilisée pour calculer cette valeur.
 18
 00: 01: 07950 -> 00: 01: 13,759
 Et cela peut avoir, en fait, tout type
-qui est permis dans la langue OCaml.
+qui est permis dans le langage OCaml.
 
 19
 00: 01: 13,759 -> 00: 01: 18,219
 Les types jouent bien sûr un rôle très important
-pour les fonctions et pour des applications de fonction.
+pour les fonctions et pour les applications de fonction.
 
 20
 00: 01: 18,219 -> 00: 01: 24,640
@@ -114,7 +114,7 @@ corresponde au type de l'argument de notre fonction.
 
 25
 00: 01: 47,719 -> 00: 01: 49,799
-Cela ne arrête pas là.
+Cela ne s'arrête pas là.
 
 26
 00: 01: 49,799 -> 00: 01: 55,380
@@ -132,7 +132,7 @@ que nous avons vues dans les semaines 2 et 3.
 
 29
 00: 02: 01660 -> 00: 02: 06140
-Par exemple les fonctions peuvent faire partie d'une 
+Par exemple, les fonctions peuvent faire partie d'une
 liste, d'un enregistrement, d'un n-uplet, d'un tableau
 
 30
@@ -141,12 +141,12 @@ ou de tout ce que vous pouvez imaginer.
 
 31
 00: 02: 10,140 -> 00: 02: 12,290
-Les fonctions peuvent être des arguments effectifs 
+Les fonctions peuvent être des arguments effectifs
 de fonctions.
 
 32
 00: 02: 12,290 -> 00: 02: 16,150
-Elles peuvent être passées comme des valeurs à 
+Elles peuvent être passées comme des valeurs à
 d'autres fonctions.
 
 33
@@ -156,12 +156,12 @@ en résultat une autre fonction.
 
 34
 00: 02: 22,170 -> 00: 02: 26,200
-Ce qui signifie qu'avec les fonctions, on peut faire 
+Ce qui signifie qu'avec les fonctions, on peut faire
 exactement les mêmes choses,
 
 35
 00: 02: 26,200 -> 00: 02: 31,549
-qu'avec n'importe quelle autre valeur de n'importe 
+qu'avec n'importe quelle autre valeur de n'importe
 quel type de notre langage de programmation.
 
 36
@@ -180,7 +180,7 @@ faire partie d'une structure de données complexe.
 
 39
 00: 02: 46,610 -> 00: 02: 52,769
-Ce qui renforce notre point : les fonctions sont 
+Ce qui renforce notre point : les fonctions sont
 des valeurs de première classe en OCaml.
 
 40
@@ -194,7 +194,7 @@ que nous savons déjà.
 
 42
 00: 02: 58,540 -> 00: 03: 02079
-Nous définissons <u>fl</u> comme une liste qui 
+Nous définissons <u>fl</u> comme une liste qui
 contient deux expressions fonctionnelles.
 
 43
@@ -211,11 +211,11 @@ Et ces fonctions doivent toutes être du même type.
 
 46
 00: 03: 11,439 -> 00: 03: 14,480
-Dans notre cas, de entier vers entier.
+Dans notre cas, c'est entier vers entier.
 
 47
 00: 03: 14,480 -> 00: 03: 17,890
-Et maintenant, nous pouvons prendre par exemple cette 
+Et maintenant, nous pouvons prendre par exemple cette
 liste, prendre son premier élément,
 
 48
@@ -232,7 +232,7 @@ Et nous voyons que cela fonctionne très bien.
 
 51
 00: 03: 30,280 -> 00: 03: 33.200
-Sur cet exemple, on peur voir l'utilité de
+Sur cet exemple, on peut voir l'utilité de
 
 52
 00: 03: 33,209 -> 00: 03: 37,290
@@ -293,8 +293,8 @@ notre fonction <u>apply_twice</u>,
 
 65
 00: 04: 16,570 -> 00: 04: 20.670
-appliqué à la fonction de doublage,
-et appliqué à la valeur 1.
+appliquée à la fonction de doublage,
+et appliquée à la valeur 1.
 
 66
 00: 04: 20,670 -> 00: 04: 26,520
@@ -388,7 +388,7 @@ et applique <u>f</u>, à <u>g</u> appliqué à <u>x</u>.
 
 86
 00: 05: 38,420 -> 00: 05: 42,750
-Maintenant, observez s'il vous plaît le type
+Maintenant, observez s'il-vous-plaît le type
 que nous obtenons au toplevel.
 
 87
@@ -410,7 +410,7 @@ Mais en fait, ce n'est pas le cas.
 
 91
 00: 05: 53,740 -> 00: 05: 59,440
-Ce qui est intéressant à noter c'est qu'ici, 
+Ce qui est intéressant à noter c'est qu'ici,
 le type de l'argument de la première fonction
 
 92
@@ -421,7 +421,7 @@ le type du résultat de la seconde fonction.
 93
 00: 06: 03220 -> 00: 06: 08500
 Ce qui est normal si vous pensez à la façon
-les fonctions sont appliquées.
+dont les fonctions sont appliquées.
 
 94
 00: 06: 08530 -> 00: 06: 11.000
@@ -438,7 +438,7 @@ avec la fonction qui double,
 
 97
 00: 06: 18,870 -> 00: 06: 21,940
-et à la valeur 10.
+et la valeur 10.
 
 98
 00: 06: 21,940 -> 00: 06: 27,400
@@ -465,7 +465,7 @@ ces deux fonctions là,
 
 103
 00: 06: 39,210 -> 00: 06: 42,870
-alors en fait, le vérificateur de type nous dit
+alors le vérificateur de type nous dit
 que ça ne fonctionne pas.
 
 104
@@ -556,7 +556,7 @@ Donc, c'est juste un rappel.
 
 124
 00: 07: 49,410 -> 00: 07: 52,450
-Donc par exemple, si on a ici
+Par exemple, si on a ici
 la fonction qui double,
 
 125
@@ -604,7 +604,7 @@ en mettant des parenthèses.
 
 134
 00: 08: 27,190 -> 00: 08: 29,990
-Donc on doit écrire de cette façon.
+On doit donc écrire de cette façon.
 
 135
 00: 08: 29,990 -> 00: 08: 32,750

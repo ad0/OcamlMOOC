@@ -4,13 +4,13 @@ Bonjour, dans cette séquence et la suivante,
 
 2
 00: 00: 03230 -> 00: 00: 08280
-on va voir comment les fonctions, 
+on va voir comment les fonctions,
 en tant que valeurs de première classe,
 
 3
 00: 00: 08280 -> 00: 00: 15,429
-peuvent nous aider à écrire des programmes très jolis 
-et concis travaillant sur des listes.
+peuvent nous aider à écrire des programmes très jolis
+et très concis travaillant sur des listes.
 
 4
 00: 00: 15,429 -> 00: 00: 18,099
@@ -74,11 +74,11 @@ Puisque les listes sont elles-mêmes un type polymorphe,
 
 17
 00: 01: 02519 -> 00: 01: 04300
-comme on l'a appris à la semaine 3,
+comme on l'a appris en semaine 3,
 
 18
 00: 01: 04300 -> 00: 01: 09360
-les fonctions travaillant sur les listes doivent bien 
+les fonctions travaillant sur les listes doivent bien
 évidemment être polymorphes aussi,
 
 19
@@ -96,7 +96,7 @@ bibliothèque standard de OCaml,
 
 22
 00: 01: 21,590 -> 00: 01: 24,080
-et ici on a juste répété sa définition.
+ici on a juste répété sa définition.
 
 23
 00: 01: 24,080 -> 00: 01: 29,960
@@ -119,7 +119,7 @@ Si la liste est vide, on renvoie la liste vide,
 
 27
 00: 01: 42,270 -> 00: 01: 46,290
-et sinon, on applique la fonction à la
+sinon, on applique la fonction à la
 tête de la liste,
 
 28
@@ -129,7 +129,7 @@ au reste de la liste.
 
 29
 00: 01: 51,530 -> 00: 01: 58.000
-Ainsi le type est comme prévu, on a en argument une 
+Ainsi le type est comme prévu, on a en argument une
 fonction et une <u>'a list</u>, et le résultat sera une
 
 30
@@ -192,7 +192,7 @@ de listes,
 
 43
 00: 02: 44,430 -> 00: 02: 50,620
-de sorte que nous avons des motifs qui sont 
+de sorte que nous avons des motifs qui sont
 des paires de motifs de liste.
 
 44
@@ -202,7 +202,7 @@ des erreurs d'exécution,
 
 45
 00: 02: 54,030 -> 00: 02: 57,420
-car il peut arriver que les deux listes soient
+car il se peut que les deux listes soient
 de longueur différente.
 
 46
@@ -215,8 +215,8 @@ qui lève en fait une condition d'erreur.
 
 48
 00: 03: 03859 -> 00: 03: 07969
-Vous en apprendrez beaucoup plus à ce sujet 
-à la semaine 5.
+Vous en apprendrez beaucoup plus à ce sujet
+en semaine 5.
 
 49
 00: 03: 07969 -> 00: 03: 14,040
@@ -230,7 +230,7 @@ qui est une fonction de deux paramètres,
 51
 00: 03: 18,280 -> 00: 03: 22,639
 et deux autres arguments qui sont des listes d'éléments
-de type qui va bien.
+de type qui convient.
 
 52
 00: 03: 22,639 -> 00: 03: 27,810
@@ -248,8 +248,8 @@ et l'on obtient comme résultat la liste des valeurs
 
 55
 00: 03: 40,239 -> 00: 03: 45,959
-Bien, voici maintenant un exemple de façon dont on peut
-utiliser la fonction d'ordre supérieur <u>map</u> 
+Bien, voici maintenant un exemple de la façon dont on peut
+utiliser la fonction d'ordre supérieur <u>map</u>
 
 56
 00: 03: 45,959 -> 00: 03: 46,549
@@ -295,7 +295,7 @@ vues auparavant,
 
 65
 00: 04: 26,350 -> 00: 04: 30,650
-et de les appliquer aux fonctions d'addition,
+et les appliquer aux fonctions d'addition,
 de multiplication, et ainsi de suite.
 
 66
@@ -318,7 +318,7 @@ en l'écrivant simplement entre parenthèses,
 
 70
 00: 04: 46,700 -> 00: 04: 53,970
-Donc, si on écrit <u>(+)</u>, cela donne par exemple 
+Donc, si on écrit <u>(+)</u>, cela donne par exemple
 la fonction d'addition binaire sur des nombres entiers,
 
 71
@@ -327,18 +327,18 @@ et il serait de même pour la division
 
 72
 00: 04: 56,040 -> 00: 05: 01830
-et pour moins. Cependant, pareil pour la
-multiplication, il y a un petit problème
+et pour moins. Et pareil pour la
+multiplication, cependant il y a un petit problème
 
 73
 00: 05: 01830 -> 00: 05: 08700
-car si on écrit <u>(*)</u>, cela donnerait bien sûr
+car si l'on écrit <u>(*)</u>, cela donnerait bien sûr
 un commentaire en OCaml.
 
 74
 00: 05: 08700 -> 00: 05: 14,360
 Pour cette raison, et seulement dans ce cas particulier
-en fait, il faut écrire des espaces autour de la
+en fait, il faut mettre des espaces autour de la
 
 75
 00: 05: 14,360 -> 00: 05: 15,080
@@ -361,8 +361,8 @@ l'application partielle.
 
 79
 00: 05: 36,330 -> 00: 05: 40,020
-Puisque cette somme de 2 listes d'entiers est maintenant
-vient obtenue
+Cette somme de 2 listes d'entiers est maintenant
+simplement obtenue
 
 80
 00: 05: 40,020 -> 00: 05: 45,130
@@ -371,13 +371,13 @@ en faisant une application partielle de <u>List.map2</u>
 
 81
 00: 05: 45,130 -> 00: 05: 50,170
-écrite ici en utilisant notre notation pour les 
+écrite ici en utilisant notre notation pour les
 opérateurs infixes.
 
 82
 00: 05: 50,170 -> 00: 05: 56,310
 Le type est en fait désormais une fonction qui prend
-deux listes entières et retourne une liste d'entiers,
+deux listes d'entiers et retourne une liste d'entiers,
 
 83
 00: 05: 56,310 -> 00: 06: 00560
@@ -386,7 +386,7 @@ cet exemple,
 
 84
 00: 06: 00560 -> 00: 06: 05780
-et on obtient exactement la somme des deux vecteurs.
+pour obtenir exactement la somme des deux vecteurs.
 
 85
 00: 06: 05780 -> 00: 06: 09000
@@ -414,7 +414,7 @@ est déjà une addition de vecteurs,
 
 90
 00: 06: 32,330 -> 00: 06: 39,190
-et maintenant tout ce qu'on a à faire c'est une 
+maintenant tout ce qu'on a à faire c'est une
 application partielle de <u>List.map2</u> à l'opération
 
 91
@@ -423,7 +423,7 @@ d'addition de vecteur,
 
 92
 00: 06: 40,820 -> 00: 06: 49,830
-ce qui nous donne pour l'addition de matrice 
+ce qui nous donne pour l'addition de matrice
 <u>List.map2 (List.map2 (+))</u>.
 
 93
@@ -457,11 +457,11 @@ devrait obtenir.
 99
 00: 07: 16,900 -> 00: 07: 20,650
 Enfin, regardons un exemple qui est
-peu plus costaud.
+un peu plus complexe.
 
 100
 00: 07: 20,650 -> 00: 07: 28,280
-Dans cet exemple, on veut calculer la liste 
+Dans cet exemple, on veut calculer la liste
 de toutes les sous-listes d'une liste donnée.
 
 101
@@ -511,7 +511,7 @@ serait <u>'a list</u>
 
 111
 00: 08: 06330 -> 00: 08: 11,950
-<u>-> 'a list list</u>, de sorte qu'il donnerait 
+<u>-> 'a list list</u>, de sorte qu'il donnerait
 une liste de listes d'éléments.
 
 112
@@ -573,22 +573,22 @@ reste <u>r</u>,
 
 125
 00: 09: 03730 -> 00: 09: 08889
-ce qui signifie qu'on peut l'obtenir à partir 
+ce qui signifie qu'on peut l'obtenir à partir
 d'un appel à la fonction récursive.
 
 126
 00: 09: 08889 -> 00: 09: 13,620
-D'autre part, dans le cas où la sous-liste utilise 
+D'autre part, dans le cas où la sous-liste utilise
 la tête <u>h</u>,
 
 127
 00: 09: 13,620 -> 00: 09: 17,519
-alors elle est de la forme où elle doit commencer
+alors elle a une forme qui doit commencer
 par la tête <u>h</u>,
 
 128
 00: 09: 17,519 -> 00: 09: 23,269
-et elle doit continuer par quelque chose qui
+et doit continuer par quelque chose qui
 est une sous-liste du reste <u>r</u>.
 
 129
@@ -616,7 +616,7 @@ bien sûr, nous avons une fonction récursive
 
 134
 00: 09: 45,790 -> 00: 09: 48,790
-Voici le premier cas qu'on a discuté précédemment,
+Voici le premier cas discuté précédemment,
 
 135
 00: 09: 48,790 -> 00: 09: 53,980
@@ -643,7 +643,7 @@ reste de la liste.
 
 140
 00: 10: 06290 -> 00: 10: 08920
-Donc, on lui donne et nous le calculons
+Donc, on lui donne un nom et nous le calculons
 juste une fois.
 
 141
@@ -701,7 +701,7 @@ pour voir que tout fonctionne bien,
 
 153
 00: 10: 57,300 -> 00: 11: 04620
-et pour la liste <u>[1; 2]</u>, on obtient en effet
+pour cette liste <u>[1; 2]</u>, on obtient en effet
 4 sous-listes différentes.
 
 154
