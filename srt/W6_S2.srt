@@ -90,7 +90,7 @@ in the dictionary
 
 21
 00:01:46,460 --> 00:01:50,530
-if it exists, or raise [NotFound] otherwise.
+if it exists, or raise <u>NotFound</u> otherwise.
 
 22
 00:01:50,530 --> 00:02:00,299
@@ -167,8 +167,8 @@ implement this value in this module,
 
 38
 00:03:27,629 --> 00:03:35,430
-so here [force] is a list, so its valid to
-apply [List.map] function.
+so here <u>force</u> is a list, so its valid to
+apply <u>List.map</u> function.
 
 39
 00:03:35,430 --> 00:03:39,030
@@ -222,7 +222,7 @@ us,
 
 50
 00:04:24,220 --> 00:04:27,800
-[Dict.t] is an abstract type,
+<u>Dict.t</u> is an abstract type,
 
 51
 00:04:27,800 --> 00:04:30,860
@@ -290,11 +290,11 @@ notice that when I evaluate this module,
 
 66
 00:05:37,430 --> 00:05:41,759
-the exception [Dict.NotFound] is raised.
+the exception <u>Dict.NotFound</u> is raised.
 
 67
 00:05:41,759 --> 00:05:46,910
-So one of the [lookup] here failed.
+So one of the <u>lookup</u> here failed.
 
 68
 00:05:46,910 --> 00:05:50,180
@@ -376,7 +376,7 @@ and that's not really possible in our implementation.
 86
 00:07:13,099 --> 00:07:21,449
 Finally, in the client, the reference to the
-module [Dict] is hardcoded into the code.
+module <u>Dict</u> is hardcoded into the code.
 
 87
 00:07:21,449 --> 00:07:25,660
@@ -394,7 +394,7 @@ configurations,
 
 90
 00:07:35,050 --> 00:07:40,360
-depending on the implementation of [Dict]
+depending on the implementation of <u>Dict</u>
 that we want to use.
 
 91
