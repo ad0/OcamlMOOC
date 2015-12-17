@@ -1,7 +1,7 @@
 1
 00:00:00,220 --> 00:00:05,480
 Dans cette séquence, nous allons voir nos premières
-structures de données de mutables que sont les tableaux.
+structures de données mutables que sont les tableaux.
 
 2
 00:00:05,480 --> 00:00:12,670
@@ -11,7 +11,7 @@ dans ce cours, en semaine 2, séquence 3.
 3
 00:00:12,670 --> 00:00:15,480
 Il s'agit d'une structure de données très
-intéressante, puisque grâce à sa taille fixée,
+intéressante, puisque grâce à sa taille fixe,
 
 4
 00:00:15,480 --> 00:00:19,410
@@ -21,7 +21,7 @@ en temps constant
 5
 00:00:19,410 --> 00:00:24,980
 et est ainsi particulièrement bien adaptée
-à l'utilisation dans des constructions de boucles comme
+à une utilisation dans des constructions de boucles comme
 
 6
 00:00:24,980 --> 00:00:26,269
@@ -38,7 +38,7 @@ trouver tous les entiers qui sont des cubes
 
 9
 00:00:36,110 --> 00:00:39,090
-ainsi que des carrés.
+et aussi des carrés.
 
 10
 00:00:39,090 --> 00:00:43,340
@@ -71,7 +71,7 @@ Une fois que nous avons tout cela,
 
 16
 00:01:06,979 --> 00:01:15,100
-alors calculer tous les cubes qui son aussi
+alors calculer tous les cubes qui sont aussi
 des carrés jusqu'à <u>n</u> n'est pas très difficile,
 
 17
@@ -91,15 +91,15 @@ comme nous l'avons appris,
 20
 00:01:28,930 --> 00:01:38,079
 et si l'on trouve un élément ici, qui est le cube
-d'une indice et qui se trouve être aussi un carré, on
+d'un indice et qui se trouve être aussi un carré, on
 
 21
 00:01:38,079 --> 00:01:39,360
-l'affiche, et voilà tout.
+l'affiche, et voilà c 'est tout.
 
 22
 00:01:39,360 --> 00:01:50,590
-OK, donc on peut tester cela sur 100, et donc vous voyez
+OK, donc on peut tester cela avec 100, et donc vous voyez
 ces entiers qui sont tous les nombres cubes, étant également des
 
 23
@@ -109,11 +109,11 @@ carrés d'entiers, jusqu'à 100.
 24
 00:01:53,840 --> 00:02:00,229
 Maintenant, la bonne nouvelle pour certains d'entre nous est que
-les tableaux OCaml sont vraiment réellement des tableaux :
+les tableaux OCaml sont réellement des tableaux :
 
 25
 00:02:00,229 --> 00:02:03,930
-non seulement il peuvent être utilisés comme dans
+non seulement ils peuvent être utilisés comme dans
 l'exemple précédent,
 
 26
@@ -188,7 +188,7 @@ la première cellule du tableau
 
 41
 00:03:04,010 --> 00:03:07,540
-maintenant il y a 100 et plus 0 comme avant.
+maintenant il y a 100 et non plus 0 comme avant.
 
 42
 00:03:07,540 --> 00:03:12,420
@@ -222,7 +222,7 @@ impératif classique auquel nous ont habitué les autres langages,
 48
 00:03:35,970 --> 00:03:41,959
 comme par exemple si l'on décide de prendre un
-tableau et de rotationner son contenu vers la
+tableau et d'effectuer une rotation de son contenu vers la
 
 49
 00:03:41,959 --> 00:03:42,040
@@ -239,7 +239,7 @@ prend un tableau <u>a</u>,
 
 52
 00:03:50,709 --> 00:03:55,439
-puis elle calcule la longeur de ce tableau en appelant
+calcule la longeur de ce tableau en appelant
 la fonction <u>Array.length</u>,
 
 53
@@ -252,7 +252,7 @@ celle en position 0,
 
 55
 00:03:59,909 --> 00:04:01,480
-parce qu'elle va être écraser,
+parce qu'elle va être écrasée,
 
 56
 00:04:01,480 --> 00:04:08,409
@@ -261,8 +261,8 @@ décale toutes les valeurs vers la gauche d'une
 
 57
 00:04:08,409 --> 00:04:13,760
-position et enfin on restaure à la dernière
-position la valeur de la première cellule.
+position et enfin on restaure la dernière
+position avec la valeur de la première cellule.
 
 58
 00:04:13,760 --> 00:04:23,889
@@ -283,12 +283,12 @@ peu importe ce que sont ses éléments,
 
 62
 00:04:30,389 --> 00:04:34,930
-et retorune le type <u>unit</u> parce que bien sûr,
+et retourne le type <u>unit</u> parce que bien sûr,
 il n'y a aucun résultat à retourner ;
 
 63
 00:04:34,930 --> 00:04:39,180
-la seule chose que nous ayons faite est de modifier
+la seule chose faite est de modifier
 en place le contenu du tableau qui a été
 
 64
@@ -310,13 +310,13 @@ de créer un tableau avec tous les éléments de
 
 68
 00:04:50,699 --> 00:04:59,530
-Vous voyez, maintenant nous pouvons décider de rotationer
+Vous voyez, maintenant nous pouvons décider de rotationner
 le tableau une fois.
 
 69
 00:04:59,530 --> 00:05:05,979
 Et dès que la rotation a été faite, bien sûr
-vous pouvez constater que tout a bien été décalé vers
+nous pouvons constater que tout a bien été décalé vers
 
 70
 00:05:05,979 --> 00:05:08,009
@@ -324,11 +324,11 @@ la gauche d'une position.
 
 71
 00:05:08,009 --> 00:05:14,639
-On peut le rotationer encore, et il continue de se décaler.
+On peut le rotationner encore, et il continue de se décaler.
 
 72
 00:05:14,639 --> 00:05:16,500
-Vous pouvez jouer le jeu tant que vous le souhaitez.
+Vous pouvez jouer à ce jeu tant que vous le souhaitez.
 
 73
 00:05:16,500 --> 00:05:22,110
@@ -366,7 +366,7 @@ est une valeur mutable.
 80
 00:05:46,289 --> 00:05:53,699
 Et cette valeur mutable est modifiée en place
-et la nouvelle valeur est le résultat de l'évaluation
+la nouvelle valeur étant le résultat de l'évaluation
 
 81
 00:05:53,699 --> 00:05:54,800
